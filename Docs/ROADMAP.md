@@ -32,8 +32,8 @@ Build phases for the Ember OS front door. Each item is marked open [ ] or comple
 
 ## Phase 4 — Hand-off
 - [x] Hand-off notes for the Claude Code agent (`Docs/CLAUDE.md` → Build and deploy)
-- [ ] Rob answers the go-live questions (repo name, Vercel account, DNS) in `Cotyledon/docs/roadmaps/live-domain-roadmap.md` §7
-- [ ] Agent creates the repo, deploys, connects the subdomains
+- [x] Repo `wolvestofeed/emberos`; Vercel project `emberos`; live at https://foodismymuse.com (www and http redirect to it, 308)
+- [ ] Cotyledon on `cotyledon.foodismymuse.com` (its own project; tracked in `Cotyledon/docs/roadmaps/live-domain-roadmap.md`)
 
 ---
 
@@ -45,3 +45,4 @@ Build phases for the Ember OS front door. Each item is marked open [ ] or comple
 - **2026-10-02** — Rob supplied four Cotyledon screens (`content/cotyledon-*.png`, ~1 MB each at ~3100 px); resized to 1600 px WebP (70–100 KB) in `public/screens/` and wired into the home gallery. Home pull quote set to "TBD" at Rob's request; he is writing his own.
 - **2026-10-02** — Per Rob: cut "Healthy people gather, and that is where community comes from" from the Mission note. Platform modules section: group headings and card titles in copper (`--color-copper-light` #D28B4C on the dark bands, 4.8:1; the kit's #B8733A stays for cream), app tags white on dark. The same card-title and tag treatment applies to the home module grid, which shares `ModuleTile`.
 - **2026-10-02** — Per Rob: every section title and card title on every page is copper (`--color-copper` on cream, `--color-copper-light` on the dark bands). Removed the logo files no page uses. Folder initialised as a git repository, first commit; there is no remote yet.
+- **2026-10-03** — Live. Pushed to `wolvestofeed/emberos`, imported into Vercel as `emberos` with no environment variables (the defaults in `src/config/apps.ts` are the production values). DNS at Squarespace: A `@` → 216.198.79.1, CNAME `www` → the project's vercel-dns target, CNAME `cotyledon` → cname.vercel-dns.com. The apex is primary; `www` redirects to it. Verified: https://foodismymuse.com 200, www and http 308 to the apex.
