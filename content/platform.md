@@ -1,0 +1,125 @@
+# Platform — copy deck
+
+Route: `/platform` · Every claim here is true of the software today, sourced from `Cotyledon/docs/outline.md` and `Comptable/docs/muse/overview.md`. Text in [brackets] is a note to the builder.
+
+---
+
+## Page header
+
+**Eyebrow:** THE PLATFORM
+
+**Headline:** Everything a food business runs on, in one system
+
+**Intro:**
+Ember OS is one operating model that spans production, finance, supply chain, inventory and safety, sustainability, people, sales and the people you serve. Each application speaks its own trade's language — recipes and batches in Muse Kitchen, grow plans and sowings in Cotyledon — on the same engine underneath.
+
+[Two small app badges under the intro, each linking to that app's sign-in: Muse Kitchen · Cotyledon]
+
+---
+
+## How the engine thinks
+
+**Heading:** Four rules the whole system keeps
+
+1. **Orders drive production.** A batch or a sowing is exactly what the orders need, in whole units. Nothing is made to fill a rack or a kettle.
+2. **The plan is the cost.** Every input line on a recipe or grow plan is priced from tagged reference data, so cost per unit is computed, never typed in.
+3. **Only real records post to the books.** Plans and forecasts live in their own world. The ledger moves when a batch closes, a receipt lands or a delivery is handed over.
+4. **Every figure carries its source.** Sourced, stated, derived, placeholder, unconfirmed or dated. A placeholder looks different everywhere it appears.
+
+---
+
+## Modules
+
+[Grouped sections. Each section: heading, one-line purpose, then a list of modules with one line each. A small tag after each module shows which app has it: MK = Muse Kitchen, CO = Cotyledon, both if unmarked.]
+
+### Overview
+See the whole operation at a glance.
+- **Dashboard** — one card per section with its key figures; operators see their own view without company financials
+- **Reports** — exports across every module
+- **Sources** — the register of every source a figure cites
+
+### Production
+Turn orders into a real production schedule.
+- **Recipes** (MK) / **Grow plans** (CO) — every input line costed: ingredients, or seed, medium, nutrients and light
+- **Varieties, Media, Nutrients & Supplements** (CO) — the libraries a grow plan draws on, each with price history
+- **Time studies** — labor standards from timed observations, not guesses
+- **Production planning, schedule, compare, calendar** — the plan of record, forecasts and the working copy, side by side
+- **Grow calendar** (CO) — every sowing's stages across the days, planned back from distribution day
+- **Capacity, equipment or grow units, packaging** — what the room can hold, and where a plan runs out of space
+- **Floor** (MK) / **Grow room** (CO) — the operator's surface: punch clock, stage records, closing a batch or sowing
+
+### Financials and accounting
+Books a CPA would sign.
+- **Unit economics** — cost per unit and cost to serve, line by line
+- **Profit & loss, balance sheet, cash flow** — statements from the ledger, never from a separate spreadsheet
+- **Ledger** — double-entry, with perpetual inventory at actual cost under US GAAP (ASC 330)
+- **Plan v actual, actuals** — what was planned against what happened
+- **Receivables, payables** — who owes, who is owed
+- **Capital & financing** — equipment, loans and the money that built the place
+
+### Inventory and safety
+Know every lot, from receipt to the plate or flat.
+- **Inventory** — FIFO lots at the price paid
+- **Food safety** (MK) — HACCP and critical control points
+- **Produce safety** (CO) — the Produce Safety Rule, sprouts Subpart M and lot traceability
+
+### Supply chain
+Buy well and know who you buy from.
+- **Procurement** — purchase orders at each supplier's published price
+- **Suppliers** — the directory: who they are, what they supply, and at what price
+- **Supplier portal** (MK) — suppliers sign in to their own space
+
+### Sustainability
+Measure the footprint beside the work that made it.
+- **Inventory & audit** — the emissions inventory and its audit trail
+- **Facility, energy, refrigerants** — Scope 1 and 2, from the bills and service records
+- **Equipment & rebates** — efficiency upgrades and the rebates they earn
+- **Ingredients and inputs** — Scope 3, from what you buy
+- **Supplier LCA data** — life-cycle data from the suppliers that publish it
+- **Logistics, waste, water** — delivery miles, end of life and effluent
+
+### People
+Staff the plan, not the other way round.
+- **Staffing** — roster, roles, wages, punches and pay periods
+- **Schedule** — the roster against the labor the plan demands, with gaps shown
+- **SOPs & training** — the procedures and who is trained on them
+
+### Sales and clients
+From first conversation to standing order.
+- **Sales portal** — the seller's own space
+- **Prospects** — the pipeline, mapped
+- **Customers** (MK) / **Subscribers** (CO) — every account with its pickup points or delivery sites
+- **Orders** — confirmed and delivered, ready for production
+- **Subscriptions** (CO) — weekly, every-two-weeks or monthly, with skip and pause
+- **Nutrition targets** (CO) — each client's targets, scored against what they receive
+
+### Portals
+Each person gets their own door.
+- **Customer portal and order builder** (MK)
+- **Client portal and Flat Builder** (CO) — clients compose their flats against their own nutrition targets
+- **Parent portal** (MK) — families see what their children are served
+- **Supplier portal** (MK)
+
+### Distribution
+- **Sites & delivery** (MK) / **Pickup points & routes** (CO) — where the food goes, and the trays that come back
+
+### Billing and payments
+- **Invoicing and receivables** — every order invoiced from the ledger
+- **Subscriptions through Stripe** (CO) — each distribution billed when it is handed over; a skipped one bills nothing
+
+### Research and development
+- **Blends and experiments** (CO) — new blends grown as titled experiments, yield read across runs, expensed as R&D under ASC 730 until proven
+
+### Workspaces
+- **Multi-tenant from the ground up** — each business is its own workspace, isolated in the database, with its own members and roles
+
+---
+
+## Close
+
+**Heading:** Two trades today, more to come
+
+**Body:**
+Muse Kitchen runs the commissary kitchen. Cotyledon runs the farm. The engine underneath is the same, and the next application will speak its own trade's language on it too.
+
+[Two sign-in buttons, same as the home cards.]

@@ -1,0 +1,167 @@
+/**
+ * Platform page copy. Source of truth: content/platform.md. Every claim is true of the
+ * software today, drawn from Cotyledon/docs/outline.md and the Muse Kitchen docs.
+ */
+import type { AppKey } from '@/config/apps';
+
+export const header = {
+  eyebrow: 'The platform',
+  headline: 'Everything a food business runs on, in one system',
+  intro:
+    "Ember OS is one operating model that spans production, finance, supply chain, inventory and safety, sustainability, people, sales and the people you serve. Each application speaks its own trade's language — recipes and batches in Muse Kitchen, grow plans and sowings in Cotyledon — on the same engine underneath.",
+};
+
+export const rules = {
+  heading: 'Four rules the whole system keeps',
+  items: [
+    { title: 'Orders drive production.', body: 'A batch or a sowing is exactly what the orders need, in whole units. Nothing is made to fill a rack or a kettle.' },
+    { title: 'The plan is the cost.', body: 'Every input line on a recipe or grow plan is priced from tagged reference data, so cost per unit is computed, never typed in.' },
+    { title: 'Only real records post to the books.', body: 'Plans and forecasts live in their own world. The ledger moves when a batch closes, a receipt lands or a delivery is handed over.' },
+    { title: 'Every figure carries its source.', body: 'Sourced, stated, derived, placeholder, unconfirmed or dated. A placeholder looks different everywhere it appears.' },
+  ],
+};
+
+/** Which app has the module. Omitted means both. */
+export interface Module {
+  name: string;
+  line?: string;
+  apps?: AppKey[];
+}
+
+export interface ModuleGroup {
+  heading: string;
+  purpose?: string;
+  modules: Module[];
+}
+
+export const groups: ModuleGroup[] = [
+  {
+    heading: 'Overview',
+    purpose: 'See the whole operation at a glance.',
+    modules: [
+      { name: 'Dashboard', line: 'one card per section with its key figures; operators see their own view without company financials' },
+      { name: 'Reports', line: 'exports across every module' },
+      { name: 'Sources', line: 'the register of every source a figure cites' },
+    ],
+  },
+  {
+    heading: 'Production',
+    purpose: 'Turn orders into a real production schedule.',
+    modules: [
+      { name: 'Recipes', line: 'every input line costed: ingredients', apps: ['muse'] },
+      { name: 'Grow plans', line: 'every input line costed: seed, medium, nutrients and light', apps: ['cotyledon'] },
+      { name: 'Varieties, Media, Nutrients & Supplements', line: 'the libraries a grow plan draws on, each with price history', apps: ['cotyledon'] },
+      { name: 'Time studies', line: 'labor standards from timed observations, not guesses' },
+      { name: 'Production planning, schedule, compare, calendar', line: 'the plan of record, forecasts and the working copy, side by side' },
+      { name: 'Grow calendar', line: "every sowing's stages across the days, planned back from distribution day", apps: ['cotyledon'] },
+      { name: 'Capacity, equipment or grow units, packaging', line: 'what the room can hold, and where a plan runs out of space' },
+      { name: 'Floor', line: 'the operator’s surface: punch clock, stage records, closing a batch', apps: ['muse'] },
+      { name: 'Grow room', line: 'the operator’s surface: punch clock, stage records, closing a sowing', apps: ['cotyledon'] },
+    ],
+  },
+  {
+    heading: 'Financials and accounting',
+    purpose: 'Books a CPA would sign.',
+    modules: [
+      { name: 'Unit economics', line: 'cost per unit and cost to serve, line by line' },
+      { name: 'Profit & loss, balance sheet, cash flow', line: 'statements from the ledger, never from a separate spreadsheet' },
+      { name: 'Ledger', line: 'double-entry, with perpetual inventory at actual cost under US GAAP (ASC 330)' },
+      { name: 'Plan v actual, actuals', line: 'what was planned against what happened' },
+      { name: 'Receivables, payables', line: 'who owes, who is owed' },
+      { name: 'Capital & financing', line: 'equipment, loans and the money that built the place' },
+    ],
+  },
+  {
+    heading: 'Inventory and safety',
+    purpose: 'Know every lot, from receipt to the plate or flat.',
+    modules: [
+      { name: 'Inventory', line: 'FIFO lots at the price paid' },
+      { name: 'Food safety', line: 'HACCP and critical control points', apps: ['muse'] },
+      { name: 'Produce safety', line: 'the Produce Safety Rule, sprouts Subpart M and lot traceability', apps: ['cotyledon'] },
+    ],
+  },
+  {
+    heading: 'Supply chain',
+    purpose: 'Buy well and know who you buy from.',
+    modules: [
+      { name: 'Procurement', line: "purchase orders at each supplier's published price" },
+      { name: 'Suppliers', line: 'the directory: who they are, what they supply, and at what price' },
+      { name: 'Supplier portal', line: 'suppliers sign in to their own space', apps: ['muse'] },
+    ],
+  },
+  {
+    heading: 'Sustainability',
+    purpose: 'Measure the footprint beside the work that made it.',
+    modules: [
+      { name: 'Inventory & audit', line: 'the emissions inventory and its audit trail' },
+      { name: 'Facility, energy, refrigerants', line: 'Scope 1 and 2, from the bills and service records' },
+      { name: 'Equipment & rebates', line: 'efficiency upgrades and the rebates they earn' },
+      { name: 'Ingredients and inputs', line: 'Scope 3, from what you buy' },
+      { name: 'Supplier LCA data', line: 'life-cycle data from the suppliers that publish it' },
+      { name: 'Logistics, waste, water', line: 'delivery miles, end of life and effluent' },
+    ],
+  },
+  {
+    heading: 'People',
+    purpose: 'Staff the plan, not the other way round.',
+    modules: [
+      { name: 'Staffing', line: 'roster, roles, wages, punches and pay periods' },
+      { name: 'Schedule', line: 'the roster against the labor the plan demands, with gaps shown' },
+      { name: 'SOPs & training', line: 'the procedures and who is trained on them' },
+    ],
+  },
+  {
+    heading: 'Sales and clients',
+    purpose: 'From first conversation to standing order.',
+    modules: [
+      { name: 'Sales portal', line: "the seller's own space" },
+      { name: 'Prospects', line: 'the pipeline, mapped' },
+      { name: 'Customers', line: 'every account with its pickup points or delivery sites', apps: ['muse'] },
+      { name: 'Subscribers', line: 'every account with its pickup points or delivery sites', apps: ['cotyledon'] },
+      { name: 'Orders', line: 'confirmed and delivered, ready for production' },
+      { name: 'Subscriptions', line: 'weekly, every-two-weeks or monthly, with skip and pause', apps: ['cotyledon'] },
+      { name: 'Nutrition targets', line: "each client's targets, scored against what they receive", apps: ['cotyledon'] },
+    ],
+  },
+  {
+    heading: 'Portals',
+    purpose: 'Each person gets their own door.',
+    modules: [
+      { name: 'Customer portal and order builder', apps: ['muse'] },
+      { name: 'Client portal and Flat Builder', line: 'clients compose their flats against their own nutrition targets', apps: ['cotyledon'] },
+      { name: 'Parent portal', line: 'families see what their children are served', apps: ['muse'] },
+      { name: 'Supplier portal', apps: ['muse'] },
+    ],
+  },
+  {
+    heading: 'Distribution',
+    modules: [
+      { name: 'Sites & delivery', line: 'where the food goes', apps: ['muse'] },
+      { name: 'Pickup points & routes', line: 'where the flats go, and the trays that come back', apps: ['cotyledon'] },
+    ],
+  },
+  {
+    heading: 'Billing and payments',
+    modules: [
+      { name: 'Invoicing and receivables', line: 'every order invoiced from the ledger' },
+      { name: 'Subscriptions through Stripe', line: 'each distribution billed when it is handed over; a skipped one bills nothing', apps: ['cotyledon'] },
+    ],
+  },
+  {
+    heading: 'Research and development',
+    modules: [
+      { name: 'Blends and experiments', line: 'new blends grown as titled experiments, yield read across runs, expensed as R&D under ASC 730 until proven', apps: ['cotyledon'] },
+    ],
+  },
+  {
+    heading: 'Workspaces',
+    modules: [
+      { name: 'Multi-tenant from the ground up', line: 'each business is its own workspace, isolated in the database, with its own members and roles' },
+    ],
+  },
+];
+
+export const close = {
+  heading: 'Two trades today, more to come',
+  body: "Muse Kitchen runs the commissary kitchen. Cotyledon runs the farm. The engine underneath is the same, and the next application will speak its own trade's language on it too.",
+};

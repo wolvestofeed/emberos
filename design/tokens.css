@@ -1,0 +1,78 @@
+/*
+ * foodismymuse.com — design tokens (Tailwind 4 theme)
+ *
+ * Ground: the forest-charcoal of the Ember illustration, cream for light bands.
+ * Accents: Ember flame amber for the one primary action; each app's palette
+ * inside its own card. Type: Montserrat (UI), Cormorant Garamond (display),
+ * Poppins (tracked labels, matching "POWERED BY").
+ *
+ * Contrast (WCAG AA, checked):
+ *   cream on ground        15.1:1    mist on ground          9.6:1
+ *   amber on ground         8.6:1    ink on amber            8.6:1
+ *   copper-light on raised  4.8:1    copper on cream          4.6:1
+ *   ink on cream           14.2:1    ink-soft on cream        6.4:1
+ *   muse-deep on muse-mint  9.9:1    coty-forest on coty-mint 8.9:1
+ */
+@theme inline {
+  /* Ember OS ground */
+  --color-ground: #1b2621;
+  --color-ground-deep: #0e3326;
+  --color-ground-raised: #243129;
+  --color-ground-line: #3a4941;
+
+  /* Light bands */
+  --color-cream: #f4eee3;
+  --color-cream-deep: #e9e0cf;
+  --color-cream-line: #d6cab5;
+  --color-paper: #fbf8f2;
+
+  /* Ink */
+  --color-ink: #1b2621;
+  --color-ink-soft: #4f5e56;
+  --color-mist: #c8d1cb;
+  --color-cream-ink: #f6ecda;
+
+  /* Flame */
+  --color-amber: #ffa928;
+  --color-flame: #f2601e;
+
+  /* Copper for headings: the kit's copper on cream, a lighter copper on the dark bands */
+  --color-copper: #b8733a;
+  --color-copper-light: #d28b4c;
+
+  /* Muse Kitchen */
+  --color-muse-emerald: #0e6b4e;
+  --color-muse-copper: #b8733a;
+  --color-muse-mint: #9fd8be;
+  --color-muse-deep: #0b2a22;
+
+  /* Cotyledon */
+  --color-coty-forest: #0e3326;
+  --color-coty-sky: #156b50;
+  --color-coty-mint: #9ed5b5;
+  --color-coty-copper: #b8733a;
+  --color-coty-cream: #f6ecda;
+
+  /* Provenance chips (semantic, never decorative) */
+  --color-prov-sourced: #1f6f45;
+  --color-prov-stated: #2a5f9e;
+  --color-prov-derived: #6a4fa3;
+  --color-prov-placeholder: #9a6a00;
+  --color-prov-unconfirmed: #8a4f2a;
+  --color-prov-dated: #5a6670;
+
+  /* Type */
+  --font-sans: var(--font-montserrat), "Helvetica Neue", Arial, sans-serif;
+  --font-display: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-label: var(--font-poppins), var(--font-montserrat), sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* Shape */
+  --radius-card: 1.25rem;
+  --radius-tile: 0.875rem;
+  --radius-pill: 9999px;
+
+  /* Shadow tinted to the ground, not black */
+  --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 18px 40px -20px rgba(8, 20, 14, 0.7);
+  --shadow-card-light: 0 1px 0 rgba(255, 255, 255, 0.6) inset, 0 14px 30px -18px rgba(27, 38, 33, 0.35);
+}
