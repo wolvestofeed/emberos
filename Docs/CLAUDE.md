@@ -38,7 +38,7 @@ Front-end UI surface only: copy, design tokens, static pages and components. No 
 
 ## Build and deploy (hand-off)
 - Install and run: `pnpm install`, `pnpm dev` (port 3001). Checks: `pnpm typecheck`, `pnpm lint`, `pnpm build`. The build is fully static (no server code, no env needed to build).
-- App URLs: `src/config/apps.ts`. Muse Kitchen defaults to getcomptable.com/muse; set `NEXT_PUBLIC_MUSE_URL` (or edit the default) when muse.foodismymuse.com is live. Cotyledon defaults to cotyledon.foodismymuse.com. `NEXT_PUBLIC_SITE_URL` sets canonical and Open Graph URLs (see `.env.example`).
+- App URLs: `src/config/apps.ts`. Muse Kitchen defaults to getcomptable.com/muse; set `NEXT_PUBLIC_MUSE_URL` (or edit the default) when muse.foodismymuse.com is live. Cotyledon defaults to cotyledon.foodismymuse.com/farm/dashboard, so the gate drops a visitor on the dashboard. `NEXT_PUBLIC_SITE_URL` sets canonical and Open Graph URLs (see `.env.example`).
 - Copy: `src/content/{home,platform,mission}.ts` mirror `content/*.md`. Edit the deck, then the data file. The Mission note's biographical facts are the ones marked [✓ verify] in the deck.
 - Screens: `src/content/home.ts` → `screens`. An entry without `src` renders as a captioned frame. Add real screens under `public/screens/` with width and height.
 - Fonts load through `next/font/google` and are self-hosted at build; no third-party requests at runtime. The CSP in `next.config.ts` allows nothing external.

@@ -21,7 +21,9 @@ export interface AppEntry {
 }
 
 const MUSE_URL = process.env.NEXT_PUBLIC_MUSE_URL ?? 'https://getcomptable.com/muse';
-const COTYLEDON_URL = process.env.NEXT_PUBLIC_COTYLEDON_URL ?? 'https://cotyledon.foodismymuse.com';
+// Deep-links to the dashboard: the preview gate carries the path through its password page, so a visitor
+// lands on the dashboard instead of the app's own welcome page and its second Login click.
+const COTYLEDON_URL = process.env.NEXT_PUBLIC_COTYLEDON_URL ?? 'https://cotyledon.foodismymuse.com/farm/dashboard';
 
 export const APPS: Record<AppKey, AppEntry> = {
   muse: {
