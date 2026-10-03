@@ -20,10 +20,8 @@ Nav: **Platform** · **Mission** · **Sign in** ▾
 
 **Eyebrow:** EMBER OS
 
-**Headline (pick one):**
-- A. The operating system for food that feeds people well.
-- B. From seed to soil to the table, one system.
-- C. Run a nourishing food business with nothing hidden.
+**Headline (Rob, 2026-10-02):**
+The operating system for food that feeds people, soil and the planet.
 
 **Supporting line:**
 Ember OS runs nutritious, regenerative food businesses end to end: growing, production, people, sustainability and CPA-grade books in one transparent system.

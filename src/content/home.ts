@@ -1,12 +1,12 @@
 /**
  * Home page copy. Source of truth: content/home.md. Edit the deck, then this file.
- * Headline: the deck offers A/B/C for Rob to pick; A is set until he does (Docs/TODO.md).
+ * Headline: Rob's own, set 2026-10-02.
  */
 import type { AppKey } from '@/config/apps';
 
 export const hero = {
   eyebrow: 'Ember OS',
-  headline: 'The operating system for food that feeds people well.',
+  headline: 'The operating system for food that feeds people, soil and the planet.',
   support:
     'Ember OS runs nutritious, regenerative food businesses end to end: growing, production, people, sustainability and CPA-grade books in one transparent system.',
 };
