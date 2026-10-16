@@ -52,7 +52,7 @@ export const values = {
 
 export const modules = {
   heading: 'A complete operating system, not a slice of one',
-  sub: 'Most food software covers one piece: inventory, or point of sale, or a CRM. Ember OS runs the whole operation from one data model.',
+  sub: 'Now you can manage every slice of your business from one system, including sustainability measured from your own recipes and your own facility, not bolted on afterwards.',
   link: { label: 'See every module', href: '/platform' },
   tiles: [
     { name: 'Production engine', line: 'Plans, batches or sowings, schedules, capacity and time studies, from one plan of record.' },

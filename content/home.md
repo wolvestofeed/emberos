@@ -84,7 +84,7 @@ Food is how people gather. Customer, client and family portals bring the people 
 
 **Heading:** A complete operating system, not a slice of one
 
-**Sub:** Most food software covers one piece: inventory, or point of sale, or a CRM. Ember OS runs the whole operation from one data model.
+**Sub:** Now you can manage every slice of your business from one system, including sustainability measured from your own recipes and your own facility, not bolted on afterwards.
 
 [Grid of ten tiles. Each tile: name + one line. Link under the grid: **See every module →** /platform]
 
