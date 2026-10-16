@@ -28,7 +28,6 @@ export function EcosystemStrip() {
           </li>
         ))}
       </ol>
-      <p className="mt-6 text-center text-sm text-ink-soft">Room for the next application at either end of the chain.</p>
     </>
   );
 }
