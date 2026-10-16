@@ -23,8 +23,8 @@ Nav: **Platform** · **Mission** · **Sign in** ▾
 **Headline (Rob, 2026-10-02):**
 The operating system for food that feeds people, soil and the planet.
 
-**Supporting line:**
-Ember OS runs nutritious, regenerative food businesses end to end: growing, production, people, sustainability and CPA-grade books in one transparent system.
+**Supporting line (Rob, 2026-10-16):**
+The food business operating system that runs costing, people and sustainability side by side.
 
 ---
 
@@ -132,7 +132,9 @@ Captions:
 
 [Pull quote from the Mission page, set large in the display serif, with a link]
 
-> "[Pull a line from the final Mission note once Rob has edited it.]"
+> "This is for the farmers, cooks, bakers, caterers and community kitchens who believe food can heal people and places."
+
+(Rob's pick, 2026-10-16. Verbatim from the Mission note.)
 
 Link: **Read why I built this →** /mission
 

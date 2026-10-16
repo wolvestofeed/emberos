@@ -24,7 +24,7 @@ After college I lived on a biodynamic, organic, vegan CSA farm in the middle of 
 
 Every one of those places taught me the same thing. Good food is a chain, and every link matters. Seed, soil, water and light. The hands that sow and harvest. The kitchen that turns a crate of produce into a meal someone looks forward to. The table where people gather and are fed, body and spirit. Break a link and the whole thing gets weaker: less nourishing, more wasteful, harder to make a living from.
 
-I stand for physical, emotional and spiritual wellness, and for small businesses and healthy food. That has never changed. What I kept running into was how the people doing this work are asked to run it. A grower tracking trays in a notebook. A chef costing recipes on a spreadsheet that no one trusts. A sustainability report pieced together once a year, after the fact, from bills in a shoebox. The numbers that should guide every decision are scattered, hidden or simply guessed.
+I stand for physical, emotional and spiritual wellness, and for small businesses and healthy food. That has never changed. What I kept running into was how the people doing this work are asked to run it. The software is disconnected, so no one ever sees the whole business at once. Everything is managed to the bottom line, and the things that make a food business worth running get squeezed out: investing in people, building a culture the workforce wants to stay in, caring for the health of the people being fed. The health of the planet belongs on that same ledger, and until now no one has had a practical way to put it there.
 
 So I built the system I always wanted.
 

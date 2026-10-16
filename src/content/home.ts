@@ -8,7 +8,7 @@ export const hero = {
   eyebrow: 'Ember OS',
   headline: 'The operating system for food that feeds people, soil and the planet.',
   support:
-    'Ember OS runs nutritious, regenerative food businesses end to end: growing, production, people, sustainability and CPA-grade books in one transparent system.',
+    'The food business operating system that runs costing, people and sustainability side by side.',
 };
 
 export interface EcosystemStage {
@@ -112,7 +112,7 @@ export const screens: { heading: string; items: Screen[] } = {
 };
 
 export const missionTeaser = {
-  // Rob is writing the quote himself; TBD until it arrives.
-  quote: 'TBD',
+  // Rob's pick (2026-10-16): the audience line from the Mission note, verbatim.
+  quote: 'This is for the farmers, cooks, bakers, caterers and community kitchens who believe food can heal people and places.',
   link: { label: 'Read why I built this', href: '/mission' },
 };
