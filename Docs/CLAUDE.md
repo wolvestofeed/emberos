@@ -48,3 +48,4 @@ Front-end UI surface only: copy, design tokens, static pages and components. No 
 - `PLAN.md` — the agreed plan (site map, page sections, platform content, visual direction).
 - `content/` — final copy per page (Markdown decks). `src/content/` — the same copy as typed data the pages render. `design/tokens.css` — the Tailwind 4 theme. `src/components/` and `src/app/` — components and pages. `src/config/apps.ts` — the app URLs. `public/brand/` — logo files from the kits.
 - `Docs/TODO.md` — one-off items. `Docs/ROADMAP.md` — build phases with an Update Log at the bottom.
+- `images/` — the design library: the Ember OS logo, wordmark and icon, both products' stacked and horizontal lockups with their endorsement badges, and the screens, with a README naming every file. Not served; `public/brand/` and `public/screens/` hold the served subset. `research/` — working material a page cites before its claim lands in `content/`.
