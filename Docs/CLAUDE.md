@@ -4,7 +4,7 @@ Rules and oversight for any agent working in this folder.
 
 ## What this is
 The public marketing site and app gateway for **Ember OS**, at foodismymuse.com. Ember OS is Rob Bogatin's operating system for nutritious, regenerative food businesses. Its applications, each "powered by Ember OS":
-- **Muse Kitchen** — scratch commissary kitchens. Live at getcomptable.com/muse; planned subdomain muse.foodismymuse.com.
+- **Muse Kitchen** — scratch commissary kitchens. Live at musekitchen.foodismymuse.com/kitchen (its own repo, `wolvestofeed/emberos-musekitchen`, since 17 October 2026).
 - **Cotyledon** — microgreens and sprouts growers. On localhost; planned subdomain cotyledon.foodismymuse.com.
 
 ## Portal entries
@@ -24,7 +24,7 @@ Front-end UI surface only: copy, design tokens, static pages and components. No 
 2. **Brand assets come from the kits only:** the Ember OS web library, the Muse Kitchen + Ember logo files, the Cotyledon logo files. Never redraw or alter a logo.
 3. **Confidentiality (from Muse's rules):** never name Muse's source company, incubator, standards partner or the ERRA mark.
 4. **Every product claim must be true of the software today.** Source claims from `Cotyledon/docs/outline.md` and the Muse docs. No invented customers, testimonials, metrics, certifications or partner names.
-5. **App URLs are constants** in one config file, so the Muse link can move from getcomptable.com/muse to its subdomain in one edit.
+5. **App URLs are constants** in one config file, so an app link moves in one edit.
 6. **Talk first, build second.** When Rob raises a question, discuss and agree before building.
 7. **Stack:** Next.js App Router + React + TypeScript + Tailwind 4, matching the other WTF Publishing apps.
 8. **Accessibility:** WCAG AA contrast, 360 px minimum width, keyboard navigable, alt text on every logo and screen.
@@ -38,7 +38,7 @@ Front-end UI surface only: copy, design tokens, static pages and components. No 
 
 ## Build and deploy (hand-off)
 - Install and run: `pnpm install`, `pnpm dev` (port 3001). Checks: `pnpm typecheck`, `pnpm lint`, `pnpm build`. The build is fully static (no server code, no env needed to build).
-- App URLs: `src/config/apps.ts`. Muse Kitchen defaults to getcomptable.com/muse; set `NEXT_PUBLIC_MUSE_URL` (or edit the default) when muse.foodismymuse.com is live. Cotyledon defaults to cotyledon.foodismymuse.com/farm/dashboard, so the gate drops a visitor on the dashboard. `NEXT_PUBLIC_SITE_URL` sets canonical and Open Graph URLs (see `.env.example`).
+- App URLs: `src/config/apps.ts`. Muse Kitchen defaults to musekitchen.foodismymuse.com/kitchen; `NEXT_PUBLIC_MUSE_URL` overrides it. Cotyledon defaults to cotyledon.foodismymuse.com/farm/dashboard, so the gate drops a visitor on the dashboard. `NEXT_PUBLIC_SITE_URL` sets canonical and Open Graph URLs (see `.env.example`).
 - Copy: `src/content/{home,platform,mission}.ts` mirror `content/*.md`. Edit the deck, then the data file. The Mission note's biographical facts are the ones marked [✓ verify] in the deck.
 - Screens: `src/content/home.ts` → `screens`. An entry without `src` renders as a captioned frame. Add real screens under `public/screens/` with width and height.
 - Fonts load through `next/font/google` and are self-hosted at build; no third-party requests at runtime. The CSP in `next.config.ts` allows nothing external.

@@ -19,7 +19,7 @@ Status: **plan agreed 2026-10-02.** Copy deck drafted in `content/` for Rob's ed
 **Portal entries are the two cards on the home page, not pages.** Each card signs directly into its app; there is no intermediate page.
 
 Subdomains (served by the apps themselves, not this site):
-- `muse.foodismymuse.com` → Muse Kitchen. **Today it lives at getcomptable.com/muse**; the subdomain needs the lift-out described in `Muse Kitchen/README.md`. Until then the Muse buttons point at getcomptable.com/muse. The URL is one constant in the code.
+- `musekitchen.foodismymuse.com` → Muse Kitchen, its own repo and Vercel project since 17 October 2026; the buttons point at `/kitchen` there. The URL is one constant in the code.
 - `cotyledon.foodismymuse.com` → Cotyledon. Goes live after this project phase; the card links to its subdomain.
 
 ## 2. Home page, top to bottom

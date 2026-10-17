@@ -2,7 +2,7 @@
  * The two Ember OS applications and where they sign in.
  *
  * These are the only places an app URL is written. Muse Kitchen lives at
- * getcomptable.com/muse until it lifts out to muse.foodismymuse.com; change
+ * musekitchen.foodismymuse.com/kitchen (its own repo since 17 October 2026); change
  * the default here (or set NEXT_PUBLIC_MUSE_URL) and every button follows.
  */
 export type AppKey = 'muse' | 'cotyledon';
@@ -20,7 +20,7 @@ export interface AppEntry {
   runs: string;
 }
 
-const MUSE_URL = process.env.NEXT_PUBLIC_MUSE_URL ?? 'https://getcomptable.com/muse';
+const MUSE_URL = process.env.NEXT_PUBLIC_MUSE_URL ?? 'https://musekitchen.foodismymuse.com/kitchen';
 // Deep-links to the dashboard: the preview gate carries the path through its password page, so a visitor
 // lands on the dashboard instead of the app's own welcome page and its second Login click.
 const COTYLEDON_URL = process.env.NEXT_PUBLIC_COTYLEDON_URL ?? 'https://cotyledon.foodismymuse.com/farm/dashboard';
