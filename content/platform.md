@@ -43,7 +43,10 @@ Turn orders into a real production schedule.
 - **Recipes** (MK) / **Grow plans** (CO) — every input line costed: ingredients, or seed, medium, nutrients and light
 - **Varieties, Media, Nutrients & Supplements** (CO) — the libraries a grow plan draws on, each with price history
 - **Time studies** — labor standards from timed observations, not guesses
-- **Production planning, schedule, compare, calendar** — the plan of record, forecasts and the working copy, side by side
+- **Production planning, schedule, calendar** — plan one run, one delivery day or a whole period; the day on the clock, the labor it demands, and the month on a calendar
+- **Forecasts** — save as many as you need; one is the plan of record, and a saved forecast can be forked
+- **Compare** — one day under two forecasts in both apps; two recipes side by side in Muse Kitchen, in cost, labor, resources, footprint and management figures
+- **Recipe assistant** (MK) — type or dictate a change; a proposal card to approve; costed and saved to the library on click
 - **Grow calendar** (CO) — every sowing's stages across the days, planned back from distribution day
 - **Capacity, equipment or grow units, packaging** — what the room can hold, and where a plan runs out of space
 - **Floor** (MK) / **Grow room** (CO) — the operator's surface: punch clock, stage records, closing a batch or sowing

@@ -101,6 +101,20 @@ Food is how people gather. Customer, client and family portals bring the people 
 
 ---
 
+## 6b. Plan it before you run it (added 2026-10-17)
+
+**Eyebrow:** Before you commit
+
+**Heading:** Plan it before you run it
+
+Three cards, same tile as section 5. Claims from Muse Kitchen docs/CLAUDE.md §9 and the Compare pages of both apps.
+
+1. **Forecasts** — Save as many forecasts as you need. One is the plan of record you report against. Open any other and every page, from the schedule to the P&L, runs under it.
+2. **Compare** — One day under two forecasts, or two recipes side by side: cost, labor, resources, footprint and the management figures, with every difference listed.
+3. **Recipe assistant** — Type or dictate a change to any recipe. The engine proposes the new version, you approve it, and it is costed and saved only when you say so. In Muse Kitchen.
+
+---
+
 ## 7. Transparency spotlight
 
 **Heading:** Every number shows its work

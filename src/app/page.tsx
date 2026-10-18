@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { hero, values, modules, missionTeaser } from '@/content/home';
+import { hero, values, modules, planning, missionTeaser } from '@/content/home';
 import { Section, SectionHeading } from '@/components/Section';
 import { PortalCard } from '@/components/PortalCard';
 import { EcosystemStrip } from '@/components/EcosystemStrip';
@@ -73,6 +73,16 @@ export default function HomePage() {
             <span aria-hidden="true">→</span>
           </Link>
         </p>
+      </Section>
+
+      {/* 6b. Plan it before you run it: forecasts, compare, the recipe assistant */}
+      <Section band="dark" ariaLabelledBy="planning-heading">
+        <SectionHeading id="planning-heading" eyebrow="Before you commit" title={planning.heading} />
+        <div className="mt-12 grid gap-5 md:grid-cols-3">
+          {planning.items.map((p, i) => (
+            <ValueTile key={p.title} index={i + 1} title={p.title} body={p.body} />
+          ))}
+        </div>
       </Section>
 
       {/* 7. Transparency spotlight */}

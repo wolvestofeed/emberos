@@ -111,6 +111,25 @@ export const screens: { heading: string; items: Screen[] } = {
   ],
 };
 
+/** Section 6b, below the modules grid: what you can do before committing. Claims from Muse Kitchen docs/CLAUDE.md §9 and the Compare pages of both apps, 2026-10-17. */
+export const planning = {
+  heading: 'Plan it before you run it',
+  items: [
+    {
+      title: 'Forecasts',
+      body: 'Save as many forecasts as you need. One is the plan of record you report against. Open any other and every page, from the schedule to the P&L, runs under it.',
+    },
+    {
+      title: 'Compare',
+      body: 'One day under two forecasts, or two recipes side by side: cost, labor, resources, footprint and the management figures, with every difference listed.',
+    },
+    {
+      title: 'Recipe assistant',
+      body: 'Type or dictate a change to any recipe. The engine proposes the new version, you approve it, and it is costed and saved only when you say so. In Muse Kitchen.',
+    },
+  ],
+};
+
 export const missionTeaser = {
   // Rob's pick (2026-10-16): the audience line from the Mission note, verbatim.
   quote: 'This is for the chefs, farmers, cooks, bakers, caterers and community kitchens who believe food can heal people and the places we call home.',
