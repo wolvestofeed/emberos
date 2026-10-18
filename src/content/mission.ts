@@ -18,7 +18,7 @@ export const note: string[] = [
   'So I built the system I always wanted.',
   "Ember OS runs a food business from the seed to the plate in one place. It plans what to grow and what to cook from the orders that are actually coming in. It costs every tray and every batch from real prices paid. It keeps books a CPA would sign. It measures energy, water, waste and carbon in the same breath as production, because the planet's health and the business's health are the same account. And it shows its work. Every figure tells you where it came from, and a number that is still a guess says so, out loud, until the real one arrives.",
   'Muse Kitchen is the first application, built for scratch commissary kitchens. Cotyledon is the second, built for growers of microgreens and sprouts, and it runs my own grow room. They speak different trades but share one engine and one set of values.',
-  'This is for the farmers, cooks, bakers, caterers and community kitchens who believe food can heal people and places, and who are tired of running that belief on duct tape. Healthy soil grows nourishing food. Nourishing food builds healthy people.',
+  'This is for the chefs, farmers, cooks, bakers, caterers and community kitchens who believe food can heal people and the places we call home, and who are tired of running that belief on duct tape. Healthy soil grows nourishing food. Nourishing food builds healthy people.',
   'Food is my muse. I hope Ember OS helps it become yours.',
 ];
 

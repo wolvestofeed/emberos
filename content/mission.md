@@ -32,7 +32,7 @@ Ember OS runs a food business from the seed to the plate in one place. It plans 
 
 Muse Kitchen is the first application, built for scratch commissary kitchens. Cotyledon is the second, built for growers of microgreens and sprouts, and it runs my own grow room. They speak different trades but share one engine and one set of values.
 
-This is for the farmers, cooks, bakers, caterers and community kitchens who believe food can heal people and places, and who are tired of running that belief on duct tape. Healthy soil grows nourishing food. Nourishing food builds healthy people.
+This is for the chefs, farmers, cooks, bakers, caterers and community kitchens who believe food can heal people and the places we call home, and who are tired of running that belief on duct tape. Healthy soil grows nourishing food. Nourishing food builds healthy people.
 
 Food is my muse. I hope Ember OS helps it become yours.
 

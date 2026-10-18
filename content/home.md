@@ -132,7 +132,7 @@ Captions:
 
 [Pull quote from the Mission page, set large in the display serif, with a link]
 
-> "This is for the farmers, cooks, bakers, caterers and community kitchens who believe food can heal people and places."
+> "This is for the chefs, farmers, cooks, bakers, caterers and community kitchens who believe food can heal people and the places we call home."
 
 (Rob's pick, 2026-10-16. Verbatim from the Mission note.)
 
