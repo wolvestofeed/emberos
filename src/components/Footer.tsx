@@ -15,7 +15,7 @@ export function Footer() {
             <Image src="/brand/ember/ember-os-wordmark-white.png" alt="Ember OS" width={586} height={99} className="h-5 w-auto" />
           </Link>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-mist">
-            The operating system for nutritious, regenerative food businesses. Seed to soil to table.
+            A sustainable food business operating system that feeds people, farmers, our soil and the planet.
           </p>
         </div>
 

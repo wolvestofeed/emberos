@@ -12,7 +12,7 @@ const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500'], variable: 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: { default: 'Ember OS', template: '%s · Ember OS' },
-  description: 'Ember OS is the operating system for nutritious, regenerative food businesses: seed to soil to table, in one transparent system.',
+  description: 'Ember OS: a sustainable food business operating system that feeds people, farmers, our soil and the planet.',
   openGraph: {
     siteName: 'Ember OS',
     type: 'website',

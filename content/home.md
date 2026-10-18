@@ -20,11 +20,11 @@ Nav: **Platform** · **Mission** · **Sign in** ▾
 
 **Eyebrow:** EMBER OS
 
-**Headline (Rob, 2026-10-02):**
-The operating system for food that feeds people, soil and the planet.
+**Headline (Rob, 2026-10-17):**
+A sustainable food business operating system that feeds people, farmers, our soil and the planet.
 
-**Supporting line (Rob, 2026-10-16):**
-The food business operating system that runs costing, people and sustainability side by side.
+**Supporting line (Rob, 2026-10-17):**
+Ember OS runs your entire business, organizes your people and delivers sustainability reports, side by side.
 
 ---
 

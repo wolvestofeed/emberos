@@ -6,9 +6,9 @@ import type { AppKey } from '@/config/apps';
 
 export const hero = {
   eyebrow: 'Ember OS',
-  headline: 'The operating system for food that feeds people, soil and the planet.',
+  headline: 'A sustainable food business operating system that feeds people, farmers, our soil and the planet.',
   support:
-    'The food business operating system that runs costing, people and sustainability side by side.',
+    'Ember OS runs your entire business, organizes your people and delivers sustainability reports, side by side.',
 };
 
 export interface EcosystemStage {
@@ -18,7 +18,7 @@ export interface EcosystemStage {
 }
 
 export const ecosystem = {
-  heading: 'One chain, from seed to supper',
+  heading: 'One platform, from seed to supper',
   stages: [
     { stage: 'Seed', line: 'Organic and heirloom seed, every lot traced to its supplier', runsOn: ['cotyledon'] },
     { stage: 'Soil', line: 'Growing media, nutrients and light, costed per tray', runsOn: ['cotyledon'] },
@@ -45,14 +45,14 @@ export const values = {
     },
     {
       title: 'Hospitality and community',
-      body: 'Food is how people gather. Customer, client and family portals bring the people being fed into the system, with their orders, invoices and choices in one place.',
+      body: 'The kitchen is where people gather. Ember OS includes customer, supplier and staff portals to bring your people into the system, with their orders, invoices and choices in one place.',
     },
   ],
 };
 
 export const modules = {
-  heading: 'A complete operating system, not a slice of one',
-  sub: 'Now you can manage every slice of your business from one system, including sustainability measured from your own recipes and your own facility, not bolted on afterwards.',
+  heading: 'Runs the kitchen or the farm, keeps the books, and knows every employee, supplier and customer.',
+  sub: 'Now you can manage every slice of your business from one system, including sustainability measured from your own recipes and your own facility.',
   link: { label: 'See every module', href: '/platform' },
   tiles: [
     { name: 'Production engine', line: 'Plans, batches or sowings, schedules, capacity and time studies, from one plan of record.' },
@@ -104,7 +104,7 @@ export interface Screen {
 export const screens: { heading: string; items: Screen[] } = {
   heading: 'Inside the system',
   items: [
-    { caption: "Dashboard — every section's key figures, one card each", src: '/screens/dashboard.webp', width: 1600, height: 989, alt: 'Cotyledon dashboard: one card per section with its key figures' },
+    { caption: "Dashboard — every section's key figures, one page", src: '/screens/dashboard.webp', width: 1600, height: 989, alt: 'Cotyledon dashboard: one card per section with its key figures' },
     { caption: 'Production planning — orders become whole batches on a real schedule', src: '/screens/grow-calendar.webp', width: 1600, height: 1021, alt: "Cotyledon grow calendar: every sowing's stages across the days" },
     { caption: 'Sales — prospects, customers and orders in one pipeline', src: '/screens/sales.webp', width: 1600, height: 988, alt: 'Cotyledon sales: prospects and subscribers in one pipeline' },
     { caption: 'Sustainability — emissions and resources beside the work that produced them', src: '/screens/sustainability.webp', width: 1600, height: 990, alt: 'Cotyledon sustainability inventory and audit' },
@@ -113,6 +113,6 @@ export const screens: { heading: string; items: Screen[] } = {
 
 export const missionTeaser = {
   // Rob's pick (2026-10-16): the audience line from the Mission note, verbatim.
-  quote: 'This is for the farmers, cooks, bakers, caterers and community kitchens who believe food can heal people and places.',
+  quote: 'This is for the chefs, farmers, cooks, bakers, caterers and community kitchens who believe food can heal people and the places we call home.',
   link: { label: 'Read why I built this', href: '/mission' },
 };
