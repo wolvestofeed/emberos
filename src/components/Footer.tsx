@@ -31,7 +31,7 @@ export function Footer() {
       </div>
       <div className="border-t border-ground-line">
         <div className="container-site flex flex-col gap-2 py-6 text-xs text-mist sm:flex-row sm:items-center sm:justify-between">
-          <p>© {YEAR} Ember OS. All rights reserved.</p>
+          <p>© {YEAR} Ember OS - Axiom Delta Venture Studio, Wolves to Feed Publishing. All rights reserved.</p>
           <p>Muse Kitchen and Cotyledon are powered by Ember OS.</p>
         </div>
       </div>
