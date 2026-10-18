@@ -50,7 +50,12 @@ export default function PlatformPage() {
         <SectionHeading id="rules-heading" eyebrow="How the engine thinks" title={rules.heading} tone="light" />
         <ol className="mt-12 grid gap-5 sm:grid-cols-2">
           {rules.items.map((r, i) => (
-            <li key={r.title} className="rounded-card border border-cream-line bg-paper p-7 shadow-card-light">
+            <li
+              key={r.title}
+              className={`rounded-card border border-cream-line bg-paper p-7 shadow-card-light${
+                i === rules.items.length - 1 && rules.items.length % 2 === 1 ? ' sm:col-span-2' : ''
+              }`}
+            >
               <span className="font-display text-4xl leading-none text-copper">{String(i + 1).padStart(2, '0')}</span>
               <h3 className="mt-4 font-display text-2xl leading-tight text-copper">{r.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-ink-soft">{r.body}</p>
