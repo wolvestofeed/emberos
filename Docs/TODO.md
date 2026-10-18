@@ -9,3 +9,4 @@ One-off items waiting to be placed into the roadmap.
 - [ ] Muse docs (`Comptable/docs/muse/overview.md`, CLAUDE.md) still say "Impact OS"; rename to Muse Kitchen, powered by Ember OS
 - [ ] Confirm the © / legal entity line for the footer (`src/components/Footer.tsx`, currently "© 2026 Ember OS")
 - [ ] Decide whether the Muse card should deep-link to the sign-in screen (`/muse/sign-in`) or the app home (`/muse`, current)
+- [ ] Next major project (Rob, 2026-10-17): payments on Muse Kitchen and on this site. See ROADMAP.md Phase 5.
