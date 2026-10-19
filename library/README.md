@@ -12,6 +12,8 @@ file on a page, put a web-sized copy there first (see "Where things go" below).
 | `logos/endorsement/` | POWERED BY EMBER OS, badge and text, on dark and light, PNG and SVG |
 | `screenshots/` | the originals at full size: four Cotyledon screens (`cotyledon-*.png`, ~3100 px), the Cotyledon preview, three Muse Kitchen pages |
 | `research/` | source documents a page cites before its claim lands in `content/` (rule 4 in `Docs/CLAUDE.md`). `Veggie-Planting-Calendar-Austin.pdf` is a seasonal reference for the mission copy |
+| `certifications/` | Rob's Texas Food Handler and TABC certificates (issued 2026-10-18). On disk only: ignored by git, since the repo is public on GitHub |
+| `Texas Compliance/` | Texas food-service compliance references: FDA cooking temperature chart, food storage chart, handwashing, allergen awareness and safe temperature posters, whole meat roast time/temperature combinations, alcohol limits |
 
 Naming, shared across the Ember OS repos: `-on-dark` and `-on-light` are transparent and coloured for
 that surface; `-badge-` versions lead with the Ember mark; `@2x` is double resolution. The full kits,
