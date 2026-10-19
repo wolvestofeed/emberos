@@ -40,7 +40,7 @@ Front-end UI surface only: copy, design tokens, static pages and components. No 
 - Install and run: `pnpm install`, `pnpm dev` (port 3001). Checks: `pnpm typecheck`, `pnpm lint`, `pnpm build`. The build is fully static (no server code, no env needed to build).
 - App URLs: `src/config/apps.ts`. Muse Kitchen defaults to musekitchen.foodismymuse.com/kitchen; `NEXT_PUBLIC_MUSE_URL` overrides it. Cotyledon defaults to cotyledon.foodismymuse.com/farm/dashboard, so the gate drops a visitor on the dashboard. `NEXT_PUBLIC_SITE_URL` sets canonical and Open Graph URLs (see `.env.example`).
 - Copy: `src/content/{home,platform,mission}.ts` mirror `content/*.md`. Edit the deck, then the data file. The Mission note's biographical facts are the ones marked [✓ verify] in the deck.
-- Screens: `src/content/home.ts` → `screens`. An entry without `src` renders as a captioned frame. Add real screens under `public/screens/` with width and height.
+- Screens: `src/content/home.ts` → `screens`. An entry without `src` renders as a captioned frame. Add real screens under `public/images/ember-os/` with width and height.
 - Fonts load through `next/font/google` and are self-hosted at build; no third-party requests at runtime. The CSP in `next.config.ts` allows nothing external.
 - Deploy: one Vercel project for this folder (its own repo, the house layout). Apex and `www` point here; `muse.` and `cotyledon.` are the apps' own projects. Nothing here needs a database, Clerk, Stripe or Neon.
 
@@ -48,4 +48,4 @@ Front-end UI surface only: copy, design tokens, static pages and components. No 
 - `PLAN.md` — the agreed plan (site map, page sections, platform content, visual direction).
 - `content/` — final copy per page (Markdown decks). `src/content/` — the same copy as typed data the pages render. `design/tokens.css` — the Tailwind 4 theme. `src/components/` and `src/app/` — components and pages. `src/config/apps.ts` — the app URLs. `public/brand/` — logo files from the kits.
 - `Docs/TODO.md` — one-off items. `Docs/ROADMAP.md` — build phases with an Update Log at the bottom.
-- `images/` — the design library: the Ember OS logo, wordmark and icon, both products' stacked and horizontal lockups with their endorsement badges, and the screens, with a README naming every file. Not served; `public/brand/` and `public/screens/` hold the served subset. `research/` — working material a page cites before its claim lands in `content/`.
+- `public/` — everything a visitor can open; the path is the URL. `brand/` the logos pages use, `images/<page>/` web-sized page images (`home/`, `consulting/`, `ember-os/` for the app screens), `files/` PDFs and downloads. `library/` — working material, never served: `logos/` the three kits, `screenshots/` the full-size originals, `research/` source documents a page cites before its claim lands in `content/`. `library/README.md` says where each kind of file goes.

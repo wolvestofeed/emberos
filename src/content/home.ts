@@ -100,14 +100,14 @@ export interface Screen {
   height?: number;
 }
 
-/** Cotyledon screens, shot by Rob 2026-10-02 (originals in content/cotyledon-*.png; web copies in public/screens/). */
+/** Cotyledon screens, shot by Rob 2026-10-02 (originals in library/screenshots/cotyledon-*.png; web copies in public/images/ember-os/). */
 export const screens: { heading: string; items: Screen[] } = {
   heading: 'Inside the system',
   items: [
-    { caption: "Dashboard — every section's key figures, one page", src: '/screens/dashboard.webp', width: 1600, height: 989, alt: 'Cotyledon dashboard: one card per section with its key figures' },
-    { caption: 'Production planning — orders become whole batches on a real schedule', src: '/screens/grow-calendar.webp', width: 1600, height: 1021, alt: "Cotyledon grow calendar: every sowing's stages across the days" },
-    { caption: 'Sales — prospects, customers and orders in one pipeline', src: '/screens/sales.webp', width: 1600, height: 988, alt: 'Cotyledon sales: prospects and subscribers in one pipeline' },
-    { caption: 'Sustainability — emissions and resources beside the work that produced them', src: '/screens/sustainability.webp', width: 1600, height: 990, alt: 'Cotyledon sustainability inventory and audit' },
+    { caption: "Dashboard — every section's key figures, one page", src: '/images/ember-os/dashboard.webp', width: 1600, height: 989, alt: 'Cotyledon dashboard: one card per section with its key figures' },
+    { caption: 'Production planning — orders become whole batches on a real schedule', src: '/images/ember-os/grow-calendar.webp', width: 1600, height: 1021, alt: "Cotyledon grow calendar: every sowing's stages across the days" },
+    { caption: 'Sales — prospects, customers and orders in one pipeline', src: '/images/ember-os/sales.webp', width: 1600, height: 988, alt: 'Cotyledon sales: prospects and subscribers in one pipeline' },
+    { caption: 'Sustainability — emissions and resources beside the work that produced them', src: '/images/ember-os/sustainability.webp', width: 1600, height: 990, alt: 'Cotyledon sustainability inventory and audit' },
   ],
 };
 
