@@ -1,6 +1,6 @@
 # foodismymuse.com — Master Roadmap
 
-Build phases for the Ember OS front door. Each item is marked open [ ] or completed [x].
+Build phases for foodismymuse.com. Each item is marked open [ ] or completed [x].
 
 ## Phase 0 — Plan
 - [x] Survey the apps and brand kits (Cotyledon outline and CLAUDE.md, Muse README, three logo kits)
@@ -42,6 +42,14 @@ The next major project after the copy pass: payments on Muse Kitchen (its own re
 - [ ] Payments on Muse Kitchen (tracked in `Muse Kitchen/docs/roadmap.md`, Phase M, M3)
 - [ ] Payments on this site
 
+## Phase 6 — Consulting build-out (Rob, 2026-10-19)
+The site becomes the marketing site for Food Is My Muse Consulting; Ember OS moves to the Tool Kit page. Tracked in detail in `Docs/roadmaps/consulting-roadmap.md`; style spec `design/default-style-sheet.md`; mock-up `design/mockups/consulting-home.html`.
+- [x] Direction, wordmark and default style sheet agreed and documented
+- [x] CLAUDE.md rewritten for the consulting site (2026-10-19)
+- [x] Structure, tokens and fonts (sub-roadmap Phase C1)
+- [x] Components and pages built; copy slots await Rob (C2–C3)
+- [ ] Imagery, review and launch (C4–C5)
+
 ---
 
 ## Update Log
@@ -68,3 +76,6 @@ The next major project after the copy pass: payments on Muse Kitchen (its own re
 - **2026-10-17**: Per Rob: forecasts, Compare and the recipe assistant were missing from the site. Home gains section 6b, "Plan it before you run it", three cards below the modules grid on the value tile. Platform's Production group: the middle card is now "Production planning, schedule, calendar" (compare removed from the name; line rewritten around the run, the day on the clock, the labor it demands and the calendar), plus three new cards: Forecasts, Compare, and Recipe assistant (Muse Kitchen only). Claims checked against the apps: forecasts are uncapped in both; Compare is by day in both and by recipe in Muse Kitchen only; the typed or dictated recipe change is the only AI feature in either app. "Scenario" never appears, per the apps' own rule. Both decks mirrored.
 - **2026-10-17**: Per Rob: the next major project is payments, on Muse Kitchen and on this site. Logged as Phase 5 above and in `Docs/TODO.md`; nothing designed or built.
 - **2026-10-17**: Per Rob: the Platform page's rules grow from four to five. Rule 5, "Forecasts are many; the plan of record is one", states that any number of forecasts can be saved, every page runs under the open one, the plan of record is the one reported against, and a past month reads against the plan in force when it closed (Muse Kitchen docs/CLAUDE.md §9, Roadmap N7). The intro gains one sentence saying every page runs under the open forecast or the plan of record. An odd last rule card spans both columns. Deck mirrored.
+- **2026-10-19**: Per Rob: added Phase 6, the consulting build-out, with its own sub-roadmap `Docs/roadmaps/consulting-roadmap.md`. Rob chose the paper-and-ledger direction (now the site's default style sheet, `design/default-style-sheet.md`, with a static mock-up in `design/mockups/`). Wordmark "Food Is My Muse Consulting" approved. No `src/` changes.
+- **2026-10-19**: Per Rob: `Docs/CLAUDE.md` rewritten for the consulting site; the wordmark is Food Is My Muse Consulting. "What this is" and "Decisions in force" now describe the consulting site with Ember OS on the Tool Kit page; rules renumbered 1–8 and the git rule now says the remote is public. The consulting sub-roadmap is reduced to a build order with defaults taken for the open decisions (route groups, site map, Sign in stays on Tool Kit, Book a call is an email link until a booking link exists). `PLAN.md` marked as the Tool Kit page's plan.
+- **2026-10-19**: Per Rob: the consulting site built, C1 to C3 of the sub-roadmap. The front page is now Food Is My Muse Consulting on paper; the Ember OS home is `/tool-kit`, with `/platform` and `/mission` unchanged under the Ember look. New pages `/services`, `/work`, `/about`. Rob's copy, prices, photos, email and booking link are bracketed slots on the pages. Typecheck, lint and build pass, eight static routes. Detail in `Docs/roadmaps/consulting-roadmap.md`.

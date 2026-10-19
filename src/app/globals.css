@@ -1,21 +1,36 @@
 @import "tailwindcss";
 @import "../../design/tokens.css";
 
+/*
+ * Two looks, one site (design/default-style-sheet.md §8).
+ * The consulting look is the default: paper ground, ink text, tomato focus ring.
+ * The Tool Kit pages wrap themselves in `.toolkit`, which restores the Ember OS ground.
+ */
 @layer base {
   html {
     scroll-behavior: smooth;
   }
   body {
-    background-color: var(--color-ground);
-    color: var(--color-cream);
+    background-color: var(--color-paper);
+    color: var(--color-ink);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
   }
   :focus-visible {
-    outline: 3px solid var(--color-amber);
+    outline: 3px solid var(--color-tomato);
     outline-offset: 3px;
   }
   ::selection {
+    background: var(--color-cream-deep);
+    color: var(--color-ink);
+  }
+  .toolkit :focus-visible {
+    outline-color: var(--color-amber);
+  }
+  .on-dark :focus-visible {
+    outline-color: var(--color-copper-light);
+  }
+  .toolkit ::selection {
     background: var(--color-amber);
     color: var(--color-ink);
   }
@@ -28,10 +43,26 @@
   text-transform: uppercase;
 }
 
+/* Tabular figures for every price, cost, percentage and numeral. */
+@utility figures {
+  font-variant-numeric: tabular-nums;
+}
+
 @utility container-site {
   margin-inline: auto;
   width: 100%;
   max-width: 72rem;
+  padding-inline: 1rem;
+  @media (min-width: 640px) {
+    padding-inline: 1.5rem;
+  }
+}
+
+/* The consulting pages' container: 1200 px, 16 px phone gutter, 24 px from 640 px. */
+@utility container-wide {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 75rem;
   padding-inline: 1rem;
   @media (min-width: 640px) {
     padding-inline: 1.5rem;

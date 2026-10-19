@@ -12,6 +12,13 @@
  *   copper-light on raised  4.8:1    copper on cream          4.6:1
  *   ink on cream           14.2:1    ink-soft on cream        6.4:1
  *   muse-deep on muse-mint  9.9:1    coty-forest on coty-mint 8.9:1
+ *
+ * Consulting pages (the default look, design/default-style-sheet.md §3):
+ *   ink on paper           14.7:1    ink-soft on paper        6.5:1
+ *   copper-ink on paper     6.0:1    copper-ink on white      6.3:1
+ *   copper-ink on cream     5.5:1    white on tomato          5.9:1
+ *   tomato on white         5.9:1    tomato on paper          5.6:1
+ *   The kit copper #B8733A on paper is 3.6:1: large text (24 px+) or non-text only.
  */
 @theme inline {
   /* Ember OS ground */
@@ -39,6 +46,10 @@
   /* Copper for headings: the kit's copper on cream, a lighter copper on the dark bands */
   --color-copper: #b8733a;
   --color-copper-light: #d28b4c;
+  /* Copper for small text on paper (AA); the one accent on consulting pages */
+  --color-copper-ink: #8f4f22;
+  --color-tomato: #b33a24;
+  --color-tomato-deep: #8f2c1b;
 
   /* Muse Kitchen */
   --color-muse-emerald: #0e6b4e;
@@ -64,6 +75,7 @@
   /* Type */
   --font-sans: var(--font-montserrat), "Helvetica Neue", Arial, sans-serif;
   --font-display: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-serif: var(--font-newsreader), Georgia, serif;
   --font-label: var(--font-poppins), var(--font-montserrat), sans-serif;
   --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 

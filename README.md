@@ -1,6 +1,6 @@
-# foodismymuse.com — the Ember OS front door
+# foodismymuse.com
 
-The public marketing site and app gateway for **Ember OS**. Three pages (Home, Platform, Mission) and two portal cards that sign straight into Muse Kitchen and Cotyledon on their subdomains. Static, no back end.
+The marketing site for **Food Is My Muse Consulting**, Rob Bogatin's food business consulting practice. Ember OS and its applications live on the Tool Kit page, with two portal cards that sign straight into Muse Kitchen and Cotyledon on their subdomains. Static, no back end.
 
 ```bash
 pnpm install
@@ -8,6 +8,6 @@ pnpm dev        # http://localhost:3001
 pnpm build      # static prerender of every route
 ```
 
-- Plan: `PLAN.md`. Rules and hand-off: `Docs/CLAUDE.md`. Phases and log: `Docs/ROADMAP.md`.
+- Build order: `Docs/roadmaps/consulting-roadmap.md`. Style spec: `design/default-style-sheet.md`. Rules and hand-off: `Docs/CLAUDE.md`. Phases and log: `Docs/ROADMAP.md`. The Ember OS pages' plan: `PLAN.md`.
 - App URLs: `src/config/apps.ts`. Copy: `content/*.md` (decks) and `src/content/*.ts` (what renders).
 - Theme: `design/tokens.css`. Served files: `public/` (`brand/` logos, `images/<page>/`, `files/` PDFs). Working material, not served: `library/` (see its README).

@@ -11,6 +11,7 @@ file on a page, put a web-sized copy there first (see "Where things go" below).
 | `logos/cotyledon/` | Cotyledon lockups, stacked and horizontal, on dark and light, plain and badge, PNG 1x/@2x, icons 128 / 256 / 512 |
 | `logos/endorsement/` | POWERED BY EMBER OS, badge and text, on dark and light, PNG and SVG |
 | `screenshots/` | the originals at full size: four Cotyledon screens (`cotyledon-*.png`, ~3100 px), the Cotyledon preview, three Muse Kitchen pages |
+| `photos/work/` | the originals of the Work page's logos and brand examples (Durango Artisan Foods, Good Food Collective), as Rob supplied them; the served copies are `public/images/consulting/work/*.webp` |
 | `research/` | source documents a page cites before its claim lands in `content/` (rule 4 in `Docs/CLAUDE.md`). `Veggie-Planting-Calendar-Austin.pdf` is a seasonal reference for the mission copy |
 | `certifications/` | Rob's Texas Food Handler and TABC certificates (issued 2026-10-18). On disk only: ignored by git, since the repo is public on GitHub |
 | `Texas Compliance/` | Texas food-service compliance references: FDA cooking temperature chart, food storage chart, handwashing, allergen awareness and safe temperature posters, whole meat roast time/temperature combinations, alcohol limits |

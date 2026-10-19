@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { hero, values, modules, planning, missionTeaser } from '@/content/home';
@@ -9,7 +10,13 @@ import { ModuleTile } from '@/components/ModuleTile';
 import { ProvenanceSpotlight } from '@/components/ProvenanceSpotlight';
 import { ScreenGallery } from '@/components/ScreenGallery';
 
-export default function HomePage() {
+export const metadata: Metadata = {
+  title: 'Tool Kit',
+  description: hero.headline,
+};
+
+/** The Tool Kit page: the Ember OS site as built on 2026-10-02, unchanged in look (PLAN.md). */
+export default function ToolKitPage() {
   return (
     <>
       {/* 2. Hero + 3. Portal cards, in one dark band so the cards sit above the fold on desktop. */}

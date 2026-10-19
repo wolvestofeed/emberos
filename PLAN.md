@@ -1,6 +1,8 @@
-# foodismymuse.com — Front-End Plan
+# foodismymuse.com — Ember OS site plan (now the Tool Kit page)
 
-The public front door of **Ember OS**. The domain is only the address; the brand on every page is Ember OS, with Muse Kitchen and Cotyledon as its applications, each "powered by Ember OS".
+> **Status, 2026-10-19:** foodismymuse.com is now the marketing site for Food Is My Muse Consulting. Everything below describes the Ember OS site as built on 2026-10-02, which becomes the **Tool Kit** page (`/tool-kit`) with `/platform` and `/mission` under it, unchanged in look. The consulting pages are planned in `Docs/roadmaps/consulting-roadmap.md` and specified in `design/default-style-sheet.md`.
+
+The Ember OS pages: the brand on them is Ember OS, with Muse Kitchen and Cotyledon as its applications, each "powered by Ember OS".
 
 Scope of this folder: the front-end UI surface only — page copy, design tokens, and static page code that a Claude Code agent assembles into a site. No back end, no auth, no forms that post anywhere.
 

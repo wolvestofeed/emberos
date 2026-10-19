@@ -5,14 +5,15 @@ import { APP_LIST } from '@/config/apps';
 const NAV = [
   { label: 'Platform', href: '/platform' },
   { label: 'Mission', href: '/mission' },
+  { label: 'Consulting', href: '/' },
 ];
 
-/** Sticky dark header: Ember OS mark and wordmark, Platform, Mission, and the Sign in menu. */
+/** The Tool Kit pages' sticky dark header: Ember OS mark and wordmark, Platform, Mission, the way back to the consulting site, and the Sign in menu. */
 export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-ground-line bg-ground/95 text-cream backdrop-blur">
       <div className="container-site flex h-16 items-center justify-between gap-3">
-        <Link href="/" className="flex shrink-0 items-center gap-2.5 rounded-md" aria-label="Ember OS home">
+        <Link href="/tool-kit" className="flex shrink-0 items-center gap-2.5 rounded-md" aria-label="Ember OS Tool Kit">
           <Image src="/brand/ember/ember-mark-64.png" alt="" width={36} height={36} className="h-9 w-9 rounded-lg" priority />
           <Image src="/brand/ember/ember-os-wordmark-white.png" alt="Ember OS" width={586} height={99} className="hidden h-[18px] w-auto sm:block" priority />
           <span className="sr-only sm:hidden">Ember OS</span>
