@@ -3,7 +3,6 @@
  * Edit the deck, then this file. Bracketed text is a slot Rob fills (design/default-style-sheet.md §10).
  */
 import type { HeroContent } from '@/components/consulting/Hero';
-import type { ServicesIntro } from '@/components/consulting/Services';
 import type { HistoryContent } from '@/components/consulting/OperatingHistory';
 import type { ToolKitTeaserContent } from '@/components/consulting/ToolKitTeaser';
 import type { ClosingContent } from '@/components/consulting/ClosingCTA';
@@ -97,14 +96,14 @@ export const howItWorks: HowItWorksContent = {
   eyebrow: 'How it works',
   heading: 'A diagnostic, then a retainer with the software, then your own system.',
   steps: [
-    { title: 'A call', body: 'Thirty minutes on where the business stands and whether the Diagnostic is the right first step.' },
+    { title: 'A call', body: 'Thirty minutes on where the business stands and which Diagnostic package is the right first step.' },
     {
-      title: 'The Diagnostic',
-      body: 'About two weeks on the business as it is, at a fixed fee. It ends in a written report: real costs and a ranked list of fixes.',
+      title: 'Basic Diagnostic or Deep Dive',
+      body: 'About two to four weeks on the business as it is, at a fixed fee. It ends in a written report: real costs and a ranked list of fixes.',
     },
     {
       title: 'A retainer, software included',
-      body: 'Stabilize for an open business, Business Launch before opening, Scale for growth. Three months minimum. Month one sets the business up on Muse Kitchen and CompTable and trains the people who use them; both are included while the retainer runs.',
+      body: 'Stabilize for an open business, Business Launch before opening, Scale for growth. Three months minimum. Month one sets the business up on Muse Kitchen and CompTable and trains the people who use them; both are included while the initial retainer runs.',
     },
     {
       title: 'Independence',
@@ -113,11 +112,6 @@ export const howItWorks: HowItWorksContent = {
   ],
 };
 
-export const servicesIntro: ServicesIntro = {
-  eyebrow: 'Work with',
-  heading: 'Rob Bogatin',
-  description: '[Description of Rob: background, how he works, and what a founder gets from working with him.]',
-};
 
 /** Rob-confirmed facts only (CLAUDE.md rule 3). */
 export const history: HistoryContent = {
@@ -125,27 +119,27 @@ export const history: HistoryContent = {
   heading: 'On the line and in the books.',
   photoPlaceholder: '[Photo: Rob at work in a kitchen]',
   rows: [
-    { label: 'Co-owner', fact: 'A Philadelphia pizzeria' },
-    { label: 'Co-owner', fact: 'A 150-seat bar and grill in Boulder' },
-    { label: 'Co-packer', fact: "SW Colorado's kettle co-packer: prepared foods, SOPs, COGS" },
-    { label: 'Social enterprise', fact: 'Good Food Collective: farm-to-shelf production and financial model for heritage orchards' },
+    { label: 'Co-owner', fact: 'Award-winning Philadelphia pizzeria, hoagie and cheesesteak shop' },
+    { label: 'Co-owner', fact: 'A 150-seat full service restaurant and bar in Boulder serving breakfast, lunch and dinner' },
+    { label: 'Co-packer', fact: "SW Colorado's kettle co-packer: six in-house brands, HACCP, SOPs, COGS, spice blends" },
+    { label: 'Social enterprise', fact: 'Good Food Collective: farm-to-shelf production and financial model for heritage apple orchards' },
     { label: 'Finance', fact: 'Director of Operations and Finance, San Juan Mountains Association' },
   ],
 };
 
 export const toolKit: ToolKitTeaserContent = {
   eyebrow: 'Tool Kit',
-  heading: 'The software that comes with the work.',
-  lead: 'Every engagement comes with its own software, set up and taught by the person who built it.',
+  heading: 'The software that comes with me.',
+  lead: 'Every retainer engagement includes its own software accounts, set up and taught by the person who built them.',
   body: 'Both are included while a retainer is active. Rob sets the business up on both, trains the staff who use them, and keeps working weekly or monthly until the owner runs the business without him.',
   apps: [
-    { name: 'Muse Kitchen', line: 'Runs production, costing and the kitchen.', price: 'List price [$___]/month', emberBadge: true },
-    { name: 'CompTable', line: 'Models compensation, payroll cost and labor compliance.', price: 'List price [$___]/month', href: 'https://getcomptable.com' },
+    { name: 'Muse Kitchen', line: 'Runs production, costing and the kitchen.', price: 'List price $250/month', emberBadge: true },
+    { name: 'CompTable', line: 'Models compensation, payroll cost and labor compliance.', price: 'List price $50/month + tokens', href: 'https://getcomptable.com' },
   ],
   link: { label: 'Open the Tool Kit', href: '/tool-kit' },
 };
 
 export const closing: ClosingContent = {
-  heading: "It's time to build the food business you dream about.",
+  heading: "It's time to build the food business you dreaming about.",
   button: { label: BOOK_LABEL, href: BOOKING_URL },
 };

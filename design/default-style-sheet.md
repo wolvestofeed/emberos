@@ -178,7 +178,7 @@ The original hero card, replaced in the hero by 6.3a and kept for service pages.
 - **Audiences:** Chefs and restaurateurs, CPG founders, Caterers, Ghost kitchens, Bakers.
 - **Markup:** a `<ul>` with list styling removed.
 
-### 6.5 Rob introduction and offer cards (the Services section)
+### 6.5 Rob introduction and offer cards (removed from Home on 2026-10-20, per Rob; the cards' look still applies to the offer tiles elsewhere)
 - **Section head:** eyebrow "Services", then the H2 **Rob Bogatin**, then a description paragraph about Rob (17 px ink-soft, max-width 40em). Rob will rewrite this section's copy, and may relabel or drop the "Services" eyebrow.
 - **ServiceCard × 4:** white, 1 px `cream-line`, radius 14 px, padding 28 px, column layout with a 14 px gap. Each card has:
   - a numeral `01`–`04` (Newsreader 15 px, copper-ink, tabular);

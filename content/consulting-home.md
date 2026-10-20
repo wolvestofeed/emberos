@@ -117,17 +117,7 @@ Four steps, scope copy:
 
 ---
 
-## 4. Services
-
-**Eyebrow:** WORK WITH
-
-**Heading:** Rob Bogatin
-
-**Description:** [Description of Rob: background, how he works, and what a founder gets from working with him.]
-
-Four offer cards, in order (the deck for each is `content/services.md`; structure in `Docs/roadmaps/consulting-roadmap.md`, Update 1):
-01 Basic Business Diagnostic · 02 (copy of 01, Rob to rewrite) · 03 Stabilize · 04 Business Launch · 05 Scale
-Each card: one line, and a bracketed price slot until Rob sets prices or decides to show none.
+## 4. (removed 2026-10-20, per Rob) The "Work with Rob Bogatin" section with the offer cards repeated `/services` and is gone from Home. The offers live on `/services` only.
 
 ---
 
