@@ -14,7 +14,7 @@ A sub-roadmap of `Docs/ROADMAP.md` (Phase 6). foodismymuse.com becomes the marke
 - Sign in stays in the Tool Kit header only. The Tool Kit header gains a link back to the consulting site. SiteHeader nav: Services, Work, Tool Kit, About, plus Book a call.
 - Book a call: an email link until Rob supplies a booking link. No form on this site.
 - Favicon and social avatar: the Ember OS ones until Rob supplies a monogram or mark.
-- Services, fixed names in order: Business Setup; Costing and Accounting; Operations and SOPs; Production and Scale.
+- Offers, in order (superseded the four department services on 2026-10-19, see Update 1): Business Diagnostic; Stabilize; Build; Scale. Setup, costing and accounting, operations and SOPs, and production are the areas each offer covers.
 - Audiences: Chefs and restaurateurs, CPG founders, Caterers, Ghost kitchens, Bakers.
 
 ## Build order
@@ -61,9 +61,68 @@ A sub-roadmap of `Docs/ROADMAP.md` (Phase 6). foodismymuse.com becomes the marke
 - A booking link, if "Book a call" should not be email.
 - A monogram or mark for the favicon and social avatar.
 
+## Update 1 — Offer structure for first-year operators (2026-10-19)
+
+### Direction (agreed with Rob)
+- **Primary client:** an owner whose food business is already formed and open, in its first one to two years, and struggling: busy but not making money, real food and labor cost unknown, stuck working in the business every day, staff turnover, prices that are a guess. Restaurants, commissary-kitchen businesses, caterers, bakers, ghost kitchens and CPG founders. Usually strong on the food or the product, missing the business systems.
+- **Secondary client:** pre-opening founders. Kept open, but not what the home page leads with.
+- **Texas formation and compliance is referred out.** Entity formation, sales tax and state permits, local health permits and liquor licensing go to a Texas attorney or CPA. Building the business itself (systems, chart of accounts, costing, budget, staffing, SOPs) is Rob's.
+- **What sets Rob apart is integration:** every department's systems built with the accounting wired in, so the owner knows what everything costs and how long it takes. That is the headline idea, not the list of areas.
+- **Model:** stages decide what the work is; cadence decides the price. The four former services (setup, costing and accounting, operations and SOPs, production and scale) become the areas covered inside every offer, not separately priced products.
+
+### The offers
+
+| # | Offer | Role | Form | Price slot |
+|---|---|---|---|---|
+| 01 | Business Diagnostic | Entry offer, the headline | Fixed fee, short fixed scope, written report with real costs and ranked fixes. Fee can be credited toward a retainer (Rob to decide). | [Fixed fee $___] |
+| 02 | Stabilize | Core business, first-year operators | Monthly retainer at two cadences: monthly advisory or weekly embedded (the benchmark is Ronin Group's monthly and weekly retainer tiers). Three-month minimum, billed monthly in advance. | [From $___ a month] |
+| 03 | Build | Secondary: pre-opening | Fixed-fee project. Formation and licensing through a Texas attorney or CPA. | [Project fee $___] |
+| 04 | Scale | Secondary: growth | Project or retainer: production, wholesale and CPG pricing, co-packing, second unit or commissary. Growth strategy sits here, built on the numbers. | [Project or retainer, from $___] |
+
+### Page outline
+**Home (`/`)**, top to bottom:
+1. Hero, speaking to the struggling owner (headline updated; Rob's intro line still his slot).
+2. **New: "Sound familiar?"** A short band of four to six symptoms the owner recognizes. Needs a new component. The copy is Rob's.
+3. **New: the Diagnostic** as its own feature block: what it is, what you get, the fee slot and Book a call. Needs a new component.
+4. **New: "How it works"**: Diagnostic, then Stabilize, with the Build and Scale paths noted. Three or four steps. Needs a new component.
+5. Work with Rob Bogatin: his description, and the four offer cards (existing component, cards updated).
+6. Operating history (unchanged).
+7. Tool Kit teaser. Decide whether Ember OS is included in a retainer or sold separately before saying so on the page.
+8. Closing CTA.
+
+The "For owners of" audience strip stays between the hero and the next section. It can merge into the symptoms band if that reads better.
+
+**Services (`/services`)**: the head, one section per offer (updated), then **new: "What every engagement covers"**, a band naming the four areas (setup, costing and accounting, operations and SOPs, production) with one line each. Needs a new component.
+
+### Done in this update (Cowork, 2026-10-19; text only, no components changed)
+- [x] Home hero: eyebrow "Costing · Accounting · Operations · Production"; headline "Your food business is open. Now make it pay."; secondary button "See how it works". The headline is a working line; Rob may rewrite it.
+- [x] Audience strip label: "Built for" → "For owners of".
+- [x] Rob's section eyebrow: "Services" → "Work with", above the heading "Rob Bogatin".
+- [x] The four cards are now the offers: 01 Business Diagnostic, 02 Stabilize, 03 Build, 04 Scale, each with a one-line description and its own price slot. Slugs changed to `#diagnostic`, `#stabilize`, `#build`, `#scale`.
+- [x] `/services`: headline "Start with a diagnostic. Stay for the systems."; "What is included" filled for all four offers; the Diagnostic's outcome written; the other three outcomes left as Rob's slots. Metadata description updated.
+- [x] Decks `content/consulting-home.md` and `content/services.md` mirror `src/content/consulting-home.ts` and `src/content/services.ts`. `tsc --noEmit` passes.
+
+### Open: build (Claude Code)
+- [x] U1.1 "Sound familiar?" symptoms band on Home (`Symptoms.tsx`, paper with ledger rules; the direction's symptoms as working lines).
+- [x] U1.2 Diagnostic feature block on Home (`DiagnosticBlock.tsx`, cream band; "What you get" is the offer's included list in the ledger look).
+- [x] U1.3 "How it works" steps on Home (`HowItWorks.tsx`: a call, the Diagnostic, Stabilize, Build or Scale; working copy).
+- [x] U1.4 "What every engagement covers" band on `/services` (`Coverage.tsx`, cream band, four tiles).
+- [x] U1.5 Home reordered to the outline above; the owners strip stays between the hero and the symptoms.
+- [x] U1.6 Style sheet §6.11–6.14 added, 6.5 renamed to offer cards, §5 band order updated.
+
+### Open: Rob's decisions
+- [ ] Diagnostic length, fee, and whether the fee is credited toward a retainer.
+- [ ] Stabilize prices for the monthly and weekly cadences; confirm the three-month minimum and billing monthly in advance.
+- [ ] Build and Scale pricing, or "by quote".
+- [ ] Whether Ember OS is included in a retainer or priced separately.
+- [ ] One or two Texas referral partners (attorney or CPA) for formation and licensing.
+- [ ] Copy: the hero intro line, the symptoms, the description of Rob, the three remaining outcomes, the closing line. The headline is a working line until he rewrites it.
+
 ---
 
 ## Update Log
 - **2026-10-19**: Sub-roadmap created. Agreed with Rob: the practice is branded Food Is My Muse Consulting, with Rob Bogatin as the main asset. Its audience is new food business founders (chefs, CPG founders, caterers, ghost kitchens, bakers) buying setup, costing and accounting, operations and production help. Two directions were mocked up on the Design canvas; Rob chose the paper-and-ledger one and approved its colors, fonts and type hierarchy. Per Rob, the wordmark moves to the header as the only wordmark, and Rob's name goes into the hero description and the Services section heading in place of "Four ways in". The style is documented as the site's default style sheet (`design/default-style-sheet.md`) with a static HTML mock-up (`design/mockups/consulting-home.html`). Nothing in `src/` has changed.
 - **2026-10-19**: Per Rob: `Docs/CLAUDE.md` rewritten for the consulting site. The open decisions were taken by default (listed under Decided) so the build can start; what still waits on Rob is listed and does not block it.
 - **2026-10-19**: Per Rob: C1 to C3 built on the defaults. `design/tokens.css` gains copper-ink, tomato, tomato-deep and `--font-serif`; `globals.css` makes paper and ink the body default with a tomato focus ring, `.toolkit` restores the Ember ground and `.on-dark` a copper-light ring on dark bands; `figures` and `container-wide` utilities. Newsreader loads through `next/font`. Route groups `src/app/(site)` (SiteHeader, SiteFooter) and `src/app/(toolkit)` (the old Header and Footer, Ember OS metadata); the former home is `(toolkit)/tool-kit/page.tsx`, Platform and Mission moved into the group with their URLs unchanged; the Tool Kit header and footer link back to the consulting site. Nine components in `src/components/consulting/` plus `PageIntro`. `src/config/site.ts` holds the practice name, nav and where Book a call goes (`NEXT_PUBLIC_BOOKING_URL`, else `mailto:` the `NEXT_PUBLIC_CONTACT_EMAIL`, else `/about#contact`). Pages `/`, `/services` (one section per service, anchored from the cards), `/work` (the five confirmed cases), `/about` (story slots, the history band, the contact block). Decks `content/consulting-home.md`, `services.md`, `work.md`, `about.md` with typed twins in `src/content/`. Every slot Rob owes renders as bracketed text. The 404 carries the consulting header. Checked on `pnpm dev` at desktop and 375 px.
+- **2026-10-19**: Per Rob: the offer structure changes (Update 1). The primary client is the first-year operator who is already open and struggling; pre-opening stays as a secondary path, and Texas formation and compliance are referred to a local attorney or CPA. The four department services become four offers (Business Diagnostic, Stabilize, Build, Scale), with the departments as the areas each covers. Text updated in Cowork: hero eyebrow, headline and secondary button, the audience label, the eyebrow over Rob's section, the four cards, and the `/services` headline and "What is included" lists; decks mirrored, `tsc --noEmit` passes. New components (symptoms, Diagnostic block, How it works, What every engagement covers) are open for Claude Code. Not committed.
+- **2026-10-19**: Per Rob: Update 1 built on the dev site (Claude Code). Four components in `src/components/consulting/`: `Symptoms`, `DiagnosticBlock`, `HowItWorks`, `Coverage`; their copy in `src/content/consulting-home.ts` and `src/content/services.ts`, decks mirrored, style sheet §6.11–6.14. Home reordered: hero, owners strip, symptoms, the Diagnostic, how it works, Rob and the offers, history, Tool Kit, closing. `/services` gains the coverage band before the closing. The home history band's tags follow the Work page: Co-owner for the pizzeria and the bar and grill, Social enterprise for Good Food Collective. The symptoms, the "how it works" steps and both section headings are working copy from the agreed direction until Rob rewrites them. The Tool Kit teaser is unchanged pending the retainer decision.

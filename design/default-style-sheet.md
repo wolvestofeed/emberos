@@ -134,7 +134,7 @@ Sizes are the desktop values from the mock-up. On phones, use the `clamp()` colu
 - **Radius:** 14 px (`--radius-tile`, existing 0.875rem) on cards and placeholders; 999 px (`--radius-pill`) on buttons.
 - **Borders:** 1 px `cream-line` on cards. Ledger rows: 1 px `cream-deep` between rows and 1 px ink above the total. The costing card header gets a 2 px ink rule.
 - **Shadow:** only on the hero costing card: `--shadow-card-light` (existing) or `0 14px 30px -18px rgba(27,38,33,0.35)`. Service cards are flat.
-- **Bands:** light (paper) → cream strip → paper → dark ground → paper → cream → dark footer. Never put two dark bands next to each other.
+- **Bands (home, roadmap Update 1):** paper (hero) → cream strip (owners) → paper (symptoms) → cream (Diagnostic) → paper (how it works) → paper with a top rule (Rob and the offers) → dark ground (history) → paper (Tool Kit) → cream (closing) → dark footer. Never put two dark bands next to each other.
 
 ---
 
@@ -174,14 +174,14 @@ The signature component. It shows a worked plate costing and must be labeled **"
 - **Audiences:** Chefs and restaurateurs, CPG founders, Caterers, Ghost kitchens, Bakers.
 - **Markup:** a `<ul>` with list styling removed.
 
-### 6.5 Rob introduction and service cards (the Services section)
+### 6.5 Rob introduction and offer cards (the Services section)
 - **Section head:** eyebrow "Services", then the H2 **Rob Bogatin**, then a description paragraph about Rob (17 px ink-soft, max-width 40em). Rob will rewrite this section's copy, and may relabel or drop the "Services" eyebrow.
 - **ServiceCard × 4:** white, 1 px `cream-line`, radius 14 px, padding 28 px, column layout with a 14 px gap. Each card has:
   - a numeral `01`–`04` (Newsreader 15 px, copper-ink, tabular);
   - an H3 title;
   - a 15 px ink-soft description;
   - a footer line pinned to the bottom (`margin-top: auto`) over a 1 px `cream-deep` rule, holding the price placeholder at 13 px, weight 600.
-- **Services, in order:** Business Setup; Costing and Accounting; Operations and SOPs; Production and Scale. These names are fixed and are reused on proposals and invoices.
+- **Offers, in order (roadmap Update 1):** 01 Business Diagnostic; 02 Stabilize; 03 Build; 04 Scale. The names are fixed and reused on proposals and invoices. The former department services are the areas every offer covers (6.14). The card's footer line is the offer's own price slot.
 - **Prices:** placeholders until Rob sets them. Never invent one.
 
 ### 6.6 OperatingHistory (dark band)
@@ -205,6 +205,24 @@ The signature component. It shows a worked plate costing and must be labeled **"
 - **Left:** the wordmark (Newsreader 22 px, cream) with "Rob Bogatin" under it (13 px, mist).
 - **Right:** "Austin, Texas · [email]".
 - The legal entity line is still open (TODO.md).
+
+### 6.11 Symptoms ("Sound familiar?")
+- Paper. Eyebrow in copper-ink, H2 at the section size, max-width 20em.
+- A `<ul>` on a three-column grid (two on a tablet, one on a phone), 1 px `cream-deep` rule above each item and below the list. Each item: a tabular numeral `01`–`06` (Newsreader 15 px, copper-ink) beside the line in Newsreader 22 px, ink.
+- Four to six lines. The copy is Rob's; the agreed direction's symptoms stand in until he rewrites them.
+
+### 6.12 DiagnosticBlock (the entry offer)
+- Cream band with 1 px `cream-line` rules above and below.
+- **Left** (`flex: 1 1 480px`): eyebrow "Start here", the offer's name as the H2, its one line in 17 px ink-soft, the price slot (15 px, 600, tabular), then the primary button and a text link to `/services#diagnostic`.
+- **Right** (`flex: 1 1 380px`): a ledger card in the CostingCard's look (white, `cream-line` border, radius 14 px, padding 28 px, light shadow): the title "What you get" over a 2 px ink rule, then an `<ol>` of the offer's included items, numerals in copper-ink, 1 px `cream-deep` rules between.
+
+### 6.13 HowItWorks
+- Paper. Eyebrow and H2 as in 6.11.
+- An `<ol>` of three or four steps on a four-column grid (two on a tablet, one on a phone) under a 1 px ink rule: numeral (Newsreader 15 px, copper-ink, tabular), H3 card title (26 px), 15 px ink-soft body. No cards, no borders between steps.
+
+### 6.14 Coverage ("What every engagement covers", on `/services`)
+- Cream band with a 1 px `cream-line` rule above, placed after the offer sections and before the closing band.
+- Eyebrow and H2 as in 6.11, then four white tiles (as the service cards: `cream-line` border, radius 14 px, padding 28 px) on a four-column grid: the area's name (Newsreader 22 px, 600) and one line (15 px ink-soft). The areas are setup, costing and accounting, operations and SOPs, production.
 
 ### 6.10 Buttons and links
 
