@@ -16,8 +16,8 @@ import { cases } from '@/content/work';
 
 export const hero: HeroContent = {
   eyebrow: 'Indy Food businesses & Restaurants in Austin',
-  headline: "You've mastered your food craft.",
-  headlineAccent: "Now, it's time to run your business.",
+  headline: "You've mastered your craft. Now,",
+  headlineAccent: "It's time to run your food business.",
   lede: {
     name: 'Food Is My Muse Consulting',
     intro: "is Austin's first food business partner that offers owners an integrated, whole systems foundation to launch, sustain and grow their business.",

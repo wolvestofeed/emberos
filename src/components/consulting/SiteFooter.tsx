@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import { LOCATION, SITE_NAME } from '@/config/site';
 
-/** The consulting footer (style sheet §6.9): the wordmark left, the location right. Per Rob (2026-10-20), no name and no email. */
+const YEAR = 2026;
+
+/** The consulting footer (style sheet §6.9): the wordmark left; the location and the copyright line right. No name and no email. */
 export function SiteFooter() {
   return (
     <footer className="on-dark bg-ground text-mist">
@@ -9,7 +11,10 @@ export function SiteFooter() {
         <Link href="/" className="rounded-sm font-serif text-[22px] font-semibold leading-[1.2] text-cream">
           {SITE_NAME}
         </Link>
-        <p className="pt-1.5">{LOCATION}</p>
+        <div className="flex flex-col gap-1 pt-1.5 sm:items-end">
+          <p>{LOCATION}</p>
+          <p>© {YEAR} Food Is My Muse, Wolves To Feed Publishing</p>
+        </div>
       </div>
     </footer>
   );

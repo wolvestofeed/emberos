@@ -133,7 +133,7 @@ Sizes are the desktop values from the mock-up. On phones, use the `clamp()` colu
 - **Grids:** service cards use `repeat(auto-fit, minmax(250px, 1fr))`, gap 20 px. That gives 4 across at 1200 px, 2 on a tablet and 1 on a phone.
 - **Radius:** 14 px (`--radius-tile`, existing 0.875rem) on cards and placeholders; 999 px (`--radius-pill`) on buttons.
 - **Borders:** 1 px `cream-line` on cards. Ledger rows: 1 px `cream-deep` between rows and 1 px ink above the total. The costing card header gets a 2 px ink rule.
-- **Shadow:** only on the hero costing card: `--shadow-card-light` (existing) or `0 14px 30px -18px rgba(27,38,33,0.35)`. Service cards are flat.
+- **Shadow (2026-10-20):** the hero card and the Diagnostic ledger card carry `--shadow-card-light`. Every other white tile on paper or cream (the app tiles, the matrix tile, the Tool Kit tiles) carries `--shadow-tile`, a soft ink-tinted lift. On the dark bands the ledger card and the history photo carry `--shadow-card`. Headings carry no shadow.
 - **Bands (home, brief §6):** paper (hero) → cream strip (owners) → paper (symptoms) → dark ground (whole systems) → cream (Diagnostic) → paper (how it works) → paper with a top rule (Rob and the offers) → dark ground (history) → paper (Tool Kit) → cream (closing) → dark footer. Never put two dark bands next to each other.
 
 ---
@@ -185,7 +185,7 @@ One order or production batch traced through every department. A white card with
 ### 6.9 SiteFooter
 - Ground background, mist text, 13 px.
 - **Left:** the wordmark (Newsreader 22 px, cream).
-- **Right:** "Austin, Texas". Per Rob (2026-10-20), no name and no email in the footer.
+- **Right:** "Austin, Texas" over "© 2026 Food Is My Muse, Wolves To Feed Publishing", right-aligned from 640 px. No name and no email in the footer.
 - The legal entity line is still open (TODO.md).
 
 ### 6.11 Symptoms ("Sound familiar?")
@@ -218,8 +218,8 @@ One order or production batch traced through every department. A white card with
 
 | Variant | Style |
 |---|---|
-| Primary | Tomato background, white text, Montserrat 600 15 px, padding 15 px 26 px, pill radius. Hover and active: `--color-tomato-deep`. |
-| Secondary | Transparent background, 1.5 px ink border, ink text, padding 14 px 24 px, pill radius. Hover: cream background. |
+| Primary | Tomato background, white text, Montserrat 600 15 px, padding 15 px 26 px, pill radius, `--shadow-button` (a tomato-tinted cast). Hover: `--color-tomato-deep`, `--shadow-button-hover`, lifted 1 px. Active: back down. |
+| Secondary | Transparent background, 1.5 px ink border, ink text, padding 14 px 24 px, pill radius. Hover: cream background and `--shadow-tile`. |
 | Text link | copper-ink, underlined. Hover: ink. |
 | Nav link | ink, no underline. Hover: underline. |
 | Focus | 3 px tomato outline, 3 px offset, on every interactive element. |

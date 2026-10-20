@@ -44,7 +44,7 @@ export function ToolKitTeaser({ content }: { content: ToolKitTeaserContent }) {
       </div>
       <ul className="grid min-w-0 flex-[1_1_380px] gap-4">
         {apps.map((app) => (
-          <li key={app.name} className="flex flex-col gap-3 rounded-tile border border-cream-line bg-white p-6">
+          <li key={app.name} className="flex flex-col gap-3 rounded-tile border border-cream-line bg-white p-6 shadow-tile">
             <div className="flex flex-wrap items-center justify-between gap-3">
               <h3 className="font-serif text-[22px] font-semibold leading-tight text-ink">
                 {app.href ? (

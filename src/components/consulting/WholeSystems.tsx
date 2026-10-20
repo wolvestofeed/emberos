@@ -24,7 +24,7 @@ export function WholeSystems({ content }: { content: WholeSystemsContent }) {
           <p className="max-w-[36em] text-[17px] leading-relaxed text-mist">{body}</p>
         </div>
         <div className="min-w-0 flex-[1_1_380px]">
-          <div className="rounded-tile border border-ground-line bg-ground-raised p-7">
+          <div className="rounded-tile border border-ground-line bg-ground-raised p-7 shadow-card">
             <h3 className="border-b-2 border-cream pb-3 font-serif text-[22px] font-semibold leading-tight text-cream">{ledger.title}</h3>
             <ol className="figures">
               {ledger.lines.map((line, i) => (

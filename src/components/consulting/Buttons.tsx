@@ -39,7 +39,7 @@ export function PrimaryButton({ href, children, size = 'md', className = '' }: B
   return (
     <Anchor
       href={href}
-      className={`inline-flex items-center justify-center rounded-pill bg-tomato font-sans font-semibold text-white transition-colors hover:bg-tomato-deep active:bg-tomato-deep ${pad} ${className}`}
+      className={`inline-flex items-center justify-center rounded-pill bg-tomato font-sans font-semibold text-white shadow-button transition-[background-color,box-shadow,transform] duration-200 hover:-translate-y-px hover:bg-tomato-deep hover:shadow-button-hover active:translate-y-0 active:bg-tomato-deep active:shadow-button ${pad} ${className}`}
     >
       {children}
     </Anchor>
@@ -51,7 +51,7 @@ export function SecondaryButton({ href, children, className = '' }: Omit<ButtonP
   return (
     <Anchor
       href={href}
-      className={`inline-flex items-center justify-center rounded-pill border-[1.5px] border-ink px-6 py-3.5 font-sans text-[15px] font-semibold text-ink transition-colors hover:bg-cream ${className}`}
+      className={`inline-flex items-center justify-center rounded-pill border-[1.5px] border-ink px-6 py-3.5 font-sans text-[15px] font-semibold text-ink transition-[background-color,box-shadow] duration-200 hover:bg-cream hover:shadow-tile ${className}`}
     >
       {children}
     </Anchor>

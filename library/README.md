@@ -13,6 +13,7 @@ file on a page, put a web-sized copy there first (see "Where things go" below).
 | `logos/endorsement/` | POWERED BY EMBER OS, badge and text, on dark and light, PNG and SVG |
 | `screenshots/` | the originals at full size: four Cotyledon screens (`cotyledon-*.png`, ~3100 px), the Cotyledon preview, the Muse Kitchen admin dashboard (Ember OS branding, Rob 2026-10-20) and CRM, the CompTable engine. Nothing with the old Impact OS branding is kept |
 | `photos/work/` | the originals of the Work page's logos and brand examples (Durango Artisan Foods, Good Food Collective), as Rob supplied them; the served copies are `public/images/consulting/work/*.webp` |
+| `banners/` | social and profile banners rendered in the site's type: `food-is-my-muse-consulting-1500x500.png` (2026-10-20) |
 | `research/` | source documents a page cites before its claim lands in `content/` (rule 4 in `Docs/CLAUDE.md`). `Veggie-Planting-Calendar-Austin.pdf` is a seasonal reference for the mission copy |
 | `certifications/` | Rob's Texas Food Handler and TABC certificates (issued 2026-10-18). On disk only: ignored by git, since the repo is public on GitHub |
 | `Texas Compliance/` | Texas food-service compliance references: FDA cooking temperature chart, food storage chart, handwashing, allergen awareness and safe temperature posters, whole meat roast time/temperature combinations, alcohol limits |

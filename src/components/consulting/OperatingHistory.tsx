@@ -32,7 +32,7 @@ export function OperatingHistory({ content, headingId = 'history-heading' }: { c
               alt={photo.alt}
               width={photo.width}
               height={photo.height}
-              className="aspect-[4/3] w-full rounded-tile object-cover"
+              className="aspect-[4/3] w-full rounded-tile object-cover shadow-card"
               sizes="(min-width: 1024px) 26rem, 100vw"
             />
           ) : (

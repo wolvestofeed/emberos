@@ -71,7 +71,7 @@ export function SoftwareAndTerms({ content }: { content: SoftwareAndTermsContent
         {/* The apps */}
         <ul className="mt-10 grid gap-5 lg:grid-cols-2">
           {apps.map((app) => (
-            <li key={app.name} className="flex flex-col overflow-hidden rounded-tile border border-cream-line bg-white">
+            <li key={app.name} className="flex flex-col overflow-hidden rounded-tile border border-cream-line bg-white shadow-tile">
               {app.screenshot ? (
                 <div className="relative">
                   <Image
@@ -125,7 +125,7 @@ export function SoftwareAndTerms({ content }: { content: SoftwareAndTermsContent
         </ul>
 
         {/* What each offer comes with */}
-        <div className="mt-12 rounded-tile border border-cream-line bg-white p-6 sm:p-7">
+        <div className="mt-12 rounded-tile border border-cream-line bg-white p-6 shadow-tile sm:p-7">
           <h3 className="border-b-2 border-ink pb-3 font-serif text-[22px] font-semibold leading-tight text-ink">{matrix.heading}</h3>
           <div className="overflow-x-auto">
             <table className="figures w-full min-w-[40rem] text-[15px] text-ink">
