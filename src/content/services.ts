@@ -14,9 +14,9 @@ export const services: Service[] = [
   {
     slug: 'diagnostic',
     numeral: '01',
-    name: 'Business Diagnostic',
-    line: 'A fixed-fee look inside your kitchen and your books: what everything really costs, where the money and the hours go, and the fixes that matter most.',
-    price: '[Fixed fee $___]',
+    name: 'Basic Business Diagnostic',
+    line: 'A fixed-fee look inside your kitchen and your books: assessing costs, where the money and the hours go, and the fixes that matter most.',
+    price: 'Fixed fee $1,500',
   },
   {
     slug: 'stabilize',
@@ -53,11 +53,11 @@ export const servicesPage = {
       service: services[0],
       included: [
         'Review of your books, sales mix and last months of costs',
-        'Recipe and plate costing on your top sellers',
-        'Labor, scheduling and prep walk-through',
-        'A written report with your real costs and a ranked list of fixes',
+        'Batch and plate prime costing',
+        'Labor, scheduling and prep assessment',
+        'A written report with your real costs and a ranked list of improvements',
       ],
-      outcome: 'A clear picture of where the business stands and what to fix first, whether or not you keep working with Rob.',
+      outcome: "A clear picture of where your business stands and what to fix. Then, what's the best consulting partnership strategy that meets your needs and budget.",
     },
     {
       service: services[1],

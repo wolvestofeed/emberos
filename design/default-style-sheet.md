@@ -129,7 +129,7 @@ Sizes are the desktop values from the mock-up. On phones, use the `clamp()` colu
 
 - **Container:** max-width 1200 px (75rem), side padding 24 px. Phone gutter is 16 px, per CLAUDE.md rule 6 (360 px minimum width). The existing `container-site` utility is 72rem; add `container-wide` at 75rem rather than changing it.
 - **Section rhythm:** 88 px vertical padding on major sections; 72 px on the closing band; 28 px on the "Built for" strip; 32 px in the footer.
-- **Hero:** two columns, text `flex: 1 1 520px` and costing card `flex: 1 1 400px`, gap 56 px. They wrap to one column on narrow screens. Top padding 88 px, bottom 72 px.
+- **Hero (per Rob, 2026-10-20):** two columns aligned to the top, text `flex: 1 1 440px` and the traced-order card `flex: 1 1 600px`, gap 56 px. They wrap to one column under about 1100 px. Top padding 88 px, bottom 72 px.
 - **Grids:** service cards use `repeat(auto-fit, minmax(250px, 1fr))`, gap 20 px. That gives 4 across at 1200 px, 2 on a tablet and 1 on a phone.
 - **Radius:** 14 px (`--radius-tile`, existing 0.875rem) on cards and placeholders; 999 px (`--radius-pill`) on buttons.
 - **Borders:** 1 px `cream-line` on cards. Ledger rows: 1 px `cream-deep` between rows and 1 px ink above the total. The costing card header gets a 2 px ink rule.
@@ -151,14 +151,14 @@ The build order follows the page top to bottom. Names are suggestions for `src/c
 
 ### 6.2 Hero
 - **Eyebrow:** "Setup · Costing · Operations · Production".
-- **Headline:** H1.
+- **Headline:** H1 in ink; an optional second line (`headlineAccent`) on its own line in tomato `#B33A24`, the button's red.
 - **Lede:** the paragraph opens with **Rob Bogatin** in ink, weight 600, followed by his intro line in ink-soft.
 - **Buttons:** primary "Book a 30-minute call" and secondary "See the services" (outline), gap 12 px, wrapping.
 - **Right column:** the costing card (6.3).
 
 ### 6.3a TracedOrderCard (the hero card, per Rob 2026-10-19)
 The card sits in a `<figure>`; its `<figcaption>` is one line under the card, 14 px ink-soft, naming the whole-systems foundation the card shows.
-One order or production batch traced through every department. Same surface, header, rules and result row as the CostingCard below, with three columns: the line (a copper-ink department tag over the item, 10 px tracked), its cost, its hours (ink-soft, a dash where none). The order line sits in bold under the title, above the 2 px rule; a tracked column-header row follows the rule. The footer: **True cost** with total hours in bold, **Price** in ink-soft, then **True margin** as the percentage in Newsreader 40 px tomato with the dollar figure beside it. Totals are computed from the rows. Under the margin row, a second table, **Order sustainability report** (same title style over a 2 px ink rule): one metric per row with its figure and unit right-aligned, 1 px `cream-deep` rules between: carbon emissions, methane, water, energy consumption, waste to compost, waste to landfill. Labeled "Illustrative example" until Rob supplies real figures.
+One order or production batch traced through every department. Same surface, header, rules and result row as the CostingCard below, with three columns: the line (a copper-ink department tag over the item, 10 px tracked), its cost, its hours (ink-soft, a dash where none). The order line sits in bold under the title, above the 2 px rule. Under the rule, two ledgers side by side (`flex: 1 1 300px` and `1 1 200px`, gap 32 px; they stack under about 640 px): the costing table with a tracked column-header row on the left, the sustainability report on the right under its own 17 px Newsreader title. The footer: **True cost** with total hours in bold, **Price** in ink-soft, then **True margin** as the percentage in Newsreader 40 px tomato with the dollar figure beside it. Totals are computed from the rows. The **Order sustainability report**: one metric per row with its figure and unit right-aligned, 1 px `cream-deep` rules between and a 1 px ink rule under the last: carbon emissions, methane, water, energy consumption, waste to compost, waste to landfill. Labeled "Illustrative example" until Rob supplies real figures.
 
 ### 6.3 CostingCard ("ledger card")
 The original hero card, replaced in the hero by 6.3a and kept for service pages. It shows a worked plate costing and must be labeled **"Illustrative example"** until Rob supplies real figures.

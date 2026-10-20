@@ -18,7 +18,7 @@ Nav: **Services** · **Work** · **Tool Kit** · **About** · [Book a call] → 
 
 **Headline (Rob, 2026-10-20):**
 You've mastered your food craft.
-Now it's time to run your business.
+**Now it's time to run your business.** (second line in tomato, #B33A24, the button's red)
 
 **Lede (Rob, 2026-10-20):** **Food is My Muse Consulting** led by Rob Bogatin, is Austin's first food business partner that offers owners an integrated, whole systems foundation to launch, sustain and grow your business.
 

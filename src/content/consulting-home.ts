@@ -15,8 +15,9 @@ import { BOOKING_URL, BOOK_LABEL } from '@/config/site';
 import { services, servicesPage } from '@/content/services';
 
 export const hero: HeroContent = {
-  eyebrow: 'Independent Food businesses & Restaurants in Austin',
-  headline: "You've mastered your food craft.\nNow it's time to run your business.",
+  eyebrow: 'Indy Food businesses & Restaurants in Austin',
+  headline: "You've mastered your food craft.",
+  headlineAccent: "Now, it's time to run your business.",
   lede: {
     name: 'Food Is My Muse Consulting',
     intro: "is Austin's first food business partner that offers owners an integrated, whole systems foundation to launch, sustain and grow their business.",
@@ -26,7 +27,7 @@ export const hero: HeroContent = {
   // Illustrative figures; the page computes the totals from the rows:
   // true cost 802.50 + 396 + 230 + 22 + 175 = 1,625.50; price 2,700; margin 1,074.50 = 39.8%; hours 1 + 18 + 4 + 1 = 24.
   traced: {
-    title: 'One order, every department',
+    title: 'Every order or batch moves every calculation',
     label: 'Illustrative example',
     item: 'Catering order: 150 boxed lunches at $18',
     rows: [
@@ -38,7 +39,7 @@ export const hero: HeroContent = {
     ],
     price: 2700.0,
     sustainability: {
-      title: 'Order sustainability report',
+      title: 'Order Sustainability Report',
       rows: [
         { metric: 'Carbon emissions', value: '144 kg CO₂e' },
         { metric: 'Methane', value: '3.4 kg CH₄' },
@@ -59,29 +60,28 @@ export const audiences = {
 };
 
 export const symptoms: SymptomsContent = {
-  eyebrow: "I've been through every pain point already",
-  heading: "Let's build your roadmap to solve problems before they impact your business",
+  eyebrow: "I've been through every pain point already, so",
+  heading: "Let's build your roadmap to solve problems before they impact your business.",
   items: [
     'Expensive & slow startup phases',
-    'Outgrowing the $150k cottage food cap',
+    'Outgrowing the $150k cottage cap',
     'Rising food costs & fuel charges',
     'Staff shortages & increasing wages',
     'Customers are always price sensitive',
-    'Being busy does not equal profitability'
+    'Busy does not equal profitability'
   ],
 };
 
 export const wholeSystems: WholeSystemsContent = {
-  eyebrow: 'Integrated, Whole systems',
-  heading: 'Every input, wired to the books.',
-  body: "Food Is My Muse Consulting builds and offers food business clients CPA-grade accounting ledgers & reports with sustainability metrics baked in.",
+  eyebrow: 'Integrated business systems',
+  heading: 'Every input is wired to the books.',
+  body: "Food Is My Muse Consulting builds its own tools and offers food business clients CPA-grade accounting ledgers & reports with unit economics, HR and sustainability metrics baked in.",
   ledger: {
-    title: 'One master ledger',
+    title: 'One master ledger captures',
     lines: ['Food cost and production', 'Labor cost and staffing', 'Cash flow and sales forecasts', 'Sustainability'],
   },
 };
 
-/** The Diagnostic as the entry offer (roadmap Update 1). "What you get" is the offer's included list from services.ts. */
 export const diagnostic: DiagnosticContent = {
   eyebrow: 'Start here',
   heading: services[0].name,
@@ -92,7 +92,7 @@ export const diagnostic: DiagnosticContent = {
   card: { title: 'What you get', items: servicesPage.sections[0].included },
 };
 
-/** "How it works" (brief §6): the Diagnostic, then a retainer with the software, then independence. Scope copy, not voice. */
+
 export const howItWorks: HowItWorksContent = {
   eyebrow: 'How it works',
   heading: 'A diagnostic, then a retainer with the software, then your own system.',
