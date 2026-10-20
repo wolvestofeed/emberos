@@ -54,7 +54,7 @@ A sub-roadmap of `Docs/ROADMAP.md` (Phase 6). foodismymuse.com becomes the marke
 - [ ] Rob reviews on `pnpm dev` (port 3001). Commit, push and deploy on his say-so.
 
 ## Open (2026-10-20)
-- [ ] The photo for the operating history band (`public/images/consulting/`).
+- [x] The photo for the operating history band: `public/images/consulting/history/rob-with-client.webp`, from Rob's `library/photos/work/rob-meeting_client_mock_1.jpeg` (2026-10-20).
 - [ ] The About page's Cotyledon paragraph: it is the Mission note's text; drop it from About or give About its own version. Rob's first-person writing, not redrafted.
 - [ ] A booking link for "Book a call" (`NEXT_PUBLIC_BOOKING_URL`); until then the buttons point at the contact block on /about.
 - [ ] A monogram or mark for the favicon and social avatar; the Ember OS ones until then.

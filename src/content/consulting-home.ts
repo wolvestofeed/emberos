@@ -119,6 +119,12 @@ export const howItWorks: HowItWorksContent = {
 export const history: HistoryContent = {
   eyebrow: 'Operating history',
   heading: 'On the line and in the books.',
+  photo: {
+    src: '/images/consulting/history/rob-with-client.webp',
+    alt: 'Rob Bogatin at a cafe table with an owner, going through the numbers on a laptop',
+    width: 1200,
+    height: 900,
+  },
   photoPlaceholder: '[Photo: Rob at work in a kitchen]',
   rows: [
     ...cases.map((c) => ({ label: c.label, fact: c.fact })),

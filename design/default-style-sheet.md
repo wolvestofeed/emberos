@@ -263,4 +263,4 @@ Today `src/app/globals.css` gives `body` the dark ground and cream text. The con
 
 ## 10. Copy status
 
-Rob writes and edits the copy directly in `src/content/*.ts`. A bracketed line is a slot he has not filled yet and renders as-is. As of 2026-10-20 the only open slot is the photo in the operating history band (`[Photo: Rob at work in a kitchen]`).
+Rob writes and edits the copy directly in `src/content/*.ts`. A bracketed line is a slot he has not filled yet and renders as-is. As of 2026-10-20 no slots are open; the operating history photo is in.
