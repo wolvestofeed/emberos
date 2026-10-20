@@ -134,7 +134,7 @@ Sizes are the desktop values from the mock-up. On phones, use the `clamp()` colu
 - **Radius:** 14 px (`--radius-tile`, existing 0.875rem) on cards and placeholders; 999 px (`--radius-pill`) on buttons.
 - **Borders:** 1 px `cream-line` on cards. Ledger rows: 1 px `cream-deep` between rows and 1 px ink above the total. The costing card header gets a 2 px ink rule.
 - **Shadow:** only on the hero costing card: `--shadow-card-light` (existing) or `0 14px 30px -18px rgba(27,38,33,0.35)`. Service cards are flat.
-- **Bands (home, roadmap Update 1):** paper (hero) → cream strip (owners) → paper (symptoms) → cream (Diagnostic) → paper (how it works) → paper with a top rule (Rob and the offers) → dark ground (history) → paper (Tool Kit) → cream (closing) → dark footer. Never put two dark bands next to each other.
+- **Bands (home, brief §6):** paper (hero) → cream strip (owners) → paper (symptoms) → dark ground (whole systems) → cream (Diagnostic) → paper (how it works) → paper with a top rule (Rob and the offers) → dark ground (history) → paper (Tool Kit) → cream (closing) → dark footer. Never put two dark bands next to each other.
 
 ---
 
@@ -156,8 +156,11 @@ The build order follows the page top to bottom. Names are suggestions for `src/c
 - **Buttons:** primary "Book a 30-minute call" and secondary "See the services" (outline), gap 12 px, wrapping.
 - **Right column:** the costing card (6.3).
 
+### 6.3a TracedOrderCard (the hero card, per Rob 2026-10-19)
+One order or production batch traced through every department. Same surface, header, rules and result row as the CostingCard below, with three columns: the line (a copper-ink department tag over the item, 10 px tracked), its cost, its hours (ink-soft, a dash where none). A tracked column-header row sits under the item line. The footer: **True cost** with total hours in bold, **Price** in ink-soft, then **True margin** as the percentage in Newsreader 40 px tomato with the dollar figure beside it. Totals are computed from the rows. Labeled "Illustrative example" until Rob supplies real figures.
+
 ### 6.3 CostingCard ("ledger card")
-The signature component. It shows a worked plate costing and must be labeled **"Illustrative example"** until Rob supplies real figures (CLAUDE.md rule 3: no invented metrics).
+The original hero card, replaced in the hero by 6.3a and kept for service pages. It shows a worked plate costing and must be labeled **"Illustrative example"** until Rob supplies real figures (CLAUDE.md rule 3: no invented metrics).
 - **Surface:** white, 1 px `cream-line` border, radius 14 px, padding 28 px, light shadow.
 - **Header row:** title "Plate costing" (Newsreader 600, 22 px) and the label "Illustrative example" (Poppins 10 px tracked, ink-soft), over a 2 px ink rule.
 - **Item line:** 14 px ink-soft.
@@ -181,7 +184,7 @@ The signature component. It shows a worked plate costing and must be labeled **"
   - an H3 title;
   - a 15 px ink-soft description;
   - a footer line pinned to the bottom (`margin-top: auto`) over a 1 px `cream-deep` rule, holding the price placeholder at 13 px, weight 600.
-- **Offers, in order (roadmap Update 1):** 01 Business Diagnostic; 02 Stabilize; 03 Build; 04 Scale. The names are fixed and reused on proposals and invoices. The former department services are the areas every offer covers (6.14). The card's footer line is the offer's own price slot.
+- **Offers, in order (roadmap Updates 1 and 2):** 01 Business Diagnostic; 02 Stabilize; 03 Business Launch; 04 Scale. The names are fixed and reused on proposals and invoices. The former department services are the areas every offer covers (6.14). The card's footer line is the offer's own price slot.
 - **Prices:** placeholders until Rob sets them. Never invent one.
 
 ### 6.6 OperatingHistory (dark band)
@@ -191,10 +194,10 @@ The signature component. It shows a worked plate costing and must be labeled **"
 - **Facts:** only Rob-confirmed facts. Currently: the Philadelphia pizzeria (owner); the 150-seat Boulder bar and grill (owner); SW Colorado's kettle co-packer (prepared foods, SOPs, COGS); Good Food Collective (farm-to-shelf production and financial model for heritage orchards); Director of Operations and Finance, San Juan Mountains Association.
 - **Markup:** a `<dl>`.
 
-### 6.7 ToolKitTeaser
+### 6.7 ToolKitTeaser (brief §4 and §6)
 - Paper background.
-- **Left:** eyebrow "Tool Kit", an H2 at 36 px, a 16 px ink-soft line, and a text link "Open the Tool Kit" (copper-ink, 600, underlined) to the Tool Kit page.
-- **Right:** the kit's "Powered by Ember OS" badge file, on-light version, at about 320 × 120 px. The mock-up shows a dashed placeholder in its place.
+- **Left** (`flex: 1 1 420px`): eyebrow "Tool Kit", an H2 at 36 px, the approved line in 17 px ink, the terms line in 16 px ink-soft, and the text link "Open the Tool Kit".
+- **Right** (`flex: 1 1 380px`): two white tiles, one per app (`cream-line` border, radius 14 px, padding 24 px): the name (Newsreader 22 px, 600), its one line (15 px ink-soft, facts only), and the list price slot over a 1 px `cream-deep` rule. Muse Kitchen's tile carries the kit's "Powered by Ember OS" badge at 20 px high beside the name; CompTable's does not. Ember OS appears nowhere else on the consulting pages, and Cotyledon never.
 
 ### 6.8 ClosingCTA
 - Cream band with a top 1 px `cream-line` rule.
@@ -223,6 +226,15 @@ The signature component. It shows a worked plate costing and must be labeled **"
 ### 6.14 Coverage ("What every engagement covers", on `/services`)
 - Cream band with a 1 px `cream-line` rule above, placed after the offer sections and before the closing band.
 - Eyebrow and H2 as in 6.11, then four white tiles (as the service cards: `cream-line` border, radius 14 px, padding 28 px) on a four-column grid: the area's name (Newsreader 22 px, 600) and one line (15 px ink-soft). The areas are setup, costing and accounting, operations and SOPs, production.
+
+### 6.15 WholeSystems (the headline idea, brief §1)
+- Dark ground band, cream text, `on-dark` focus ring. Placed between the symptoms and the Diagnostic.
+- **Left** (`flex: 1 1 480px`): eyebrow "Whole systems" in copper-light, H2 at the section size, Rob's explanation in 17 px mist (a slot until he writes it).
+- **Right** (`flex: 1 1 380px`): a ledger card on `ground-raised` with a `ground-line` border: the title "One ledger" over a 2 px cream rule, then an `<ol>` of the connected lines in Newsreader 22 px cream, numerals in copper-light, 1 px `ground-line` rules between.
+
+### 6.16 Terms (software and terms, on `/services`)
+- Paper, after the coverage band and before the closing band.
+- Eyebrow and H2 as in 6.11, then a `<dl>` under a 1 px ink rule: label (Poppins 11 px tracked, copper-ink, 200 px wide) and the statement (17 px ink, tabular figures), 1 px `cream-deep` rules between. A 15 px ink-soft note under the list carries single projects.
 
 ### 6.10 Buttons and links
 

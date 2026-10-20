@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
-import { servicesPage, coverage } from '@/content/services';
+import { servicesPage, coverage, terms } from '@/content/services';
 import { closing } from '@/content/consulting-home';
 import { PageIntro } from '@/components/consulting/PageIntro';
 import { ClosingCTA } from '@/components/consulting/ClosingCTA';
 import { Coverage } from '@/components/consulting/Coverage';
+import { Terms } from '@/components/consulting/Terms';
 
 export const metadata: Metadata = {
   title: 'Services',
-  description: 'Business Diagnostic, Stabilize, Build and Scale: costing, accounting, operations and production for food businesses.',
+  description: 'Business Diagnostic, Stabilize, Business Launch and Scale: costing, accounting, operations and production for food businesses.',
 };
 
 /** One section per service, in the fixed order, each reachable from its card on the home page. */
@@ -43,6 +44,7 @@ export default function ServicesPage() {
         </ul>
       </div>
       <Coverage content={coverage} />
+      <Terms content={terms} />
       <ClosingCTA content={closing} />
     </>
   );

@@ -14,7 +14,7 @@ A sub-roadmap of `Docs/ROADMAP.md` (Phase 6). foodismymuse.com becomes the marke
 - Sign in stays in the Tool Kit header only. The Tool Kit header gains a link back to the consulting site. SiteHeader nav: Services, Work, Tool Kit, About, plus Book a call.
 - Book a call: an email link until Rob supplies a booking link. No form on this site.
 - Favicon and social avatar: the Ember OS ones until Rob supplies a monogram or mark.
-- Offers, in order (superseded the four department services on 2026-10-19, see Update 1): Business Diagnostic; Stabilize; Build; Scale. Setup, costing and accounting, operations and SOPs, and production are the areas each offer covers.
+- Offers, in order (superseded the four department services on 2026-10-19, see Updates 1 and 2): Business Diagnostic; Stabilize; Business Launch; Scale. Setup, costing and accounting, operations and SOPs, and production are the areas each offer covers.
 - Audiences: Chefs and restaurateurs, CPG founders, Caterers, Ghost kitchens, Bakers.
 
 ## Build order
@@ -110,13 +110,37 @@ The "For owners of" audience strip stays between the hero and the next section. 
 - [x] U1.5 Home reordered to the outline above; the owners strip stays between the hero and the symptoms.
 - [x] U1.6 Style sheet §6.11–6.14 added, 6.5 renamed to offer cards, §5 band order updated.
 
+### Rob's decisions from Update 1
+Carried into Update 2 below; the software question is answered there (included while a retainer is active).
+
+## Update 2 — Whole systems, software and terms (brief from Cowork, 2026-10-19)
+
+### Direction
+- The headline idea is whole-systems consulting: every department's systems built with the accounting wired in, so the owner knows what everything costs and how long it takes. Food cost and production, labor and staffing, cash flow and forecasts, and sustainability are connected lines on one ledger. "Whole systems" is the term (vocabulary rule in `Docs/CLAUDE.md`).
+- Software and subscribers: retainers (Stabilize, Business Launch, Scale) run three months minimum; month one onboards the business onto Muse Kitchen and CompTable; both subscriptions are included while the retainer is active; the engagement ends with the owner running the business on their own system. The Diagnostic and single projects are consulting only. Outside an engagement, subscriptions are at regular rates; after one, a monthly check-in retainer carries an active-client discount. Data export on leaving is fine print in the terms. Cotyledon does not appear on the consulting pages; CompTable copy never advises.
+
+### Done (Cowork, text): Build renamed Business Launch (`#launch`); the Tool Kit teaser body for Muse Kitchen and CompTable; `/services` metadata; decks mirrored.
+
+### Done (Claude Code, 2026-10-19)
+- [x] U2.1 Symptoms and their heading are Rob's slots (the agreed direction stays as prompts inside the brackets).
+- [x] U2.2 `WholeSystems.tsx`: a dark band between the symptoms and the Diagnostic; Rob's explanation as a slot, the four connected lines as a ledger.
+- [x] U2.3 "How it works" rewritten: a call, the Diagnostic (about two weeks, fixed fee), a retainer with the software included and onboarding in month one, independence with the check-in option.
+- [x] U2.4 `ToolKitTeaser.tsx` rebuilt: the approved line, the terms line, two app tiles with list price slots; the Ember badge on Muse Kitchen only; CompTable links to getcomptable.com.
+- [x] U2.5 `Terms.tsx` on `/services` after the coverage band: minimum, software included with both list price slots, month one, the end, after (check-in retainer and discount slots), outside an engagement; single projects as a note. Quality control added to the operations line.
+- [x] U2.6 Style sheet §6.7 rewritten, §6.15–6.16 added, §5 band order; `Docs/CLAUDE.md` decisions in force extended.
+
+### Not done, waiting on Rob
+- [x] Per Rob: the plate-costing card is replaced by `TracedOrderCard.tsx` (one catering order through purchasing, production, operations, sales and admin, accounting; true cost, true margin and total hours computed at the bottom; "Illustrative example"). `CostingCard.tsx` stays for service pages.
+- [ ] The About page's Cotyledon paragraph: drop it from About, or an About-only version. His first-person writing; not rewritten. `/mission` stays as it is.
+
 ### Open: Rob's decisions
-- [ ] Diagnostic length, fee, and whether the fee is credited toward a retainer.
-- [ ] Stabilize prices for the monthly and weekly cadences; confirm the three-month minimum and billing monthly in advance.
-- [ ] Build and Scale pricing, or "by quote".
-- [ ] Whether Ember OS is included in a retainer or priced separately.
+- [ ] Diagnostic length and fee, and whether the fee is credited toward a retainer.
+- [ ] Retainer prices for the monthly and weekly cadences; the check-in retainer price; the active-client discount amount.
+- [ ] Muse Kitchen and CompTable list prices.
+- [ ] Single-project pricing, or "by quote".
+- [ ] The About page's Cotyledon paragraph.
 - [ ] One or two Texas referral partners (attorney or CPA) for formation and licensing.
-- [ ] Copy: the hero intro line, the symptoms, the description of Rob, the three remaining outcomes, the closing line. The headline is a working line until he rewrites it.
+- [ ] Copy: the hero intro line, the symptoms and their heading, the whole-systems explanation, the description of Rob, the three remaining outcomes, the closing line. The hero and `/services` headlines are working lines until he rewrites them.
 
 ---
 
@@ -126,3 +150,5 @@ The "For owners of" audience strip stays between the hero and the next section. 
 - **2026-10-19**: Per Rob: C1 to C3 built on the defaults. `design/tokens.css` gains copper-ink, tomato, tomato-deep and `--font-serif`; `globals.css` makes paper and ink the body default with a tomato focus ring, `.toolkit` restores the Ember ground and `.on-dark` a copper-light ring on dark bands; `figures` and `container-wide` utilities. Newsreader loads through `next/font`. Route groups `src/app/(site)` (SiteHeader, SiteFooter) and `src/app/(toolkit)` (the old Header and Footer, Ember OS metadata); the former home is `(toolkit)/tool-kit/page.tsx`, Platform and Mission moved into the group with their URLs unchanged; the Tool Kit header and footer link back to the consulting site. Nine components in `src/components/consulting/` plus `PageIntro`. `src/config/site.ts` holds the practice name, nav and where Book a call goes (`NEXT_PUBLIC_BOOKING_URL`, else `mailto:` the `NEXT_PUBLIC_CONTACT_EMAIL`, else `/about#contact`). Pages `/`, `/services` (one section per service, anchored from the cards), `/work` (the five confirmed cases), `/about` (story slots, the history band, the contact block). Decks `content/consulting-home.md`, `services.md`, `work.md`, `about.md` with typed twins in `src/content/`. Every slot Rob owes renders as bracketed text. The 404 carries the consulting header. Checked on `pnpm dev` at desktop and 375 px.
 - **2026-10-19**: Per Rob: the offer structure changes (Update 1). The primary client is the first-year operator who is already open and struggling; pre-opening stays as a secondary path, and Texas formation and compliance are referred to a local attorney or CPA. The four department services become four offers (Business Diagnostic, Stabilize, Build, Scale), with the departments as the areas each covers. Text updated in Cowork: hero eyebrow, headline and secondary button, the audience label, the eyebrow over Rob's section, the four cards, and the `/services` headline and "What is included" lists; decks mirrored, `tsc --noEmit` passes. New components (symptoms, Diagnostic block, How it works, What every engagement covers) are open for Claude Code. Not committed.
 - **2026-10-19**: Per Rob: Update 1 built on the dev site (Claude Code). Four components in `src/components/consulting/`: `Symptoms`, `DiagnosticBlock`, `HowItWorks`, `Coverage`; their copy in `src/content/consulting-home.ts` and `src/content/services.ts`, decks mirrored, style sheet §6.11–6.14. Home reordered: hero, owners strip, symptoms, the Diagnostic, how it works, Rob and the offers, history, Tool Kit, closing. `/services` gains the coverage band before the closing. The home history band's tags follow the Work page: Co-owner for the pizzeria and the bar and grill, Social enterprise for Good Food Collective. The symptoms, the "how it works" steps and both section headings are working copy from the agreed direction until Rob rewrites them. The Tool Kit teaser is unchanged pending the retainer decision.
+- **2026-10-19**: Per Rob, on Cowork's brief (Update 2): the practice is whole-systems consulting with the software included during retainers and independence as the goal. Cowork renamed Build to Business Launch and rewrote the Tool Kit teaser body; Claude Code turned the symptoms into Rob's slots, added the whole-systems band and the software-and-terms block, rewrote how it works and the Tool Kit teaser (two apps, the approved line, list price slots, the Ember badge on Muse Kitchen only), added quality control to the operations line, and extended the style sheet and `Docs/CLAUDE.md`. The costing card and the About page's Cotyledon paragraph wait on Rob. Not committed.
+- **2026-10-19**: Per Rob: the hero's plate-costing card is replaced by the traced-order card, an illustrative catering order traced through five departments with true cost, true margin and total hours. Style sheet section 6.3a. Not committed.

@@ -8,6 +8,7 @@
  */
 import type { Service } from '@/components/consulting/Services';
 import type { CoverageContent } from '@/components/consulting/Coverage';
+import type { TermsContent } from '@/components/consulting/Terms';
 
 export const services: Service[] = [
   {
@@ -25,9 +26,9 @@ export const services: Service[] = [
     price: '[From $___ a month]',
   },
   {
-    slug: 'build',
+    slug: 'launch',
     numeral: '03',
-    name: 'Build',
+    name: 'Business Launch',
     line: 'Before you open: the systems, chart of accounts, costing model, opening budget, staffing plan and SOPs, built to run from day one.',
     price: '[Project fee $___]',
   },
@@ -100,7 +101,25 @@ export const coverage: CoverageContent = {
   areas: [
     { name: 'Setup', line: 'Books, chart of accounts, budget and the first-year plan. Formation, permits and licensing go to a Texas attorney or CPA.' },
     { name: 'Costing and accounting', line: 'Recipe and plate costing, COGS, pricing, P&L structure and a monthly close you can keep.' },
-    { name: 'Operations and SOPs', line: 'Prep systems, ordering, inventory, staffing, HR and written standards the crew actually follows.' },
+    { name: 'Operations and SOPs', line: 'Prep systems, ordering, inventory, staffing, HR, quality control and written standards the crew actually follows.' },
     { name: 'Production', line: 'Batch scaling, co-packing, time studies and the move from kitchen to shelf.' },
   ],
+};
+
+/** Software and terms (brief §4). Plain statements; every price is a slot. */
+export const terms: TermsContent = {
+  eyebrow: 'Software and terms',
+  heading: 'What a retainer includes, and what happens after.',
+  items: [
+    { label: 'Minimum', text: 'Retainers (Stabilize, Business Launch, Scale) run three months minimum, billed monthly in advance.' },
+    {
+      label: 'Software included',
+      text: 'While a retainer is active, Muse Kitchen (list price [$___]/month) and CompTable (list price [$___]/month) are included.',
+    },
+    { label: 'Month one', text: 'Rob sets the business up on both platforms and trains the staff who use them, so you run the software alongside him for at least two months.' },
+    { label: 'The end', text: 'The engagement ends with you running the business on your own system.' },
+    { label: 'After', text: 'Keep Rob on a monthly check-in retainer ([$___]/month) and receive an active-client subscription discount ([___]%).' },
+    { label: 'Outside an engagement', text: 'Subscriptions on their own are at regular rates. The Diagnostic and single projects are billed at consulting rates, with no software.' },
+  ],
+  note: 'Single projects: paid one-off work at its own rate ([by quote]), without software.',
 };

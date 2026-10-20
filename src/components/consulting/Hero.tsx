@@ -1,5 +1,5 @@
 import { PrimaryButton, SecondaryButton } from '@/components/consulting/Buttons';
-import { CostingCard, type CostingExample } from '@/components/consulting/CostingCard';
+import { TracedOrderCard, type TracedOrderExample } from '@/components/consulting/TracedOrderCard';
 
 export interface HeroContent {
   eyebrow: string;
@@ -8,12 +8,13 @@ export interface HeroContent {
   lede: { name: string; intro: string };
   primary: { label: string; href: string };
   secondary: { label: string; href: string };
-  costing: CostingExample;
+  /** One order traced through every department (brief section 6). */
+  traced: TracedOrderExample;
 }
 
-/** Hero (style sheet §6.2): text left, the costing card right; one column under about 960 px. */
+/** Hero (style sheet §6.2): text left, the traced-order card right; one column under about 960 px. */
 export function Hero({ content }: { content: HeroContent }) {
-  const { eyebrow, headline, lede, primary, secondary, costing } = content;
+  const { eyebrow, headline, lede, primary, secondary, traced } = content;
   return (
     <section aria-labelledby="hero-heading" className="container-wide flex flex-wrap items-center gap-10 pb-12 pt-14 sm:gap-14 sm:pb-[72px] sm:pt-[88px]">
       <div className="flex min-w-0 flex-[1_1_520px] flex-col gap-6">
@@ -30,7 +31,7 @@ export function Hero({ content }: { content: HeroContent }) {
         </div>
       </div>
       <div className="min-w-0 flex-[1_1_400px]">
-        <CostingCard example={costing} />
+        <TracedOrderCard example={traced} />
       </div>
     </section>
   );

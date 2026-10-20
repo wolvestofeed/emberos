@@ -23,18 +23,21 @@ Your food business is open. Now make it pay.
 
 **Buttons:** [Book a 30-minute call] (primary) · [See how it works] → `/services`
 
-**Costing card (illustrative example, labeled as such):**
+**Traced-order card (per Rob, 2026-10-19, replacing the plate-costing card; illustrative, labeled as such):**
 
-| Plate costing | Illustrative example |
-|---|---|
-| Braised short rib, polenta, greens | |
-| Short rib, 10 oz | $4.85 |
-| Polenta | $0.62 |
-| Greens and dressing | $0.48 |
-| Jus and garnish | $0.39 |
-| **Plate cost** | **$6.34** |
-| Menu price | $28.00 |
-| **Food cost** | **22.6%** |
+| One order, every department | Cost | Hours |
+|---|---|---|
+| Catering order: 40 boxed lunches at $18 | | |
+| Purchasing: Ingredients, ordered and received | $214.00 | 0.50 h |
+| Production: Prep and cook, 6 h at $22 | $132.00 | 6.00 h |
+| Operations: Packaging and delivery | $71.00 | 1.50 h |
+| Sales and admin: Booking and invoicing | $16.50 | 0.75 h |
+| Accounting: Share of rent and overhead | $58.00 | none |
+| **True cost** | **$491.50** | **8.75 h** |
+| Price | $720.00 | |
+| **True margin** | **31.7%, $228.50** | |
+
+The page computes the totals from the rows. Real figures replace these when Rob supplies them.
 
 ---
 
@@ -48,19 +51,32 @@ Chefs and restaurateurs · CPG founders · Caterers · Ghost kitchens · Bakers
 
 **Eyebrow:** SOUND FAMILIAR?
 
-**Heading (working line):** Busy every day, and still not sure the business pays.
+**Heading:** [Heading in Rob's words]
 
-Six symptoms of the first-year operator, from the agreed direction; working lines until Rob rewrites them:
-1. The dining room is full and the bank account is not.
-2. You do not know what a plate really costs to make.
-3. Labor is your biggest number and nobody can say what it should be.
-4. You are in the kitchen every day, so nothing gets fixed.
-5. Good people keep leaving, and training starts over.
-6. Prices were a guess on opening day and have not moved since.
+Four to six symptoms, Rob's words. The slots carry the agreed direction as prompts:
+1. [Symptom, in Rob's words: busy but not making money]
+2. [Symptom: real food and labor cost unknown]
+3. [Symptom: working in the business every day]
+4. [Symptom: staff turnover]
+5. [Symptom: prices are a guess]
 
 ---
 
-## 3c. The Diagnostic (cream band)
+## 3c. Whole systems (dark band)
+
+**Eyebrow:** WHOLE SYSTEMS
+
+**Heading:** Every system, wired to the books.
+
+**Body:** [Rob's explanation: every system he builds is wired to the accounting, so nothing in the business runs blind.]
+
+Right, a ledger card, **One ledger**: Food cost and production · Labor cost and staffing · Cash flow and sales forecasts · Sustainability
+
+Vocabulary (brief §1): "whole systems" is the term. Never "cross-functional", "comprehensive", "inclusive", or any "only", "first" or "best" claim.
+
+---
+
+## 3d. The Diagnostic (cream band)
 
 **Eyebrow:** START HERE
 
@@ -72,17 +88,17 @@ Right, a ledger card, **What you get**: the Diagnostic's "What is included" list
 
 ---
 
-## 3d. How it works (paper)
+## 3e. How it works (paper)
 
 **Eyebrow:** HOW IT WORKS
 
-**Heading (working line):** Start with the Diagnostic. Stay for the systems.
+**Heading:** A diagnostic, then a retainer with the software, then your own system.
 
-Four steps, working copy:
+Four steps, scope copy:
 1. **A call.** Thirty minutes on where the business stands and whether the Diagnostic is the right first step.
-2. **The Diagnostic.** A fixed-fee look inside the kitchen and the books, ending in a written report: your real costs and a ranked list of fixes.
-3. **Stabilize.** A monthly retainer through the first years: the close, costing and pricing, labor, HR, quality and SOPs, on a monthly or weekly cadence.
-4. **Build or Scale.** Opening the next place, or growing into wholesale, co-packing or a second unit: a project or retainer when that stage comes.
+2. **The Diagnostic.** About two weeks on the business as it is, at a fixed fee. It ends in a written report: real costs and a ranked list of fixes.
+3. **A retainer, software included.** Stabilize for an open business, Business Launch before opening, Scale for growth. Three months minimum. Month one sets the business up on Muse Kitchen and CompTable and trains the people who use them; both are included while the retainer runs.
+4. **Independence.** The engagement ends with you running the business on your own system. Keep a monthly check-in if you want one, with an active-client subscription discount.
 
 ---
 
@@ -95,7 +111,7 @@ Four steps, working copy:
 **Description:** [Description of Rob: background, how he works, and what a founder gets from working with him.]
 
 Four offer cards, in order (the deck for each is `content/services.md`; structure in `Docs/roadmaps/consulting-roadmap.md`, Update 1):
-01 Business Diagnostic · 02 Stabilize · 03 Build · 04 Scale
+01 Business Diagnostic · 02 Stabilize · 03 Business Launch · 04 Scale
 Each card: one line, and a bracketed price slot until Rob sets prices or decides to show none.
 
 ---
@@ -123,11 +139,17 @@ Confirmed facts (Rob, 2026-10-19):
 
 **Heading:** The software that comes with the work.
 
-**Body:** Ember OS, Muse Kitchen and Cotyledon: the costing, production and compliance tools used inside an engagement.
+**Lead (approved line):** Every engagement comes with its own software, set up and taught by the person who built it.
+
+**Body:** Both are included while a retainer is active. Rob sets the business up on both, trains the staff who use them, and keeps working weekly or monthly until the owner runs the business without him.
+
+Two app tiles, right:
+- **Muse Kitchen** (with the kit's "Powered by Ember OS" badge) — Runs production, costing and the kitchen. — List price [$___]/month
+- **CompTable** (getcomptable.com; facts only, never advice) — Models compensation, payroll cost and labor compliance. — List price [$___]/month
 
 **Link:** Open the Tool Kit → `/tool-kit`
 
-Right: the kit's "Powered by Ember OS" badge, on-light (`public/brand/ember/powered-by-ember-os-badge-on-light.png`).
+Cotyledon does not appear on the consulting pages.
 
 ---
 

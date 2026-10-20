@@ -20,6 +20,9 @@ Front-end UI surface only: copy, design tokens, static pages and components. No 
 - The two portal cards on the Tool Kit page sign directly into the apps. There are no separate app entry pages on this site.
 - The Mission page is Rob's first-person note. Every biographical fact on it, and on About and Work, is confirmed by Rob before publishing.
 - "Book a call" is a link (email until Rob supplies a booking link). No form on this site; a form would need a third-party service and a CSP change.
+- The practice is whole-systems consulting (brief, 2026-10-19): every department's systems built with the accounting wired in. "Whole systems" is the term; never "cross-functional", "comprehensive", "inclusive", or any "only", "first" or "best" claim. The offers are Business Diagnostic, Stabilize, Business Launch and Scale; the former department services are the areas every engagement covers.
+- Software on the consulting pages: Muse Kitchen (Ember OS) and CompTable (getcomptable.com) only, included while a retainer is active. Cotyledon never appears on the consulting pages; the "Powered by Ember OS" badge applies to Muse Kitchen only. CompTable copy states facts and math and never advises: no "recommend", "should", "best", "optimal", "consider switching" or "we suggest".
+- Voice copy is Rob's and stays a bracketed slot until he writes it: intro lines, the symptoms, the whole-systems explanation, his description, outcomes, the closing line. Plain scope descriptions are fine.
 - Cotyledon's app rules (no icons, no persuasive copy, replace-not-log) do not govern this site. Log every change in `Docs/ROADMAP.md` → Update Log.
 - No walkthrough or demo call-to-action.
 

@@ -43,7 +43,7 @@ What is included:
 
 What you have at the end: [What the owner has after the first three months.]
 
-## 03 Build (`#build`)
+## 03 Business Launch (`#launch`)
 
 Before you open: the systems, chart of accounts, costing model, opening budget, staffing plan and SOPs, built to run from day one.
 
@@ -82,8 +82,27 @@ What you have at the end: [What the owner has when the next stage is running.]
 
 - **Setup** — Books, chart of accounts, budget and the first-year plan. Formation, permits and licensing go to a Texas attorney or CPA.
 - **Costing and accounting** — Recipe and plate costing, COGS, pricing, P&L structure and a monthly close you can keep.
-- **Operations and SOPs** — Prep systems, ordering, inventory, staffing, HR and written standards the crew actually follows.
+- **Operations and SOPs** — Prep systems, ordering, inventory, staffing, HR, quality control and written standards the crew actually follows.
 - **Production** — Batch scaling, co-packing, time studies and the move from kitchen to shelf.
+
+---
+
+## Software and terms (paper)
+
+**Eyebrow:** SOFTWARE AND TERMS
+
+**Heading:** What a retainer includes, and what happens after.
+
+- **Minimum** — Retainers (Stabilize, Business Launch, Scale) run three months minimum, billed monthly in advance.
+- **Software included** — While a retainer is active, Muse Kitchen (list price [$___]/month) and CompTable (list price [$___]/month) are included.
+- **Month one** — Rob sets the business up on both platforms and trains the staff who use them, so you run the software alongside him for at least two months.
+- **The end** — The engagement ends with you running the business on your own system.
+- **After** — Keep Rob on a monthly check-in retainer ([$___]/month) and receive an active-client subscription discount ([___]%).
+- **Outside an engagement** — Subscriptions on their own are at regular rates. The Diagnostic and single projects are billed at consulting rates, with no software.
+
+Note under the list: Single projects: paid one-off work at its own rate ([by quote]), without software.
+
+Fine print for the terms document, not the page: a client can export their data on leaving, provided the consulting agreement is paid in full.
 
 ---
 
