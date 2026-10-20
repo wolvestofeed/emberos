@@ -14,30 +14,44 @@ Nav: **Services** · **Work** · **Tool Kit** · **About** · [Book a call] → 
 
 ## 2. Hero
 
-**Eyebrow:** COSTING · ACCOUNTING · OPERATIONS · PRODUCTION
+**Eyebrow (Rob, 2026-10-20):** INDEPENDENT FOOD BUSINESSES & RESTAURANTS IN AUSTIN
 
-**Headline:**
-Your food business is open. Now make it pay.
+**Headline (Rob, 2026-10-20):**
+You've mastered your food craft.
+Now it's time to run your business.
 
-**Lede:** **Rob Bogatin** [intro line: who he works with and what changes after he's been in the kitchen and in the books.]
+**Lede (Rob, 2026-10-20):** **Food is My Muse Consulting** led by Rob Bogatin, is Austin's first food business partner that offers owners an integrated, whole systems foundation to launch, sustain and grow your business.
 
-**Buttons:** [Book a 30-minute call] (primary) · [See how it works] → `/services`
+**Buttons:** [Book a 30-minute call] (primary) · [See how I work] → `/services`
 
 **Traced-order card (per Rob, 2026-10-19, replacing the plate-costing card; illustrative, labeled as such):**
 
 | One order, every department | Cost | Hours |
 |---|---|---|
-| Catering order: 40 boxed lunches at $18 | | |
-| Purchasing: Ingredients, ordered and received | $214.00 | 0.50 h |
-| Production: Prep and cook, 6 h at $22 | $132.00 | 6.00 h |
-| Operations: Packaging and delivery | $71.00 | 1.50 h |
-| Sales and admin: Booking and invoicing | $16.50 | 0.75 h |
-| Accounting: Share of rent and overhead | $58.00 | none |
-| **True cost** | **$491.50** | **8.75 h** |
-| Price | $720.00 | |
-| **True margin** | **31.7%, $228.50** | |
+| **Catering order: 150 boxed lunches at $18** (bold, under the title, above the rule) | | |
+| Purchasing: Ingredients, ordered and received | $802.50 | 1.00 h |
+| Production: Prep and cook, 18 h at $22 | $396.00 | 18.00 h |
+| Operations: Packaging and delivery | $230.00 | 4.00 h |
+| Sales and admin: Booking and invoicing | $22.00 | 1.00 h |
+| Accounting: Share of rent and overhead | $175.00 | none |
+| **True cost** | **$1,625.50** | **24.00 h** |
+| Price | $2,700.00 | |
+| **True margin** | **39.8%, $1,074.50** | |
 
-The page computes the totals from the rows. Real figures replace these when Rob supplies them.
+Under the money and hours (Rob, 2026-10-20), **Order sustainability report**, one metric per row:
+
+| Order sustainability report | |
+|---|---|
+| Carbon emissions | 144 kg CO₂e |
+| Methane | 3.4 kg CH₄ |
+| Water | 4,725 L |
+| Energy consumption | 158 kWh |
+| Waste, compost | 23.3 kg |
+| Waste, landfill | 6.8 kg |
+
+The page computes the money and hour totals from the rows. All figures are illustrative; real ones replace them when Rob supplies them.
+
+**Caption under the card (working line, Rob may rewrite):** An integrated whole-systems foundation: accounting and sustainability built into every process, so one order shows its true cost, its hours and its footprint.
 
 ---
 
@@ -72,7 +86,7 @@ Four to six symptoms, Rob's words. The slots carry the agreed direction as promp
 
 Right, a ledger card, **One ledger**: Food cost and production · Labor cost and staffing · Cash flow and sales forecasts · Sustainability
 
-Vocabulary (brief §1): "whole systems" is the term. Never "cross-functional", "comprehensive", "inclusive", or any "only", "first" or "best" claim.
+"Whole systems" is the term.
 
 ---
 

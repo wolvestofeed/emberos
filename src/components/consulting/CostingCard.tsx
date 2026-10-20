@@ -1,7 +1,7 @@
 export interface CostingExample {
   /** "Plate costing", "Batch costing"… */
   title: string;
-  /** "Illustrative example" until Rob supplies real figures (CLAUDE.md rule 3). */
+  /** "Illustrative example" until Rob supplies real figures. */
   label: string;
   /** The dish or batch the figures describe. */
   item: string;
@@ -9,7 +9,7 @@ export interface CostingExample {
   menuPrice: number;
 }
 
-const usd = (n: number) => `$${n.toFixed(2)}`;
+const usd = (n: number) => `$${n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
 
 /**
  * The ledger card (style sheet §6.3): a real <table> with a caption, so screen readers read it as one.

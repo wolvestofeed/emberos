@@ -2,7 +2,7 @@
 
 Route: `/services` · One section per offer, in order. Each is reachable from its card on the home page (`/services#slug`). Text in [brackets] is a slot Rob fills. Rendered by `src/content/services.ts`.
 
-Offer structure (Rob, 2026-10-19; `Docs/roadmaps/consulting-roadmap.md`, Update 1): the Diagnostic is the entry offer, Stabilize is the core retainer for operators in their first years, Build and Scale are secondary paths. Setup, costing and accounting, operations and SOPs, and production are the areas each offer covers. The offer names are reused on proposals and invoices. Prices are placeholders until Rob sets them or decides to show none; never invent one.
+Offer structure (Rob, 2026-10-19; `Docs/roadmaps/consulting-roadmap.md`, Update 1): the Diagnostic is the entry offer, Stabilize is the core retainer for operators in their first years, Build and Scale are secondary paths. Setup, costing and accounting, operations and SOPs, and production are the areas each offer covers. The offer names are reused on proposals and invoices. Prices are placeholders until Rob sets them or decides to show none.
 
 ---
 

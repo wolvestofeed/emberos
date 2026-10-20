@@ -1,6 +1,6 @@
 # About — copy deck
 
-Route: `/about` · Rendered by `src/content/about.ts`. Every biographical fact is confirmed by Rob before publishing (CLAUDE.md rule 3). Text in [brackets] is a slot Rob fills.
+Route: `/about` · Rendered by `src/content/about.ts`. Text in [brackets] is a slot Rob fills.
 
 Per Rob (2026-10-19): the About page carries the Mission note, the same text as the Tool Kit's `/mission` page, and nothing else about his history; operating history has its own page, `/work`.
 

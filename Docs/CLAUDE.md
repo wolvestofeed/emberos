@@ -18,9 +18,9 @@ Front-end UI surface only: copy, design tokens, static pages and components. No 
 - Two looks, one site. Consulting pages (Home, Services, Work, About) use the default style sheet on paper. Tool Kit pages (`/tool-kit`, `/platform`, `/mission`) keep the dark Ember OS look unchanged. Route groups `(site)` and `(toolkit)` carry each look; URLs do not change.
 - The wordmark is "Food Is My Muse Consulting", set in type. It is the only wordmark in the main header. Rob Bogatin is introduced in the hero line and has his own section above the service cards.
 - The two portal cards on the Tool Kit page sign directly into the apps. There are no separate app entry pages on this site.
-- The Mission page is Rob's first-person note. Every biographical fact on it, and on About and Work, is confirmed by Rob before publishing.
+- The Mission page is Rob's first-person note. Rob confirms its biographical facts before publishing.
 - "Book a call" is a link (email until Rob supplies a booking link). No form on this site; a form would need a third-party service and a CSP change.
-- The practice is whole-systems consulting (brief, 2026-10-19): every department's systems built with the accounting wired in. "Whole systems" is the term; never "cross-functional", "comprehensive", "inclusive", or any "only", "first" or "best" claim. The offers are Business Diagnostic, Stabilize, Business Launch and Scale; the former department services are the areas every engagement covers.
+- The practice is whole-systems consulting (brief, 2026-10-19): every department's systems built with the accounting wired in. "Whole systems" is the term. The offers are Business Diagnostic, Stabilize, Business Launch and Scale; the former department services are the areas every engagement covers.
 - Software on the consulting pages: Muse Kitchen (Ember OS) and CompTable (getcomptable.com) only, included while a retainer is active. Cotyledon never appears on the consulting pages; the "Powered by Ember OS" badge applies to Muse Kitchen only. CompTable copy states facts and math and never advises: no "recommend", "should", "best", "optimal", "consider switching" or "we suggest".
 - Voice copy is Rob's and stays a bracketed slot until he writes it: intro lines, the symptoms, the whole-systems explanation, his description, outcomes, the closing line. Plain scope descriptions are fine.
 - Cotyledon's app rules (no icons, no persuasive copy, replace-not-log) do not govern this site. Log every change in `Docs/ROADMAP.md` → Update Log.
@@ -29,12 +29,11 @@ Front-end UI surface only: copy, design tokens, static pages and components. No 
 ## Rules
 1. **Brand assets come from the kits only:** the Ember OS web library, the Muse Kitchen + Ember logo files, the Cotyledon logo files. Never redraw or alter a logo.
 2. **Confidentiality (from Muse's rules):** never name Muse's source company, incubator, standards partner or the ERRA mark.
-3. **Every claim must be true today.** Product claims come from `Cotyledon/docs/outline.md` and the Muse docs. Consulting claims, history and prices come from Rob. No invented customers, testimonials, metrics, certifications or partner names.
-4. **App URLs are constants** in one config file, so an app link moves in one edit.
-5. **Talk first, build second.** When Rob raises a question, discuss and agree before building.
-6. **Stack:** Next.js App Router + React + TypeScript + Tailwind 4, matching the other WTF Publishing apps.
-7. **Accessibility:** WCAG AA contrast, 360 px minimum width, keyboard navigable, alt text on every logo and screen.
-8. **Git:** never commit or push without Rob's explicit per-action approval. The remote `wolvestofeed/emberos` is **public**; nothing personal (certificates, receipts, anything with an address or phone) is ever committed. `.gitignore` keeps them out.
+3. **App URLs are constants** in one config file, so an app link moves in one edit.
+4. **Talk first, build second.** When Rob raises a question, discuss and agree before building.
+5. **Stack:** Next.js App Router + React + TypeScript + Tailwind 4, matching the other WTF Publishing apps.
+6. **Accessibility:** WCAG AA contrast, 360 px minimum width, keyboard navigable, alt text on every logo and screen.
+7. **Git:** never commit or push without Rob's explicit per-action approval. The remote `wolvestofeed/emberos` is **public**; nothing personal (certificates, receipts, anything with an address or phone) is ever committed. `.gitignore` keeps them out.
 
 ## Brand reference
 - Ember OS ground: forest-charcoal #1B2621 / #0E3326; cream #F4EEE3; flame amber #FFA928, #F2601E. Wordmark: Montserrat Bold + Light.

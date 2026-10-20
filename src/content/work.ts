@@ -1,7 +1,6 @@
 /**
  * Work page copy. Source of truth: content/work.md. Edit the deck, then this file.
- * Case studies come from Rob's confirmed history only: no invented clients, testimonials or
- * metrics (CLAUDE.md rule 3). Bracketed text is a slot Rob fills.
+ * Case studies from Rob's history. Bracketed text is a slot Rob fills.
  *
  * Images: web-sized WebP in public/images/consulting/work/, originals in library/photos/work/.
  * Logos and brand examples supplied by Rob, 2026-10-19.

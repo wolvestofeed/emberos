@@ -2,8 +2,7 @@
  * About page copy. Source of truth: content/about.md. Edit the deck, then this file.
  *
  * The story is Rob's Mission note, the same text as the Tool Kit's /mission page, imported from
- * `src/content/mission.ts` so the two never drift. Every biographical fact in it is confirmed by
- * Rob before publishing (CLAUDE.md rule 3). Operating history has its own page, /work.
+ * `src/content/mission.ts` so the two never drift. Operating history has its own page, /work.
  */
 import { BOOKING_URL, BOOK_LABEL } from '@/config/site';
 import { header as mission, note, signature } from '@/content/mission';

@@ -11,7 +11,7 @@ export interface HistoryContent {
   /** Web-sized copy in public/images/consulting/. Without it the slot is a labeled placeholder. */
   photo?: { src: string; alt: string; width: number; height: number };
   photoPlaceholder: string;
-  /** Rob-confirmed facts only (CLAUDE.md rule 3). */
+  /** Rob's operating history. */
   rows: HistoryRow[];
 }
 

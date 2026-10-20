@@ -4,7 +4,7 @@
  * entry offer, Stabilize is the core retainer for operators in their first years, Build and Scale are the
  * secondary paths. Setup, costing and accounting, operations and SOPs, and production are the areas each
  * offer covers, not separate products. The offer names are reused on proposals and invoices.
- * Prices are placeholders until Rob sets them or decides to show none; never invent one.
+ * Prices are placeholders until Rob sets them or decides to show none.
  */
 import type { Service } from '@/components/consulting/Services';
 import type { CoverageContent } from '@/components/consulting/Coverage';

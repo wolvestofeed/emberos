@@ -4,7 +4,7 @@ A sub-roadmap of `Docs/ROADMAP.md` (Phase 6). foodismymuse.com becomes the marke
 
 - **Style spec:** `design/default-style-sheet.md` (the build spec; a coding agent builds from it and the mock-up alone).
 - **Reference mock-up:** `design/mockups/consulting-home.html`.
-- **Rules:** `Docs/CLAUDE.md`. Builds on Rob's yes (rule 5); commits and pushes are per-action (rule 8).
+- **Rules:** `Docs/CLAUDE.md`. Builds on Rob's yes (rule 4); commits and pushes are per-action (rule 7).
 
 ## Decided (2026-10-19)
 - Persona, colors, fonts and type hierarchy: the paper-and-ledger direction, approved by Rob.
@@ -42,7 +42,7 @@ A sub-roadmap of `Docs/ROADMAP.md` (Phase 6). foodismymuse.com becomes the marke
 - [x] Copy deck `content/consulting-home.md` and typed data `src/content/consulting-home.ts`, the same pattern as the other pages. Slots Rob has not filled stay as bracketed placeholders.
 - [x] `/services`: one section per service, sharing the service names.
 - [x] `/work`: case studies from Rob's confirmed history only.
-- [x] `/about`: Rob's background, every fact confirmed by Rob.
+- [x] `/about`: Rob's background.
 
 ### C4 — Imagery
 - [ ] Rob's photos (headshot, at work in a kitchen): web-sized in `public/images/consulting/`, originals in `library/photos/`.

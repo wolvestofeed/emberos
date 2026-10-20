@@ -8,25 +8,34 @@ export interface TracedRow {
   hours?: number;
 }
 
+export interface SustainabilityRow {
+  metric: string;
+  /** The figure with its unit, as text: "38.4 kg CO₂e". */
+  value: string;
+}
+
 export interface TracedOrderExample {
   title: string;
-  /** "Illustrative example" until Rob supplies real figures (CLAUDE.md rule 3). */
+  /** "Illustrative example" until Rob supplies real figures. */
   label: string;
-  /** The order or batch being traced. */
+  /** The order or batch being traced, set bold under the title. */
   item: string;
   rows: TracedRow[];
   price: number;
+  /** The order's sustainability report: one metric per row, under the money and hours. */
+  sustainability?: { title: string; rows: SustainabilityRow[] };
 }
 
-const usd = (n: number) => `$${n.toFixed(2)}`;
+const usd = (n: number) => `$${n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
 const hrs = (n: number) => `${n.toFixed(2)} h`;
 
 /**
  * One order traced through every department (brief §6): a real <table> in the ledger look, a row per
- * department with its cost and hours, and true cost, true margin and total hours computed at the bottom.
+ * department with its cost and hours, true cost, true margin and total hours computed at the bottom,
+ * and under them the order's sustainability report.
  */
 export function TracedOrderCard({ example }: { example: TracedOrderExample }) {
-  const { title, label, item, rows, price } = example;
+  const { title, label, item, rows, price, sustainability } = example;
   const trueCost = rows.reduce((sum, r) => sum + r.cost, 0);
   const totalHours = rows.reduce((sum, r) => sum + (r.hours ?? 0), 0);
   const margin = price - trueCost;
@@ -35,22 +44,22 @@ export function TracedOrderCard({ example }: { example: TracedOrderExample }) {
   return (
     <div className="rounded-tile border border-cream-line bg-white p-7 pb-6 shadow-card-light">
       <table className="figures w-full text-[15px] text-ink">
-        <caption className="text-left">
-          <span className="flex flex-wrap items-baseline justify-between gap-3 border-b-2 border-ink pb-3">
+        <caption className="border-b-2 border-ink pb-3 text-left">
+          <span className="flex flex-wrap items-baseline justify-between gap-3">
             <span className="font-serif text-[22px] font-semibold leading-tight">{title}</span>
             <span className="font-label text-[10px] uppercase tracking-[0.24em] text-ink-soft">{label}</span>
           </span>
-          <span className="block pb-1.5 pt-2.5 text-sm text-ink-soft">{item}</span>
+          <span className="block pt-1.5 text-[15px] font-bold text-ink">{item}</span>
         </caption>
         <thead>
           <tr className="font-label text-[10px] uppercase tracking-[0.24em] text-ink-soft">
-            <th scope="col" className="pb-1.5 text-left font-medium">
+            <th scope="col" className="pb-1.5 pt-2.5 text-left font-medium">
               Department
             </th>
-            <th scope="col" className="pb-1.5 text-right font-medium">
+            <th scope="col" className="pb-1.5 pt-2.5 text-right font-medium">
               Cost
             </th>
-            <th scope="col" className="pb-1.5 text-right font-medium">
+            <th scope="col" className="pb-1.5 pt-2.5 text-right font-medium">
               Hours
             </th>
           </tr>
@@ -93,6 +102,22 @@ export function TracedOrderCard({ example }: { example: TracedOrderExample }) {
           </tr>
         </tfoot>
       </table>
+
+      {sustainability ? (
+        <table className="figures mt-7 w-full text-[15px] text-ink">
+          <caption className="border-b-2 border-ink pb-3 text-left font-serif text-[22px] font-semibold leading-tight">{sustainability.title}</caption>
+          <tbody>
+            {sustainability.rows.map((r) => (
+              <tr key={r.metric} className="border-b border-cream-deep last:border-b-0">
+                <th scope="row" className="py-[9px] pr-3 text-left font-normal">
+                  {r.metric}
+                </th>
+                <td className="py-[9px] text-right">{r.value}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      ) : null}
     </div>
   );
 }

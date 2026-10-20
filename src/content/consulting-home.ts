@@ -15,33 +15,46 @@ import { BOOKING_URL, BOOK_LABEL } from '@/config/site';
 import { services, servicesPage } from '@/content/services';
 
 export const hero: HeroContent = {
-  eyebrow: 'Costing · Accounting · Operations · Production',
-  headline: 'Your food business is open. Now make it pay.',
+  eyebrow: 'Independent Food businesses & Restaurants in Austin',
+  headline: "You've mastered your food craft.\nNow it's time to run your business.",
   lede: {
-    name: 'Rob Bogatin',
-    intro: "[intro line: who he works with and what changes after he's been in the kitchen and in the books.]",
+    name: 'Food Is My Muse Consulting',
+    intro: "is Austin's first food business partner that offers owners an integrated, whole systems foundation to launch, sustain and grow their business.",
   },
   primary: { label: BOOK_LABEL, href: BOOKING_URL },
-  secondary: { label: 'See how it works', href: '/services' },
+  secondary: { label: 'See how I work', href: '/services' },
   // Illustrative figures; the page computes the totals from the rows:
-  // true cost 214 + 132 + 71 + 16.50 + 58 = 491.50; price 720; margin 228.50 = 31.7%; hours 0.5 + 6 + 1.5 + 0.75 = 8.75.
+  // true cost 802.50 + 396 + 230 + 22 + 175 = 1,625.50; price 2,700; margin 1,074.50 = 39.8%; hours 1 + 18 + 4 + 1 = 24.
   traced: {
     title: 'One order, every department',
     label: 'Illustrative example',
-    item: 'Catering order: 40 boxed lunches at $18',
+    item: 'Catering order: 150 boxed lunches at $18',
     rows: [
-      { department: 'Purchasing', item: 'Ingredients, ordered and received', cost: 214.0, hours: 0.5 },
-      { department: 'Production', item: 'Prep and cook, 6 h at $22', cost: 132.0, hours: 6 },
-      { department: 'Operations', item: 'Packaging and delivery', cost: 71.0, hours: 1.5 },
-      { department: 'Sales and admin', item: 'Booking and invoicing', cost: 16.5, hours: 0.75 },
-      { department: 'Accounting', item: 'Share of rent and overhead', cost: 58.0 },
+      { department: 'Purchasing', item: 'Ingredients, ordered and received', cost: 802.5, hours: 1 },
+      { department: 'Production', item: 'Prep and cook, 18 h at $22', cost: 396.0, hours: 18 },
+      { department: 'Operations', item: 'Packaging and delivery', cost: 230.0, hours: 4 },
+      { department: 'Sales and admin', item: 'Booking and invoicing', cost: 22.0, hours: 1 },
+      { department: 'Accounting', item: 'Share of rent and overhead', cost: 175.0 },
     ],
-    price: 720.0,
+    price: 2700.0,
+    sustainability: {
+      title: 'Order sustainability report',
+      rows: [
+        { metric: 'Carbon emissions', value: '144 kg CO₂e' },
+        { metric: 'Methane', value: '3.4 kg CH₄' },
+        { metric: 'Water', value: '4,725 L' },
+        { metric: 'Energy consumption', value: '158 kWh' },
+        { metric: 'Waste, compost', value: '23.3 kg' },
+        { metric: 'Waste, landfill', value: '6.8 kg' },
+      ],
+    },
   },
+  // Working line; Rob may rewrite it.
+  caption: 'An integrated whole-systems foundation: accounting and sustainability built into every process, so one order shows its true cost, its hours and its footprint.',
 };
 
 export const audiences = {
-  label: 'For owners of',
+  label: 'Food business operators i work with',
   items: ['Chefs and restaurateurs', 'CPG founders', 'Caterers', 'Ghost kitchens', 'Bakers'],
 };
 

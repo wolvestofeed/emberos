@@ -127,7 +127,7 @@ Sizes are the desktop values from the mock-up. On phones, use the `clamp()` colu
 
 ## 5. Layout, shape and depth
 
-- **Container:** max-width 1200 px (75rem), side padding 24 px. Phone gutter is 16 px, per CLAUDE.md rule 7 (360 px minimum width). The existing `container-site` utility is 72rem; add `container-wide` at 75rem rather than changing it.
+- **Container:** max-width 1200 px (75rem), side padding 24 px. Phone gutter is 16 px, per CLAUDE.md rule 6 (360 px minimum width). The existing `container-site` utility is 72rem; add `container-wide` at 75rem rather than changing it.
 - **Section rhythm:** 88 px vertical padding on major sections; 72 px on the closing band; 28 px on the "Built for" strip; 32 px in the footer.
 - **Hero:** two columns, text `flex: 1 1 520px` and costing card `flex: 1 1 400px`, gap 56 px. They wrap to one column on narrow screens. Top padding 88 px, bottom 72 px.
 - **Grids:** service cards use `repeat(auto-fit, minmax(250px, 1fr))`, gap 20 px. That gives 4 across at 1200 px, 2 on a tablet and 1 on a phone.
@@ -157,10 +157,11 @@ The build order follows the page top to bottom. Names are suggestions for `src/c
 - **Right column:** the costing card (6.3).
 
 ### 6.3a TracedOrderCard (the hero card, per Rob 2026-10-19)
-One order or production batch traced through every department. Same surface, header, rules and result row as the CostingCard below, with three columns: the line (a copper-ink department tag over the item, 10 px tracked), its cost, its hours (ink-soft, a dash where none). A tracked column-header row sits under the item line. The footer: **True cost** with total hours in bold, **Price** in ink-soft, then **True margin** as the percentage in Newsreader 40 px tomato with the dollar figure beside it. Totals are computed from the rows. Labeled "Illustrative example" until Rob supplies real figures.
+The card sits in a `<figure>`; its `<figcaption>` is one line under the card, 14 px ink-soft, naming the whole-systems foundation the card shows.
+One order or production batch traced through every department. Same surface, header, rules and result row as the CostingCard below, with three columns: the line (a copper-ink department tag over the item, 10 px tracked), its cost, its hours (ink-soft, a dash where none). The order line sits in bold under the title, above the 2 px rule; a tracked column-header row follows the rule. The footer: **True cost** with total hours in bold, **Price** in ink-soft, then **True margin** as the percentage in Newsreader 40 px tomato with the dollar figure beside it. Totals are computed from the rows. Under the margin row, a second table, **Order sustainability report** (same title style over a 2 px ink rule): one metric per row with its figure and unit right-aligned, 1 px `cream-deep` rules between: carbon emissions, methane, water, energy consumption, waste to compost, waste to landfill. Labeled "Illustrative example" until Rob supplies real figures.
 
 ### 6.3 CostingCard ("ledger card")
-The original hero card, replaced in the hero by 6.3a and kept for service pages. It shows a worked plate costing and must be labeled **"Illustrative example"** until Rob supplies real figures (CLAUDE.md rule 3: no invented metrics).
+The original hero card, replaced in the hero by 6.3a and kept for service pages. It shows a worked plate costing and must be labeled **"Illustrative example"** until Rob supplies real figures.
 - **Surface:** white, 1 px `cream-line` border, radius 14 px, padding 28 px, light shadow.
 - **Header row:** title "Plate costing" (Newsreader 600, 22 px) and the label "Illustrative example" (Poppins 10 px tracked, ink-soft), over a 2 px ink rule.
 - **Item line:** 14 px ink-soft.
@@ -191,7 +192,7 @@ The original hero card, replaced in the hero by 6.3a and kept for service pages.
 - Ground background, cream text.
 - **Left column** (`flex: 1 1 340px`): the eyebrow "Operating history" (copper-light), then an H2, then a 4:3 photo slot. The slot uses a `next/image` from `public/images/consulting/` once Rob supplies the photo. Until then it is a dashed `ground-line` placeholder on `ground-raised`, labeled in mist.
 - **Right column** (`flex: 1 1 520px`): rows of a label (Poppins 11 px, tracked, copper-light, 180 px wide) and a fact (Newsreader 22 px), padding 22 px 0, with 1 px `ground-line` between rows. The rows wrap on a phone (label above fact).
-- **Facts:** only Rob-confirmed facts. Currently: the Philadelphia pizzeria (owner); the 150-seat Boulder bar and grill (owner); SW Colorado's kettle co-packer (prepared foods, SOPs, COGS); Good Food Collective (farm-to-shelf production and financial model for heritage orchards); Director of Operations and Finance, San Juan Mountains Association.
+- **Facts:** Rob's operating history. Currently: the Philadelphia pizzeria (owner); the 150-seat Boulder bar and grill (owner); SW Colorado's kettle co-packer (prepared foods, SOPs, COGS); Good Food Collective (farm-to-shelf production and financial model for heritage orchards); Director of Operations and Finance, San Juan Mountains Association.
 - **Markup:** a `<dl>`.
 
 ### 6.7 ToolKitTeaser (brief §4 and §6)
@@ -271,7 +272,7 @@ Today `src/app/globals.css` gives `body` the dark ground and cream text. The con
 
 ---
 
-## 9. Accessibility checklist (CLAUDE.md rule 7)
+## 9. Accessibility checklist (CLAUDE.md rule 6)
 
 - [ ] Every text pair is in the contrast table in section 3 (all pass AA).
 - [ ] 360 px width: the header collapses, the hero stacks, cards go to one column, history rows stack, and nothing scrolls sideways.

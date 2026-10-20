@@ -1,6 +1,6 @@
 # Work — copy deck
 
-Route: `/work` · Case studies from Rob's confirmed history only. No invented clients, testimonials or metrics (CLAUDE.md rule 3). Text in [brackets] is a slot Rob fills. Per Rob (2026-10-19): the San Juan Mountains Association role stays off this page, it is not food. Rendered by `src/content/work.ts`. Images (Rob, 2026-10-19): served from `public/images/consulting/work/` as WebP, originals in `library/photos/work/`.
+Route: `/work` · Case studies from Rob's history. Text in [brackets] is a slot Rob fills. Per Rob (2026-10-19): the San Juan Mountains Association role stays off this page, it is not food. Rendered by `src/content/work.ts`. Images (Rob, 2026-10-19): served from `public/images/consulting/work/` as WebP, originals in `library/photos/work/`.
 
 ---
 

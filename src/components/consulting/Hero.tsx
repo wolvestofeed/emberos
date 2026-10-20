@@ -10,16 +10,18 @@ export interface HeroContent {
   secondary: { label: string; href: string };
   /** One order traced through every department (brief section 6). */
   traced: TracedOrderExample;
+  /** One line under the card naming what it shows: the whole-systems foundation. */
+  caption: string;
 }
 
 /** Hero (style sheet §6.2): text left, the traced-order card right; one column under about 960 px. */
 export function Hero({ content }: { content: HeroContent }) {
-  const { eyebrow, headline, lede, primary, secondary, traced } = content;
+  const { eyebrow, headline, lede, primary, secondary, traced, caption } = content;
   return (
     <section aria-labelledby="hero-heading" className="container-wide flex flex-wrap items-center gap-10 pb-12 pt-14 sm:gap-14 sm:pb-[72px] sm:pt-[88px]">
       <div className="flex min-w-0 flex-[1_1_520px] flex-col gap-6">
         <p className="eyebrow text-copper-ink">{eyebrow}</p>
-        <h1 id="hero-heading" className="font-serif text-[clamp(2.5rem,6vw,3.75rem)] font-medium leading-[1.05] tracking-[-0.02em] text-ink">
+        <h1 id="hero-heading" className="whitespace-pre-line font-serif text-[clamp(2.5rem,6vw,3.75rem)] font-medium leading-[1.05] tracking-[-0.02em] text-ink">
           {headline}
         </h1>
         <p className="max-w-[34em] text-lg leading-relaxed text-ink-soft">
@@ -30,9 +32,10 @@ export function Hero({ content }: { content: HeroContent }) {
           <SecondaryButton href={secondary.href}>{secondary.label}</SecondaryButton>
         </div>
       </div>
-      <div className="min-w-0 flex-[1_1_400px]">
+      <figure className="min-w-0 flex-[1_1_400px]">
         <TracedOrderCard example={traced} />
-      </div>
+        <figcaption className="mt-4 px-1 text-sm leading-relaxed text-ink-soft">{caption}</figcaption>
+      </figure>
     </section>
   );
 }
