@@ -14,7 +14,7 @@ Nav: **Services** · **Work** · **Tool Kit** · **About** · [Book a call] → 
 
 ## 2. Hero
 
-**Eyebrow (Rob, 2026-10-20):** INDEPENDENT FOOD BUSINESSES & RESTAURANTS IN AUSTIN
+**Eyebrow (Rob, 2026-10-20):** INDY FOOD BUSINESSES & RESTAURANTS IN AUSTIN
 
 **Headline (Rob, 2026-10-20):**
 You've mastered your food craft.
@@ -26,7 +26,7 @@ You've mastered your food craft.
 
 **Traced-order card (per Rob, 2026-10-19, replacing the plate-costing card; illustrative, labeled as such):**
 
-| One order, every department | Cost | Hours |
+| Every order or batch moves every calculation | Cost | Hours |
 |---|---|---|
 | **Catering order: 150 boxed lunches at $18** (bold, under the title, above the rule) | | |
 | Purchasing: Ingredients, ordered and received | $802.50 | 1.00 h |
@@ -40,7 +40,7 @@ You've mastered your food craft.
 
 Under the money and hours (Rob, 2026-10-20), **Order sustainability report**, one metric per row:
 
-| Order sustainability report | |
+| Order Sustainability Report | |
 |---|---|
 | Carbon emissions | 144 kg CO₂e |
 | Methane | 3.4 kg CH₄ |
@@ -63,29 +63,29 @@ Chefs and restaurateurs · CPG founders · Caterers · Ghost kitchens · Bakers
 
 ## 3b. Sound familiar? (paper, ledger rules)
 
-**Eyebrow (Rob, 2026-10-20):** I'VE BEEN THROUGH EVERY PAIN POINT ALREADY
+**Eyebrow (Rob, 2026-10-20):** I'VE BEEN THROUGH EVERY PAIN POINT ALREADY, SO
 
-**Heading (Rob, 2026-10-20):** Let's build your roadmap to solve problems before they impact your business
+**Heading (Rob, 2026-10-20):** Let's build your roadmap to solve problems before they impact your business.
 
 Six symptoms (Rob, 2026-10-20):
 1. Expensive & slow startup phases
-2. Outgrowing the $150k cottage food cap
+2. Outgrowing the $150k cottage cap
 3. Rising food costs & fuel charges
 4. Staff shortages & increasing wages
 5. Customers are always price sensitive
-6. Being busy does not equal profitability
+6. Busy does not equal profitability
 
 ---
 
 ## 3c. Whole systems (dark band)
 
-**Eyebrow (Rob, 2026-10-20):** INTEGRATED, WHOLE SYSTEMS
+**Eyebrow (Rob, 2026-10-20):** INTEGRATED BUSINESS SYSTEMS
 
-**Heading (Rob, 2026-10-20):** Every input, wired to the books.
+**Heading (Rob, 2026-10-20):** Every input is wired to the books.
 
-**Body (Rob, 2026-10-20):** Food Is My Muse Consulting builds and offers food business clients CPA-grade accounting ledgers & reports with sustainability metrics baked in.
+**Body (Rob, 2026-10-20):** Food Is My Muse Consulting builds its own tools and offers food business clients CPA-grade accounting ledgers & reports with unit economics, HR and sustainability metrics baked in.
 
-Right, a ledger card, **One master ledger**: Food cost and production · Labor cost and staffing · Cash flow and sales forecasts · Sustainability
+Right, a ledger card, **One master ledger captures**: Food cost and production · Labor cost and staffing · Cash flow and sales forecasts · Sustainability
 
 "Whole systems" is the term.
 
@@ -126,7 +126,7 @@ Four steps, scope copy:
 **Description:** [Description of Rob: background, how he works, and what a founder gets from working with him.]
 
 Four offer cards, in order (the deck for each is `content/services.md`; structure in `Docs/roadmaps/consulting-roadmap.md`, Update 1):
-01 Business Diagnostic · 02 Stabilize · 03 Business Launch · 04 Scale
+01 Basic Business Diagnostic · 02 (copy of 01, Rob to rewrite) · 03 Stabilize · 04 Business Launch · 05 Scale
 Each card: one line, and a bracketed price slot until Rob sets prices or decides to show none.
 
 ---

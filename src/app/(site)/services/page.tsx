@@ -16,7 +16,7 @@ export default function ServicesPage() {
   const { header, sections } = servicesPage;
   return (
     <>
-      <PageIntro eyebrow={header.eyebrow} heading={header.headline} lede={header.lede} />
+      <PageIntro eyebrow={header.eyebrow} heading={header.headline} headingAccent={header.headlineAccent} lede={header.lede} />
       <div className="container-wide pb-16 sm:pb-[88px]">
         <ul className="divide-y divide-cream-line border-t border-cream-line">
           {sections.map(({ service, included, outcome }) => (

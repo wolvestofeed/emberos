@@ -12,7 +12,7 @@ import type { DiagnosticContent } from '@/components/consulting/DiagnosticBlock'
 import type { HowItWorksContent } from '@/components/consulting/HowItWorks';
 import type { WholeSystemsContent } from '@/components/consulting/WholeSystems';
 import { BOOKING_URL, BOOK_LABEL } from '@/config/site';
-import { services, servicesPage } from '@/content/services';
+import { offer, servicesPage } from '@/content/services';
 
 export const hero: HeroContent = {
   eyebrow: 'Indy Food businesses & Restaurants in Austin',
@@ -84,11 +84,11 @@ export const wholeSystems: WholeSystemsContent = {
 
 export const diagnostic: DiagnosticContent = {
   eyebrow: 'Start here',
-  heading: services[0].name,
-  body: services[0].line,
-  price: services[0].price,
+  heading: offer('01').name,
+  body: offer('01').line,
+  price: offer('01').price,
   primary: { label: BOOK_LABEL, href: BOOKING_URL },
-  detail: { label: 'See what is included', href: `/services#${services[0].slug}` },
+  detail: { label: 'See what is included', href: `/services#${offer('01').slug}` },
   card: { title: 'What you get', items: servicesPage.sections[0].included },
 };
 

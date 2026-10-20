@@ -8,27 +8,32 @@ Offer structure (Rob, 2026-10-19; `Docs/roadmaps/consulting-roadmap.md`, Update 
 
 **Eyebrow:** SERVICES
 
-**Headline:** Start with a diagnostic. Stay for the systems.
+**Headline (Rob, 2026-10-20):** Start with a diagnostic.
+**Stay for the systems and partner value.** (second line in tomato, #B33A24)
 
 **Lede:** [One or two lines on how an engagement starts and what it looks like from the inside.]
 
 ---
 
-## 01 Business Diagnostic (`#diagnostic`)
+## 01 Basic Business Diagnostic (`#diagnostic`)
 
-A fixed-fee look inside your kitchen and your books: what everything really costs, where the money and the hours go, and the fixes that matter most.
+A fixed-fee look inside your kitchen and your books: assessing costs, where the money and the hours go, and the fixes that matter most.
 
-[Fixed fee $___]
+Fixed fee $1,500
 
 What is included:
 - Review of your books, sales mix and last months of costs
-- Recipe and plate costing on your top sellers
-- Labor, scheduling and prep walk-through
-- A written report with your real costs and a ranked list of fixes
+- Batch and plate prime costing
+- Labor, scheduling and prep assessment
+- A written report with your real costs and a ranked list of improvements
 
-What you have at the end: A clear picture of where the business stands and what to fix first, whether or not you keep working with Rob.
+What you have at the end: A clear picture of where your business stands and what to fix. Then, what's the best consulting partnership strategy that meets your needs and budget.
 
-## 02 Stabilize (`#stabilize`)
+## 02 (`#diagnostic-2`), a copy of 01 for Rob to rewrite (2026-10-20)
+
+Same name, line, fee, inclusions and outcome as 01 until Rob replaces them.
+
+## 03 Stabilize (`#stabilize`)
 
 A monthly retainer for your first years: costing and pricing, the monthly close, labor and scheduling, HR, quality control and SOPs.
 
@@ -43,7 +48,7 @@ What is included:
 
 What you have at the end: [What the owner has after the first three months.]
 
-## 03 Business Launch (`#launch`)
+## 04 Business Launch (`#launch`)
 
 Before you open: the systems, chart of accounts, costing model, opening budget, staffing plan and SOPs, built to run from day one.
 
@@ -58,7 +63,7 @@ What is included:
 
 What you have at the end: [What the founder has on opening day.]
 
-## 04 Scale (`#scale`)
+## 05 Scale (`#scale`)
 
 Production planning, wholesale and CPG pricing, co-packing, time studies, and the move to a second unit or a commissary.
 
