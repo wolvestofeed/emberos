@@ -1,5 +1,5 @@
 /**
- * About page copy. Source of truth: content/about.md. Edit the deck, then this file.
+ * About page copy.
  *
  * The story is Rob's Mission note, the same text as the Tool Kit's /mission page, imported from
  * `src/content/mission.ts` so the two never drift. Operating history has its own page, /work.

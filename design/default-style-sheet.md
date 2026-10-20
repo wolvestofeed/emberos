@@ -29,7 +29,7 @@ The feel is warm, exact and practical, like a back-of-house clipboard and a clea
 | Element | Rule |
 |---|---|
 | Wordmark | **Food Is My Muse Consulting**, set in type (Newsreader 600). It is the only wordmark in the main header and the largest element in it. There is no drawn logo and no icon mark yet. |
-| Rob Bogatin | The main asset, but not the wordmark. He is introduced in the hero description (his name in bold at the start of the line) and given his own section: his name as a section heading plus a description, placed above the service cards. |
+| Rob Bogatin | The main asset, but not the wordmark. He is named in the hero lede; his history is the Work page and the operating history band on Home. |
 | Ember OS and the apps | Live on the **Tool Kit** page. The current Ember OS home content becomes that page. On consulting pages, Ember OS appears only through the kit's own "Powered by Ember OS" badge file (`public/brand/…` or `library/logos/endorsement/`). Never redraw or retypeset it (CLAUDE.md rule 1). |
 | Muse Kitchen separation | "Muse" appears in both names. Never use Muse Kitchen's look on consulting pages: no Cormorant in wide capitals, no emerald-and-soil tile. |
 
@@ -156,37 +156,15 @@ The build order follows the page top to bottom. Names are suggestions for `src/c
 - **Buttons:** primary "Book a 30-minute call" and secondary "See the services" (outline), gap 12 px, wrapping.
 - **Right column:** the costing card (6.3).
 
-### 6.3a TracedOrderCard (the hero card, per Rob 2026-10-19)
+### 6.3 TracedOrderCard (the hero card)
 The card sits in a `<figure>`; its `<figcaption>` is one line under the card, 14 px ink-soft, naming the whole-systems foundation the card shows.
-One order or production batch traced through every department. Same surface, header, rules and result row as the CostingCard below, with three columns: the line (a copper-ink department tag over the item, 10 px tracked), its cost, its hours (ink-soft, a dash where none). The order line sits in bold under the title, above the 2 px rule. Under the rule, two ledgers side by side (`flex: 1 1 300px` and `1 1 200px`, gap 32 px; they stack under about 640 px): the costing table with a tracked column-header row on the left, the sustainability report on the right under its own 17 px Newsreader title. The footer: **True cost** with total hours in bold, **Price** in ink-soft, then **True margin** as the percentage in Newsreader 40 px tomato with the dollar figure beside it. Totals are computed from the rows. The **Order sustainability report**: one metric per row with its figure and unit right-aligned, 1 px `cream-deep` rules between and a 1 px ink rule under the last: carbon emissions, methane, water, energy consumption, waste to compost, waste to landfill. Labeled "Illustrative example" until Rob supplies real figures.
+One order or production batch traced through every department. A white card with the ledger look, three columns: the line (a copper-ink department tag over the item, 10 px tracked), its cost, its hours (ink-soft, a dash where none). The order line sits in bold under the title, above the 2 px rule. Under the rule, two ledgers side by side (`flex: 1 1 300px` and `1 1 200px`, gap 32 px; they stack under about 640 px): the costing table with a tracked column-header row on the left, the sustainability report on the right under its own 17 px Newsreader title. The footer: **True cost** with total hours in bold, **Price** in ink-soft, then **True margin** as the percentage in Newsreader 40 px tomato with the dollar figure beside it. Totals are computed from the rows. The **Order sustainability report**: one metric per row with its figure and unit right-aligned, 1 px `cream-deep` rules between and a 1 px ink rule under the last: carbon emissions, methane, water, energy consumption, waste to compost, waste to landfill. Labeled "Illustrative example" until Rob supplies real figures.
 
-### 6.3 CostingCard ("ledger card")
-The original hero card, replaced in the hero by 6.3a and kept for service pages. It shows a worked plate costing and must be labeled **"Illustrative example"** until Rob supplies real figures.
-- **Surface:** white, 1 px `cream-line` border, radius 14 px, padding 28 px, light shadow.
-- **Header row:** title "Plate costing" (Newsreader 600, 22 px) and the label "Illustrative example" (Poppins 10 px tracked, ink-soft), over a 2 px ink rule.
-- **Item line:** 14 px ink-soft.
-- **Rows:** label left, figure right, 9 px vertical padding, 1 px `cream-deep` between rows, 1 px ink under the last component row.
-- **Totals:** "Plate cost" in bold, then "Menu price" in ink-soft.
-- **Result row:** "Food cost" (600) with the percentage in Newsreader 40 px tomato, over a top rule.
-- **Mock-up data** (illustrative, arithmetic checked): short rib 10 oz $4.85, polenta $0.62, greens and dressing $0.48, jus and garnish $0.39. Plate cost $6.34, menu price $28.00, food cost 22.6%.
-- **Data:** build it from a typed array, so the component can be reused on service pages with other examples.
-- **Markup:** use a `<table>` (with `<caption>`, `<th scope="row">` and right-aligned numeric cells) rather than divs, so screen readers read it as a table. The look stays the same.
-
-### 6.4 AudienceStrip ("Built for")
+### 6.4 AudienceStrip ("Food business operators I work with")
 - Cream band with 1 px `cream-line` rules above and below.
 - The label "Built for" (eyebrow style, ink-soft), then the audience names in Newsreader 22 px, wrapping with a gap of 12 px 32 px.
 - **Audiences:** Chefs and restaurateurs, CPG founders, Caterers, Ghost kitchens, Bakers.
 - **Markup:** a `<ul>` with list styling removed.
-
-### 6.5 Rob introduction and offer cards (removed from Home on 2026-10-20, per Rob; the cards' look still applies to the offer tiles elsewhere)
-- **Section head:** eyebrow "Services", then the H2 **Rob Bogatin**, then a description paragraph about Rob (17 px ink-soft, max-width 40em). Rob will rewrite this section's copy, and may relabel or drop the "Services" eyebrow.
-- **ServiceCard × 4:** white, 1 px `cream-line`, radius 14 px, padding 28 px, column layout with a 14 px gap. Each card has:
-  - a numeral `01`–`04` (Newsreader 15 px, copper-ink, tabular);
-  - an H3 title;
-  - a 15 px ink-soft description;
-  - a footer line pinned to the bottom (`margin-top: auto`) over a 1 px `cream-deep` rule, holding the price placeholder at 13 px, weight 600.
-- **Offers, in order (roadmap Updates 1 and 2):** 01 Business Diagnostic; 02 Stabilize; 03 Business Launch; 04 Scale. The names are fixed and reused on proposals and invoices. The former department services are the areas every offer covers (6.14). The card's footer line is the offer's own price slot.
-- **Prices:** placeholders until Rob sets them. Never invent one.
 
 ### 6.6 OperatingHistory (dark band)
 - Ground background, cream text.
@@ -218,7 +196,7 @@ The original hero card, replaced in the hero by 6.3a and kept for service pages.
 ### 6.12 DiagnosticBlock (the entry offer)
 - Cream band with 1 px `cream-line` rules above and below.
 - **Left** (`flex: 1 1 480px`): eyebrow "Start here", the offer's name as the H2, its one line in 17 px ink-soft, the price slot (15 px, 600, tabular), then the primary button and a text link to `/services#diagnostic`.
-- **Right** (`flex: 1 1 380px`): a ledger card in the CostingCard's look (white, `cream-line` border, radius 14 px, padding 28 px, light shadow): the title "What you get" over a 2 px ink rule, then an `<ol>` of the offer's included items, numerals in copper-ink, 1 px `cream-deep` rules between.
+- **Right** (`flex: 1 1 380px`): a ledger card (white, `cream-line` border, radius 14 px, padding 28 px, light shadow): the title "What you get" over a 2 px ink rule, then an `<ol>` of the offer's included items, numerals in copper-ink, 1 px `cream-deep` rules between.
 
 ### 6.13 HowItWorks
 - Paper. Eyebrow and H2 as in 6.11.
@@ -285,13 +263,4 @@ Today `src/app/globals.css` gives `body` the dark ground and cream text. The con
 
 ## 10. Copy status
 
-All copy on the mock-up is placeholder or neutral stand-in. Rob writes the real copy, and drafts in his voice are modeled only on his own writing. Bracketed text marks a slot Rob still has to fill:
-
-- the hero intro line after his name;
-- the description of Rob in the Services section;
-- the closing line;
-- prices;
-- his email;
-- the photo.
-
-The audience names, service names and operating-history facts are confirmed.
+Rob writes and edits the copy directly in `src/content/*.ts`. A bracketed line is a slot he has not filled yet and renders as-is. As of 2026-10-20 the only open slot is the photo in the operating history band (`[Photo: Rob at work in a kitchen]`).

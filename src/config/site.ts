@@ -2,11 +2,9 @@
  * The consulting practice: name, owner, where "Book a call" goes, and the site navigation.
  *
  * Book a call is a link, never a form (Docs/CLAUDE.md, decisions in force). With a booking URL it
- * goes there; with only an email it is a mailto; with neither it points at the contact block on
- * /about, and the footer shows "[email]" until Rob supplies one.
+ * goes there; with only an email it is a mailto; with neither it points at the contact block on /about.
  */
 export const SITE_NAME = 'Food Is My Muse Consulting';
-export const OWNER = 'Rob Bogatin';
 export const LOCATION = 'Austin, Texas';
 export const SITE_DESCRIPTION =
   'Food business consulting by Rob Bogatin: business setup, costing and accounting, operations and SOPs, production and scale, for chefs and restaurateurs, CPG founders, caterers, ghost kitchens and bakers.';

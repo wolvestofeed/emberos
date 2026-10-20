@@ -1,6 +1,6 @@
 /**
- * Home page copy for the consulting site. Source of truth: content/consulting-home.md.
- * Edit the deck, then this file. Bracketed text is a slot Rob fills (design/default-style-sheet.md §10).
+ * Home page copy for the consulting site. This file is the source of truth; the operating history
+ * rows come from src/content/work.ts and the Diagnostic block from src/content/services.ts.
  */
 import type { HeroContent } from '@/components/consulting/Hero';
 import type { HistoryContent } from '@/components/consulting/OperatingHistory';
@@ -12,6 +12,7 @@ import type { HowItWorksContent } from '@/components/consulting/HowItWorks';
 import type { WholeSystemsContent } from '@/components/consulting/WholeSystems';
 import { BOOKING_URL, BOOK_LABEL } from '@/config/site';
 import { offer, servicesPage } from '@/content/services';
+import { cases } from '@/content/work';
 
 export const hero: HeroContent = {
   eyebrow: 'Indy Food businesses & Restaurants in Austin',
@@ -54,7 +55,7 @@ export const hero: HeroContent = {
 };
 
 export const audiences = {
-  label: 'Food business operators i work with',
+  label: 'Food business operators I work with',
   items: ['Chefs and restaurateurs', 'CPG founders', 'Caterers', 'Ghost kitchens', 'Bakers'],
 };
 
@@ -91,7 +92,6 @@ export const diagnostic: DiagnosticContent = {
   card: { title: 'What you get', items: servicesPage.sections[0].included },
 };
 
-
 export const howItWorks: HowItWorksContent = {
   eyebrow: 'How it works',
   heading: 'A diagnostic, then a retainer with the software, then your own system.',
@@ -103,7 +103,7 @@ export const howItWorks: HowItWorksContent = {
     },
     {
       title: 'A retainer, software included',
-      body: 'Stabilize for an open business, Business Launch before opening, Scale for growth. Three months minimum. Month one sets the business up on Muse Kitchen and CompTable and trains the people who use them; both are included while the initial retainer runs.',
+      body: `${offer('03').name} for an open business, ${offer('04').name} before opening, ${offer('05').name} for growth. Three months minimum. Month one sets the business up on Muse Kitchen and CompTable and trains the people who use them; both are included while the initial retainer runs.`,
     },
     {
       title: 'Independence',
@@ -112,17 +112,16 @@ export const howItWorks: HowItWorksContent = {
   ],
 };
 
-
-/** Rob-confirmed facts only (CLAUDE.md rule 3). */
+/**
+ * Operating history, fed from the Work page's cases so each business is written once (per Rob,
+ * 2026-10-20). The San Juan Mountains Association row is Home-only: Rob keeps it off Work, it is not food.
+ */
 export const history: HistoryContent = {
   eyebrow: 'Operating history',
   heading: 'On the line and in the books.',
   photoPlaceholder: '[Photo: Rob at work in a kitchen]',
   rows: [
-    { label: 'Co-owner', fact: 'Award-winning Philadelphia pizzeria, hoagie and cheesesteak shop' },
-    { label: 'Co-owner', fact: 'A 150-seat full service restaurant and bar in Boulder serving breakfast, lunch and dinner' },
-    { label: 'Co-packer', fact: "SW Colorado's kettle co-packer: six in-house brands, HACCP, SOPs, COGS, spice blends" },
-    { label: 'Social enterprise', fact: 'Good Food Collective: farm-to-shelf production and financial model for heritage apple orchards' },
+    ...cases.map((c) => ({ label: c.label, fact: c.fact })),
     { label: 'Finance', fact: 'Director of Operations and Finance, San Juan Mountains Association' },
   ],
 };
@@ -140,6 +139,6 @@ export const toolKit: ToolKitTeaserContent = {
 };
 
 export const closing: ClosingContent = {
-  heading: "It's time to build the food business you dreaming about.",
+  heading: "It's time to build the food business you've been dreaming about.",
   button: { label: BOOK_LABEL, href: BOOKING_URL },
 };

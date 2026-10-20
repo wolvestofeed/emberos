@@ -9,5 +9,5 @@ pnpm build      # static prerender of every route
 ```
 
 - Build order: `Docs/roadmaps/consulting-roadmap.md`. Style spec: `design/default-style-sheet.md`. Rules and hand-off: `Docs/CLAUDE.md`. Phases and log: `Docs/ROADMAP.md`. The Ember OS pages' plan: `PLAN.md`.
-- App URLs: `src/config/apps.ts`. Copy: `content/*.md` (decks) and `src/content/*.ts` (what renders).
+- App URLs: `src/config/apps.ts`. Copy: `src/content/*.ts` is what renders; `content/*.md` holds the Ember OS pages' decks.
 - Theme: `design/tokens.css`. Served files: `public/` (`brand/` logos, `images/<page>/`, `files/` PDFs). Working material, not served: `library/` (see its README).

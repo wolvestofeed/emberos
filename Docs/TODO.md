@@ -1,12 +1,9 @@
 # foodismymuse.com — ToDo
 
-One-off items waiting to be placed into the roadmap.
+One-off items waiting to be placed into the roadmap. The consulting pages' open items are in `Docs/roadmaps/consulting-roadmap.md`.
 
-- [ ] DNS: point muse. and cotyledon. subdomains at their apps (Claude Code agent / deploy step)
 - [ ] Optional: Rob's own photos (grow room, racks, kitchen) to replace any placeholder imagery
 - [ ] Rob confirms every [✓ verify] fact on the Mission note
-- [x] Rob writes the home pull quote himself — set 2026-10-16 to the Mission note's audience line
-- [ ] Muse docs (`Comptable/docs/muse/overview.md`, CLAUDE.md) still say "Impact OS"; rename to Muse Kitchen, powered by Ember OS
-- [ ] Confirm the © / legal entity line for the footer (`src/components/Footer.tsx`, currently "© 2026 Ember OS")
-- [ ] Decide whether the Muse card should deep-link to the sign-in screen (`/muse/sign-in`) or the app home (`/muse`, current)
+- [ ] Confirm the © / legal entity line for the Tool Kit footer (`src/components/Footer.tsx`, currently "© 2026 Ember OS")
 - [ ] Next major project (Rob, 2026-10-17): payments on Muse Kitchen and on this site. See ROADMAP.md Phase 5.
+- [ ] Decide what happens to `design/mockups/consulting-home.html`, the pre-build mock-up; the built site has moved past it.

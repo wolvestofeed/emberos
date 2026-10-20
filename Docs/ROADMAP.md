@@ -47,8 +47,9 @@ The site becomes the marketing site for Food Is My Muse Consulting; Ember OS mov
 - [x] Direction, wordmark and default style sheet agreed and documented
 - [x] CLAUDE.md rewritten for the consulting site (2026-10-19)
 - [x] Structure, tokens and fonts (sub-roadmap Phase C1)
-- [x] Components and pages built; copy slots await Rob (C2–C3)
-- [ ] Imagery, review and launch (C4–C5)
+- [x] Components and pages built; Rob's copy in (C2–C3)
+- [x] Review and first push (C5, 2026-10-20)
+- [ ] Imagery: the operating-history photo, Work images when wanted (C4)
 
 ---
 
@@ -81,3 +82,4 @@ The site becomes the marketing site for Food Is My Muse Consulting; Ember OS mov
 - **2026-10-19**: Per Rob: the consulting site built, C1 to C3 of the sub-roadmap. The front page is now Food Is My Muse Consulting on paper; the Ember OS home is `/tool-kit`, with `/platform` and `/mission` unchanged under the Ember look. New pages `/services`, `/work`, `/about`. Rob's copy, prices, photos, email and booking link are bracketed slots on the pages. Typecheck, lint and build pass, eight static routes. Detail in `Docs/roadmaps/consulting-roadmap.md`.
 - **2026-10-19**: Per Rob: the offer structure changed (consulting sub-roadmap, Update 1: Business Diagnostic, Stabilize, Build, Scale for the first-year operator). Cowork rewrote the text; Claude Code built the four new sections (symptoms, the Diagnostic, how it works, what every engagement covers) and reordered Home. Not committed.
 - **2026-10-19**: Per Rob, on Cowork's brief: whole-systems consulting with Muse Kitchen and CompTable included during retainers (consulting sub-roadmap, Update 2). Build renamed Business Launch; the symptoms are Rob's slots; new whole-systems band and software-and-terms block; how it works and the Tool Kit teaser rewritten. Two items wait on Rob: the traced-order card and the About page's Cotyledon paragraph. Not committed.
+- **2026-10-20**: Per Rob: final review and cleanup of the consulting pages, then the first push since the restructure. Work feeds the home operating history; the home offer cards and the Work images are gone; unused components and the consulting copy decks retired. Open items in `Docs/roadmaps/consulting-roadmap.md`.

@@ -1,5 +1,18 @@
-import type { Service } from '@/components/consulting/Services';
+/**
+ * The five offers, the /services page and the software-and-terms section. This file is the source of
+ * truth for the Services page; the home page's Diagnostic block reads offer 01 from it.
+ */
 import type { SoftwareAndTermsContent } from '@/components/consulting/SoftwareAndTerms';
+
+export interface Service {
+  /** URL fragment on /services, e.g. `diagnostic`. */
+  slug: string;
+  numeral: string;
+  name: string;
+  /** One line under the name. */
+  line: string;
+  price: string;
+}
 
 export const services: Service[] = [
   {
@@ -109,10 +122,7 @@ export const servicesPage = {
   ],
 };
 
-/**
- * Software and terms (Rob, 2026-10-20): the two apps, what each offer comes with, and the terms.
- * Replaces the coverage band and the terms list. Prices are slots.
- */
+/** Software and terms: the two apps, what each offer comes with, and the terms. */
 export const software: SoftwareAndTermsContent = {
   eyebrow: 'Software Tools and Service Terms',
   heading: 'Three decades of experience on top of cutting-edge food business software.',

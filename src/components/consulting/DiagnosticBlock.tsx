@@ -14,7 +14,7 @@ export interface DiagnosticContent {
 
 /**
  * The Diagnostic as the entry offer (roadmap Update 1, U1.2): a cream band, the pitch on the left,
- * and "what you get" on the right as a ledger card in the CostingCard's look.
+ * and "what you get" on the right as a ledger card.
  */
 export function DiagnosticBlock({ content }: { content: DiagnosticContent }) {
   const { eyebrow, heading, body, price, primary, detail, card } = content;
