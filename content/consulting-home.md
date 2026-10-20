@@ -63,28 +63,29 @@ Chefs and restaurateurs · CPG founders · Caterers · Ghost kitchens · Bakers
 
 ## 3b. Sound familiar? (paper, ledger rules)
 
-**Eyebrow:** SOUND FAMILIAR?
+**Eyebrow (Rob, 2026-10-20):** I'VE BEEN THROUGH EVERY PAIN POINT ALREADY
 
-**Heading:** [Heading in Rob's words]
+**Heading (Rob, 2026-10-20):** Let's build your roadmap to solve problems before they impact your business
 
-Four to six symptoms, Rob's words. The slots carry the agreed direction as prompts:
-1. [Symptom, in Rob's words: busy but not making money]
-2. [Symptom: real food and labor cost unknown]
-3. [Symptom: working in the business every day]
-4. [Symptom: staff turnover]
-5. [Symptom: prices are a guess]
+Six symptoms (Rob, 2026-10-20):
+1. Expensive & slow startup phases
+2. Outgrowing the $150k cottage food cap
+3. Rising food costs & fuel charges
+4. Staff shortages & increasing wages
+5. Customers are always price sensitive
+6. Being busy does not equal profitability
 
 ---
 
 ## 3c. Whole systems (dark band)
 
-**Eyebrow:** WHOLE SYSTEMS
+**Eyebrow (Rob, 2026-10-20):** INTEGRATED, WHOLE SYSTEMS
 
-**Heading:** Every system, wired to the books.
+**Heading (Rob, 2026-10-20):** Every input, wired to the books.
 
-**Body:** [Rob's explanation: every system he builds is wired to the accounting, so nothing in the business runs blind.]
+**Body (Rob, 2026-10-20):** Food Is My Muse Consulting builds and offers food business clients CPA-grade accounting ledgers & reports with sustainability metrics baked in.
 
-Right, a ledger card, **One ledger**: Food cost and production · Labor cost and staffing · Cash flow and sales forecasts · Sustainability
+Right, a ledger card, **One master ledger**: Food cost and production · Labor cost and staffing · Cash flow and sales forecasts · Sustainability
 
 "Whole systems" is the term.
 

@@ -58,26 +58,25 @@ export const audiences = {
   items: ['Chefs and restaurateurs', 'CPG founders', 'Caterers', 'Ghost kitchens', 'Bakers'],
 };
 
-/** "Sound familiar?" (brief §6). The symptoms and the heading are Rob's words: bracketed slots until he writes them. */
 export const symptoms: SymptomsContent = {
-  eyebrow: 'Sound familiar?',
-  heading: "[Heading in Rob's words]",
+  eyebrow: "I've been through every pain point already",
+  heading: "Let's build your roadmap to solve problems before they impact your business",
   items: [
-    '[Symptom, in Rob\'s words: busy but not making money]',
-    '[Symptom: real food and labor cost unknown]',
-    '[Symptom: working in the business every day]',
-    '[Symptom: staff turnover]',
-    '[Symptom: prices are a guess]',
+    'Expensive & slow startup phases',
+    'Outgrowing the $150k cottage food cap',
+    'Rising food costs & fuel charges',
+    'Staff shortages & increasing wages',
+    'Customers are always price sensitive',
+    'Being busy does not equal profitability'
   ],
 };
 
-/** Whole systems (brief §1): the headline idea. Rob writes the explanation; the ledger is the structure. */
 export const wholeSystems: WholeSystemsContent = {
-  eyebrow: 'Whole systems',
-  heading: 'Every system, wired to the books.',
-  body: "[Rob's explanation: every system he builds is wired to the accounting, so nothing in the business runs blind.]",
+  eyebrow: 'Integrated, Whole systems',
+  heading: 'Every input, wired to the books.',
+  body: "Food Is My Muse Consulting builds and offers food business clients CPA-grade accounting ledgers & reports with sustainability metrics baked in.",
   ledger: {
-    title: 'One ledger',
+    title: 'One master ledger',
     lines: ['Food cost and production', 'Labor cost and staffing', 'Cash flow and sales forecasts', 'Sustainability'],
   },
 };
