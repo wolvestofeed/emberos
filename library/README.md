@@ -9,8 +9,9 @@ file on a page, put a web-sized copy there first (see "Where things go" below).
 | `logos/ember-os/` | the Ember OS logo: stacked (256 / 512 / 1024), wordmark (dark, white, on background), square mark 32 to 1024 and `favicon.ico` |
 | `logos/muse-kitchen/` | Muse Kitchen lockups, stacked and horizontal, on dark and light, plain and badge, PNG 1x/@2x and SVG, the 128 px icon |
 | `logos/cotyledon/` | Cotyledon lockups, stacked and horizontal, on dark and light, plain and badge, PNG 1x/@2x, icons 128 / 256 / 512 |
+| `logos/comptable/` | the CompTable mark and name logo, from the CompTable repo's `images/comptable/logos/` |
 | `logos/endorsement/` | POWERED BY EMBER OS, badge and text, on dark and light, PNG and SVG |
-| `screenshots/` | the originals at full size: four Cotyledon screens (`cotyledon-*.png`, ~3100 px), the Cotyledon preview, three Muse Kitchen pages |
+| `screenshots/` | the originals at full size: four Cotyledon screens (`cotyledon-*.png`, ~3100 px), the Cotyledon preview, the Muse Kitchen admin dashboard (Ember OS branding, Rob 2026-10-20) and CRM, the CompTable engine. Nothing with the old Impact OS branding is kept |
 | `photos/work/` | the originals of the Work page's logos and brand examples (Durango Artisan Foods, Good Food Collective), as Rob supplied them; the served copies are `public/images/consulting/work/*.webp` |
 | `research/` | source documents a page cites before its claim lands in `content/` (rule 4 in `Docs/CLAUDE.md`). `Veggie-Planting-Calendar-Austin.pdf` is a seasonal reference for the mission copy |
 | `certifications/` | Rob's Texas Food Handler and TABC certificates (issued 2026-10-18). On disk only: ignored by git, since the repo is public on GitHub |

@@ -79,26 +79,30 @@ What you have at the end: [What the owner has when the next stage is running.]
 
 ---
 
-## What every engagement covers (cream band)
-
-**Eyebrow:** INSIDE EVERY OFFER
-
-**Heading:** What every engagement covers.
-
-- **Setup** — Books, chart of accounts, budget and the first-year plan. Formation, permits and licensing go to a Texas attorney or CPA.
-- **Costing and accounting** — Recipe and plate costing, COGS, pricing, P&L structure and a monthly close you can keep.
-- **Operations and SOPs** — Prep systems, ordering, inventory, staffing, HR, quality control and written standards the crew actually follows.
-- **Production** — Batch scaling, co-packing, time studies and the move from kitchen to shelf.
-
----
-
-## Software and terms (paper)
+## Software and terms (cream band; per Rob 2026-10-20 it replaces the coverage band and the terms list)
 
 **Eyebrow:** SOFTWARE AND TERMS
 
-**Heading:** What a retainer includes, and what happens after.
+**Heading:** What comes with each engagement.
 
-- **Minimum** — Retainers (Stabilize, Business Launch, Scale) run three months minimum, billed monthly in advance.
+**Lead:** Every engagement comes with its own software, set up and taught by the person who built it. Retainers include both apps while they run; the Diagnostic and single projects are consulting only.
+
+Two app tiles, each with a screenshot:
+- **Muse Kitchen** (Powered by Ember OS badge; screenshot `public/images/consulting/software/muse-kitchen-admin-dashboard.webp`, from Rob's 2026-10-20 shot of the admin dashboard with Ember OS branding, `library/screenshots/muse-kitchen-admin-dash.webp`; the old Impact OS shots were deleted everywhere) — Runs production, costing and the kitchen. Covers: recipes, batches and production planning · plate and batch costing from real prices paid · orders, deliveries and the books. List price [$___]/month
+- **CompTable** (getcomptable.com; wordmark `public/brand/comptable/comptable-name-logo.webp` and screenshot `public/images/consulting/software/comptable-engine.webp`, both from the CompTable repo's `images/`, originals in `library/logos/comptable/` and `library/screenshots/`; facts only, never advice) — Compensation modeling and compliance for hospitality: payroll cost, take-home pay and the FOH/BOH gap, side by side. Covers: compensation models: wages, tip pools, service charges, benefits · payroll cost, staff income and FOH/BOH disparity against your baseline · compliance findings that cite the statute and the dollar impact. List price [$___]/month
+
+**What each offer comes with** (a table; the names come from the offers above):
+
+| Offer | Form | Muse Kitchen | CompTable | Minimum |
+|---|---|---|---|---|
+| 01 Basic Business Diagnostic | Fixed fee, about two weeks | — | — | — |
+| 02 (copy of 01) | Fixed fee, about two weeks | — | — | — |
+| 03 Stabilize | Monthly retainer, monthly or weekly cadence | Included | Included | Three months |
+| 04 Business Launch | Fixed-fee project | Included | Included | Three months |
+| 05 Scale | Project or retainer | Included | Included | Three months |
+
+**The terms:**
+- **Minimum** — Retainers (the names of offers 03, 04 and 05, read from the list) run three months minimum, billed monthly in advance.
 - **Software included** — While a retainer is active, Muse Kitchen (list price [$___]/month) and CompTable (list price [$___]/month) are included.
 - **Month one** — Rob sets the business up on both platforms and trains the staff who use them, so you run the software alongside him for at least two months.
 - **The end** — The engagement ends with you running the business on your own system.

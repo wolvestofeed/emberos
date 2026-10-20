@@ -206,8 +206,8 @@ The original hero card, replaced in the hero by 6.3a and kept for service pages.
 
 ### 6.9 SiteFooter
 - Ground background, mist text, 13 px.
-- **Left:** the wordmark (Newsreader 22 px, cream) with "Rob Bogatin" under it (13 px, mist).
-- **Right:** "Austin, Texas · [email]".
+- **Left:** the wordmark (Newsreader 22 px, cream).
+- **Right:** "Austin, Texas". Per Rob (2026-10-20), no name and no email in the footer.
 - The legal entity line is still open (TODO.md).
 
 ### 6.11 Symptoms ("Sound familiar?")
@@ -224,18 +224,17 @@ The original hero card, replaced in the hero by 6.3a and kept for service pages.
 - Paper. Eyebrow and H2 as in 6.11.
 - An `<ol>` of three or four steps on a four-column grid (two on a tablet, one on a phone) under a 1 px ink rule: numeral (Newsreader 15 px, copper-ink, tabular), H3 card title (26 px), 15 px ink-soft body. No cards, no borders between steps.
 
-### 6.14 Coverage ("What every engagement covers", on `/services`)
-- Cream band with a 1 px `cream-line` rule above, placed after the offer sections and before the closing band.
-- Eyebrow and H2 as in 6.11, then four white tiles (as the service cards: `cream-line` border, radius 14 px, padding 28 px) on a four-column grid: the area's name (Newsreader 22 px, 600) and one line (15 px ink-soft). The areas are setup, costing and accounting, operations and SOPs, production.
+### 6.14 SoftwareAndTerms (on `/services`, per Rob 2026-10-20; replaces Coverage and Terms)
+- Cream band with a 1 px `cream-line` rule above, after the offer sections and before the closing band.
+- Eyebrow, H2 and a 17 px ink lead (the approved software line and the one-sentence rule).
+- **App tiles:** two white tiles on a two-column grid (one column under 1024 px): a 16:9 screenshot across the top (or a dashed placeholder on cream), then the name (Newsreader 26 px, 600) with the kit's text-only POWERED BY EMBER OS at 26 px high beside it on Muse Kitchen only (the badge version is too small to read at that height); CompTable's wordmark also sits over the top-right of its screenshot, where the engine screen's top bar is blank, its one line in ink-soft, a short ruled list of what it covers, and the list price slot pinned to the bottom.
+- **Matrix:** a white tile holding a `<table>`: Offer (numeral in copper-ink serif, the name linked to its section), Form, Muse Kitchen, CompTable, Minimum. "Included" in 600 ink; a dash in ink-soft where not. It scrolls sideways on a phone.
+- **Terms:** the former Terms `<dl>` under a 22 px Newsreader title, with the single-projects note.
 
 ### 6.15 WholeSystems (the headline idea, brief §1)
 - Dark ground band, cream text, `on-dark` focus ring. Placed between the symptoms and the Diagnostic.
 - **Left** (`flex: 1 1 480px`): eyebrow "Whole systems" in copper-light, H2 at the section size, Rob's explanation in 17 px mist (a slot until he writes it).
 - **Right** (`flex: 1 1 380px`): a ledger card on `ground-raised` with a `ground-line` border: the title "One ledger" over a 2 px cream rule, then an `<ol>` of the connected lines in Newsreader 22 px cream, numerals in copper-light, 1 px `ground-line` rules between.
-
-### 6.16 Terms (software and terms, on `/services`)
-- Paper, after the coverage band and before the closing band.
-- Eyebrow and H2 as in 6.11, then a `<dl>` under a 1 px ink rule: label (Poppins 11 px tracked, copper-ink, 200 px wide) and the statement (17 px ink, tabular figures), 1 px `cream-deep` rules between. A 15 px ink-soft note under the list carries single projects.
 
 ### 6.10 Buttons and links
 

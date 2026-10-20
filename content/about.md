@@ -26,4 +26,4 @@ The note is `content/mission.md` word for word, and `src/content/about.ts` impor
 
 **Body:** [A line on the best way to start: a call, an email, what to bring.]
 
-[email] · [Book a 30-minute call] when a booking link or email is set (`src/config/site.ts`)
+[Book a 30-minute call] when a booking link or email is set (`src/config/site.ts`). No email shown (per Rob, 2026-10-20).

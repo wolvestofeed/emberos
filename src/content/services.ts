@@ -1,14 +1,5 @@
-/**
- * The five offers (02 is a copy of 01 for Rob to rewrite, 2026-10-20). Source of truth: content/services.md. Edit the deck, then this file.
- * Offer structure (Rob, 2026-10-19; Docs/roadmaps/consulting-roadmap.md, Update 1): the Diagnostic is the
- * entry offer, Stabilize is the core retainer for operators in their first years, Build and Scale are the
- * secondary paths. Setup, costing and accounting, operations and SOPs, and production are the areas each
- * offer covers, not separate products. The offer names are reused on proposals and invoices.
- * Prices are placeholders until Rob sets them or decides to show none.
- */
 import type { Service } from '@/components/consulting/Services';
-import type { CoverageContent } from '@/components/consulting/Coverage';
-import type { TermsContent } from '@/components/consulting/Terms';
+import type { SoftwareAndTermsContent } from '@/components/consulting/SoftwareAndTerms';
 
 export const services: Service[] = [
   {
@@ -118,31 +109,60 @@ export const servicesPage = {
   ],
 };
 
-export const coverage: CoverageContent = {
-  eyebrow: 'Inside every offer',
-  heading: 'What every engagement covers.',
-  areas: [
-    { name: 'Setup', line: 'Books, chart of accounts, budget and the first-year plan. Formation, permits and licensing go to a Texas attorney or CPA.' },
-    { name: 'Costing and accounting', line: 'Recipe and plate costing, COGS, pricing, P&L structure and a monthly close you can keep.' },
-    { name: 'Operations and SOPs', line: 'Prep systems, ordering, inventory, staffing, HR, quality control and written standards the crew actually follows.' },
-    { name: 'Production', line: 'Batch scaling, co-packing, time studies and the move from kitchen to shelf.' },
-  ],
-};
-
-/** Software and terms (brief §4). Plain statements; every price is a slot. */
-export const terms: TermsContent = {
-  eyebrow: 'Software and terms',
-  heading: 'What a retainer includes, and what happens after.',
-  items: [
-    { label: 'Minimum', text: 'Retainers (Stabilize, Business Launch, Scale) run three months minimum, billed monthly in advance.' },
+/**
+ * Software and terms (Rob, 2026-10-20): the two apps, what each offer comes with, and the terms.
+ * Replaces the coverage band and the terms list. Prices are slots.
+ */
+export const software: SoftwareAndTermsContent = {
+  eyebrow: 'Software Tools and Service Terms',
+  heading: 'Three decades of experience on top of cutting-edge food business software.',
+  lead: 'Every engagement comes with my expertise and focused attention on your business success. Retainers include use of the two software applications I built myself for food businesses just like yours - Muse Kitchen and CompTable.',
+  apps: [
     {
-      label: 'Software included',
-      text: 'While a retainer is active, Muse Kitchen (list price [$___]/month) and CompTable (list price [$___]/month) are included.',
+      name: 'Muse Kitchen',
+      line: 'Runs the kitchen and the business, end-to-end',
+      covers: ['Recipes, batches and production planning, forecasts', 'Plate and batch costing from real prices paid', 'Customer CRM, Orders, Deliveries, Suppliers and CPA-grade books'],
+      price: 'List price $250/month',
+      emberBadge: true,
+      screenshot: { src: '/images/consulting/software/muse-kitchen-admin-dashboard.webp', alt: 'The Muse Kitchen admin dashboard: financials, cold chain, supply chain, sustainability, people and sales on one page', width: 1200, height: 640 },
     },
-    { label: 'Month one', text: 'Rob sets the business up on both platforms and trains the staff who use them, so you run the software alongside him for at least two months.' },
-    { label: 'The end', text: 'The engagement ends with you running the business on your own system.' },
-    { label: 'After', text: 'Keep Rob on a monthly check-in retainer ([$___]/month) and receive an active-client subscription discount ([___]%).' },
-    { label: 'Outside an engagement', text: 'Subscriptions on their own are at regular rates. The Diagnostic and single projects are billed at consulting rates, with no software.' },
+    {
+      name: 'CompTable',
+      line: 'Compensation modeling and compliance for hospitality: payroll cost, take-home pay and the FOH/BOH gap, side by side',
+      covers: [
+        'Maximize profit and offer living wages and staff benefits',
+        'Payroll liabilities, staff income and FOH/BOH disparity',
+        'Compliance rules that cite the statute and the dollar impact',
+      ],
+      price: 'List price $50/month+ AI tokens as needed',
+      href: 'https://getcomptable.com',
+      logo: { src: '/brand/comptable/comptable-name-logo.webp', alt: 'CompTable', width: 800, height: 175 },
+      overlay: { src: '/brand/comptable/comptable-name-logo.webp', alt: '', width: 800, height: 175 },
+      screenshot: { src: '/images/consulting/software/comptable-engine.webp', alt: 'CompTable: building a compensation model, with the live preview against the traditional baseline and a compliance finding', width: 863, height: 507 },
+    },
   ],
-  note: 'Single projects: paid one-off work at its own rate ([by quote]), without software.',
+  matrix: {
+    heading: 'What each service comes with',
+    rows: [
+      { numeral: '01', form: 'Fixed fee, about two weeks', museKitchen: false, compTable: false, minimum: '—' },
+      { numeral: '02', form: 'Fixed fee, two to four weeks', museKitchen: false, compTable: false, minimum: '—' },
+      { numeral: '03', form: 'Monthly retainer (monthly or weekly)', museKitchen: true, compTable: true, minimum: 'Three months' },
+      { numeral: '04', form: 'Fixed-fee project (weekly)', museKitchen: true, compTable: true, minimum: 'Three months' },
+      { numeral: '05', form: 'Project or retainer (monthly or weekly)', museKitchen: true, compTable: true, minimum: 'Three months' },
+    ],
+  },
+  terms: {
+    heading: 'The terms',
+    items: [
+      { label: 'Minimum', text: `Retainers (${offer('03').name}, ${offer('04').name}, ${offer('05').name}) run three months minimum, billed monthly in advance.` },
+      {
+        label: 'Software included',
+        text: 'While a retainer is active, Muse Kitchen (list price $250/month) and CompTable (list price $50/month + tokens) are included free for three months.',
+      },
+      { label: 'Month one', text: 'Rob sets the business up on both platforms and trains the staff who use them, so you run the software alongside him for at least two months.' },
+      { label: 'The end', text: 'The engagement ends with you running the business on your own system.' },
+      { label: 'After', text: 'Keep Rob on a monthly Sustain retainer and receive an active-client subscription discount of 50%.' },
+      { label: 'Outside an engagement', text: 'Subscriptions on their own are at regular rates. The Diagnostic and single projects are billed at consulting rates, with no software.' },
+    ],
+  },
 };

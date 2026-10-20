@@ -178,4 +178,4 @@ Cotyledon does not appear on the consulting pages.
 
 ## 8. Footer
 
-**Food Is My Muse Consulting** / Rob Bogatin · Austin, Texas · [email]
+**Food Is My Muse Consulting** · Austin, Texas (per Rob, 2026-10-20: no name, no email)

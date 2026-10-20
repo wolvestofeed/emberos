@@ -146,6 +146,6 @@ export const toolKit: ToolKitTeaserContent = {
 };
 
 export const closing: ClosingContent = {
-  heading: "[Closing line in Rob's words]",
+  heading: "It's time to build the food business you dream about.",
   button: { label: BOOK_LABEL, href: BOOKING_URL },
 };

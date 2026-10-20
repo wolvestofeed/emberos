@@ -20,6 +20,6 @@ export { signature };
 
 export const contact = {
   heading: 'Get in touch',
-  body: '[A line on the best way to start: a call, an email, what to bring.]',
+  body: "Feel free to reach me via phone  970-844-3145, email  lonewolf@wolvestofeed.com, or schedule a 30 minute call.",
   button: { label: BOOK_LABEL, href: BOOKING_URL },
 };

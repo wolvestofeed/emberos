@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { header, story, signature, contact } from '@/content/about';
-import { CONTACT_EMAIL } from '@/config/site';
 import { PageIntro } from '@/components/consulting/PageIntro';
 import { PrimaryButton } from '@/components/consulting/Buttons';
 
@@ -32,15 +31,6 @@ export default function AboutPage() {
               {contact.heading}
             </h2>
             <p className="mt-3 max-w-[36em] text-[17px] leading-relaxed text-ink-soft">{contact.body}</p>
-            <p className="mt-3 text-[15px] text-ink">
-              {CONTACT_EMAIL ? (
-                <a href={`mailto:${CONTACT_EMAIL}`} className="font-semibold text-copper-ink underline underline-offset-4 hover:text-ink">
-                  {CONTACT_EMAIL}
-                </a>
-              ) : (
-                '[email]'
-              )}
-            </p>
           </div>
           {contact.button.href !== '/about#contact' ? <PrimaryButton href={contact.button.href}>{contact.button.label}</PrimaryButton> : null}
         </div>

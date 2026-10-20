@@ -1,10 +1,9 @@
 import type { Metadata } from 'next';
-import { servicesPage, coverage, terms } from '@/content/services';
+import { servicesPage, software } from '@/content/services';
 import { closing } from '@/content/consulting-home';
 import { PageIntro } from '@/components/consulting/PageIntro';
 import { ClosingCTA } from '@/components/consulting/ClosingCTA';
-import { Coverage } from '@/components/consulting/Coverage';
-import { Terms } from '@/components/consulting/Terms';
+import { SoftwareAndTerms } from '@/components/consulting/SoftwareAndTerms';
 
 export const metadata: Metadata = {
   title: 'Services',
@@ -43,8 +42,7 @@ export default function ServicesPage() {
           ))}
         </ul>
       </div>
-      <Coverage content={coverage} />
-      <Terms content={terms} />
+      <SoftwareAndTerms content={software} />
       <ClosingCTA content={closing} />
     </>
   );
