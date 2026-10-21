@@ -8,7 +8,11 @@ const NAV = [
   { label: 'Consulting', href: '/' },
 ];
 
-/** The Tool Kit pages' sticky dark header: Ember OS mark and wordmark, Platform, Mission, the way back to the consulting site, and the Sign in menu. */
+/**
+ * The Tool Kit pages' sticky dark header: Ember OS mark and wordmark, Platform, Mission, the way back
+ * to the consulting site, and the Sign in menu. Under 640 px the three links fold into a Menu
+ * <details>, as the consulting header does, so the header fits 360 px and Sign in stays visible.
+ */
 export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-ground-line bg-ground/95 text-cream backdrop-blur">
@@ -19,18 +23,17 @@ export function Header() {
           <span className="sr-only sm:hidden">Ember OS</span>
         </Link>
 
-        <nav aria-label="Primary" className="flex items-center gap-1 sm:gap-2">
-          {NAV.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="rounded-md px-2 py-2 font-sans text-sm font-medium text-mist transition-colors hover:text-cream sm:px-3"
-            >
-              {item.label}
-            </Link>
-          ))}
+        <div className="flex items-center gap-2 sm:gap-3">
+          <nav aria-label="Primary" className="hidden items-center gap-2 sm:flex">
+            {NAV.map((item) => (
+              <Link key={item.href} href={item.href} className="rounded-md px-3 py-2 font-sans text-sm font-medium text-mist transition-colors hover:text-cream">
+                {item.label}
+              </Link>
+            ))}
+          </nav>
           <SignInMenu />
-        </nav>
+          <PageMenu />
+        </div>
       </div>
     </header>
   );
@@ -44,7 +47,7 @@ function SignInMenu() {
   return (
     <details className="group relative">
       <summary
-        className="flex cursor-pointer list-none items-center gap-1.5 rounded-pill bg-amber px-3.5 py-2 font-sans text-sm font-semibold text-ink transition-colors hover:bg-[#ffb94d] sm:px-4"
+        className="flex cursor-pointer list-none items-center gap-1.5 whitespace-nowrap rounded-pill bg-amber px-3.5 py-2 font-sans text-sm font-semibold text-ink transition-colors hover:bg-[#ffb94d] sm:px-4"
         aria-haspopup="menu"
       >
         Sign in
@@ -78,6 +81,31 @@ function SignInMenu() {
           </li>
         ))}
       </ul>
+    </details>
+  );
+}
+
+/** The phone menu: Platform, Mission and Consulting in a <details>, hidden from 640 px up where the links show inline. */
+function PageMenu() {
+  return (
+    <details className="relative sm:hidden">
+      <summary
+        className="flex cursor-pointer list-none items-center rounded-pill border border-ground-line px-3.5 py-2 font-sans text-sm font-semibold text-cream transition-colors hover:bg-white/10"
+        aria-label="Open the menu"
+      >
+        Menu
+      </summary>
+      <nav aria-label="Primary" className="absolute right-0 z-50 mt-2 w-48 rounded-tile border border-ground-line bg-ground-raised p-1.5 shadow-card">
+        <ul>
+          {NAV.map((item) => (
+            <li key={item.href}>
+              <Link href={item.href} className="block rounded-lg px-3 py-2.5 font-sans text-sm font-medium text-cream transition-colors hover:bg-white/10">
+                {item.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </details>
   );
 }

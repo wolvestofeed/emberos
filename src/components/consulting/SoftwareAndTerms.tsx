@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { Fragment, type ReactNode } from 'react';
 import { offer } from '@/content/services';
 
 export interface SoftwareApp {
@@ -124,10 +125,39 @@ export function SoftwareAndTerms({ content }: { content: SoftwareAndTermsContent
           ))}
         </ul>
 
-        {/* What each offer comes with */}
+        {/* What each offer comes with: one stacked block per offer under 640 px, the table from 640 px up. */}
         <div className="mt-12 rounded-tile border border-cream-line bg-white p-6 shadow-tile sm:p-7">
           <h3 className="border-b-2 border-ink pb-3 font-serif text-[22px] font-semibold leading-tight text-ink">{matrix.heading}</h3>
-          <div className="overflow-x-auto">
+          <ul className="sm:hidden">
+            {matrix.rows.map((r) => {
+              const o = offer(r.numeral);
+              const cells: [string, ReactNode][] = [
+                ['Form', r.form],
+                ['Muse Kitchen', <Included key="muse" yes={r.museKitchen} />],
+                ['CompTable', <Included key="comptable" yes={r.compTable} />],
+                ['Minimum', r.minimum],
+              ];
+              return (
+                <li key={r.numeral} className="border-b border-cream-deep py-4 last:border-b-ink">
+                  <p className="text-[15px]">
+                    <span className="mr-3 font-serif text-copper-ink">{o.numeral}</span>
+                    <a href={`#${o.slug}`} className="font-semibold text-ink hover:underline">
+                      {o.name}
+                    </a>
+                  </p>
+                  <dl className="figures mt-3 grid grid-cols-[auto_1fr] gap-x-5 gap-y-1.5 text-[15px]">
+                    {cells.map(([label, value]) => (
+                      <Fragment key={label}>
+                        <dt className={`${SUBTITLE} pt-0.5`}>{label}</dt>
+                        <dd className="text-ink-soft">{value}</dd>
+                      </Fragment>
+                    ))}
+                  </dl>
+                </li>
+              );
+            })}
+          </ul>
+          <div className="hidden overflow-x-auto sm:block">
             <table className="figures w-full min-w-[40rem] text-[15px] text-ink">
               <thead>
                 <tr className={SUBTITLE}>

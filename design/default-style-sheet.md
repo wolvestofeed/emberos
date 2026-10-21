@@ -206,7 +206,7 @@ One order or production batch traced through every department. A white card with
 - Cream band with a 1 px `cream-line` rule above, after the offer sections and before the closing band.
 - Eyebrow, H2 and a 17 px ink lead (the approved software line and the one-sentence rule).
 - **App tiles:** two white tiles on a two-column grid (one column under 1024 px): a 16:9 screenshot across the top (or a dashed placeholder on cream), then the name (Newsreader 26 px, 600) with the kit's text-only POWERED BY EMBER OS at 26 px high beside it on Muse Kitchen only (the badge version is too small to read at that height); CompTable's wordmark also sits over the top-right of its screenshot, where the engine screen's top bar is blank, its one line in ink-soft, a short ruled list of what it covers, and the list price slot pinned to the bottom.
-- **Matrix:** a white tile holding a `<table>`: Offer (numeral in copper-ink serif, the name linked to its section), Form, Muse Kitchen, CompTable, Minimum. "Included" in 600 ink; a dash in ink-soft where not. It scrolls sideways on a phone.
+- **Matrix:** a white tile holding a `<table>`: Offer (numeral in copper-ink serif, the name linked to its section), Form, Muse Kitchen, CompTable, Minimum. "Included" in 600 ink; a dash in ink-soft where not. Under 640 px (per Rob, 2026-10-20) the table gives way to one stacked block per offer: the numeral and linked name, then Form, Muse Kitchen, CompTable and Minimum as label-and-value rows. Nothing scrolls sideways.
 - **Terms:** the former Terms `<dl>` under a 22 px Newsreader title, with the single-projects note.
 
 ### 6.15 WholeSystems (the headline idea, brief §1)
@@ -252,7 +252,7 @@ Today `src/app/globals.css` gives `body` the dark ground and cream text. The con
 ## 9. Accessibility checklist (CLAUDE.md rule 6)
 
 - [ ] Every text pair is in the contrast table in section 3 (all pass AA).
-- [ ] 360 px width: the header collapses, the hero stacks, cards go to one column, history rows stack, and nothing scrolls sideways.
+- [x] 360 px width: the header collapses, the hero stacks, cards go to one column, history rows stack, and nothing scrolls sideways (checked on every route, 2026-10-20).
 - [ ] Headings in order: one H1 per page, then H2 per section and H3 per card.
 - [ ] The costing card is a real `<table>` with a caption.
 - [ ] The skip link still targets `#main`.

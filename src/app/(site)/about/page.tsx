@@ -8,6 +8,22 @@ export const metadata: Metadata = {
   description: header.lede,
 };
 
+/** A phone number or an email address in Rob's contact line becomes a tel: or mailto: link, so it is one tap on a phone. The text is unchanged. */
+const CONTACT_TOKEN = /(\+?1?[\s-]?\(?\d{3}\)?[\s-]?\d{3}[\s-]?\d{4}|[\w.+-]+@[\w-]+(?:\.[\w-]+)+)/g;
+
+function linkContacts(text: string) {
+  return text.split(CONTACT_TOKEN).map((part, i) => {
+    if (i % 2 === 0) return part;
+    const isEmail = part.includes('@');
+    const href = isEmail ? `mailto:${part}` : `tel:+1${part.replace(/\D/g, '').replace(/^1/, '')}`;
+    return (
+      <a key={i} href={href} className="whitespace-nowrap text-ink underline underline-offset-4 hover:text-copper-ink">
+        {part}
+      </a>
+    );
+  });
+}
+
 /** Rob's note, the same text as the Mission page, then how to get in touch. Operating history lives on /work. */
 export default function AboutPage() {
   return (
@@ -30,7 +46,7 @@ export default function AboutPage() {
             <h2 id="contact-heading" className="font-serif text-[clamp(1.75rem,4vw,2.25rem)] font-medium leading-[1.15] text-ink">
               {contact.heading}
             </h2>
-            <p className="mt-3 max-w-[36em] text-[17px] leading-relaxed text-ink-soft">{contact.body}</p>
+            <p className="mt-3 max-w-[36em] text-[17px] leading-relaxed text-ink-soft">{linkContacts(contact.body)}</p>
           </div>
           <PrimaryButton href={contact.button.href}>{contact.button.label}</PrimaryButton>
         </div>

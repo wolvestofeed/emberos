@@ -49,7 +49,7 @@ A sub-roadmap of `Docs/ROADMAP.md` (Phase 6). foodismymuse.com becomes the marke
 - [x] The on-light "Powered by Ember OS" badge copied into `public/brand/ember/`.
 
 ### C5 — Checks and launch
-- [ ] Accessibility pass against style sheet section 9 (AA contrast, 360 px, keyboard, alt text).
+- [ ] Accessibility pass against style sheet section 9 (AA contrast, 360 px, keyboard, alt text). The 360 px pass is done (2026-10-20): every route checked, no sideways scroll; contrast, keyboard and alt text remain.
 - [x] `pnpm typecheck`, `pnpm lint`, `pnpm build` pass; every route prerenders static (2026-10-19, eight routes).
 - [ ] Rob reviews on `pnpm dev` (port 3001). Commit, push and deploy on his say-so.
 
