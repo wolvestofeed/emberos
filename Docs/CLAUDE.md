@@ -16,7 +16,7 @@ Front-end UI surface only: copy, design tokens, static pages and components. No 
 
 ## Decisions in force
 - Two looks, one site. Consulting pages (Home, Services, Work, About) use the default style sheet on paper. Tool Kit pages (`/tool-kit`, `/platform`, `/mission`) keep the dark Ember OS look unchanged. Route groups `(site)` and `(toolkit)` carry each look; URLs do not change.
-- The wordmark is "Food Is My Muse Consulting", set in type. It is the only wordmark in the main header. Rob Bogatin is named in the hero lede; his history is the Work page, which also feeds the home page's operating history band.
+- The wordmark is "Food Is My Muse Consulting", set in type. It is the only wordmark in the main header. Rob Bogatin is named in the hero lede; his history is the Work page's operating-history band (moved off Home 2026-10-21), fed from `src/content/work.ts`.
 - The two portal cards on the Tool Kit page sign directly into the apps. There are no separate app entry pages on this site.
 - The Mission page is Rob's first-person note. Rob confirms its biographical facts before publishing.
 - "Book a call" is a link to Rob's Cal.com event (`src/config/site.ts`, overridable with `NEXT_PUBLIC_BOOKING_URL`). No form on this site; a form would need a third-party service and a CSP change.

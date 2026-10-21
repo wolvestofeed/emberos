@@ -1,9 +1,8 @@
 /**
- * Home page copy for the consulting site. This file is the source of truth; the operating history
- * rows come from src/content/work.ts and the Diagnostic block from src/content/services.ts.
+ * Home page copy for the consulting site. This file is the source of truth; the Diagnostic block
+ * reads src/content/services.ts. The operating-history band moved to the Work page on 2026-10-21.
  */
 import type { HeroContent } from '@/components/consulting/Hero';
-import type { HistoryContent } from '@/components/consulting/OperatingHistory';
 import type { ToolKitTeaserContent } from '@/components/consulting/ToolKitTeaser';
 import type { ClosingContent } from '@/components/consulting/ClosingCTA';
 import type { SymptomsContent } from '@/components/consulting/Symptoms';
@@ -12,7 +11,6 @@ import type { HowItWorksContent } from '@/components/consulting/HowItWorks';
 import type { WholeSystemsContent } from '@/components/consulting/WholeSystems';
 import { BOOKING_URL, BOOK_LABEL } from '@/config/site';
 import { offer, servicesPage } from '@/content/services';
-import { cases } from '@/content/work';
 
 export const hero: HeroContent = {
   eyebrow: 'Indy Food businesses & Restaurants in Austin',
@@ -114,26 +112,6 @@ export const howItWorks: HowItWorksContent = {
       title: 'Independence',
       body: 'The engagement ends with you running the business on your own system. Keep a monthly check-in if you want one, with an active-client subscription discount.',
     },
-  ],
-};
-
-/**
- * Operating history, fed from the Work page's cases so each business is written once (per Rob,
- * 2026-10-20). The San Juan Mountains Association row is Home-only: Rob keeps it off Work, it is not food.
- */
-export const history: HistoryContent = {
-  eyebrow: 'Operating history',
-  heading: 'On the line and in the books.',
-  photo: {
-    src: '/images/consulting/history/rob-with-client.webp',
-    alt: 'Rob Bogatin at a cafe table with an owner, going through the numbers on a laptop',
-    width: 1200,
-    height: 900,
-  },
-  photoPlaceholder: '[Photo: Rob at work in a kitchen]',
-  rows: [
-    ...cases.map((c) => ({ label: c.label, fact: c.homeFact ?? c.fact })),
-    { label: 'Finance', fact: 'Director of Operations and Finance, San Juan Mountains Association' },
   ],
 };
 
