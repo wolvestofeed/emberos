@@ -46,8 +46,11 @@ export const hero: HeroContent = {
         { metric: 'Methane', value: '3.4 kg CH₄' },
         { metric: 'Water', value: '4,725 L' },
         { metric: 'Energy consumption', value: '158 kWh' },
-        { metric: 'Waste, compost', value: '23.3 kg' },
-        { metric: 'Waste, landfill', value: '6.8 kg' },
+        // The four waste pathways of Muse Kitchen's Waste & End-of-Life page (2026-10-21); illustrative split of the same 30.1 kg.
+        { metric: 'Waste, food donation', value: '3.8 kg' },
+        { metric: 'Waste, animal feed', value: '6.9 kg' },
+        { metric: 'Waste, compost', value: '17.6 kg' },
+        { metric: 'Waste, landfill', value: '1.8 kg' },
       ],
     },
   },
