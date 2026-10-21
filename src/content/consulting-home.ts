@@ -70,10 +70,10 @@ export const symptoms: SymptomsContent = {
     'Expensive & slow startup phases',
     'Outgrowing the $150k cottage cap',
     'Rising food costs & fuel charges',
-    'Staff shortages & increasing wages',
+    'Staff shortages, higher wages, retention',
     'Customers are always price sensitive',
     'Busy does not equal profitability',
-    'An organics diversion plan due to the City every year',
+    'An organics diversion plan & reporting',
   ],
 };
 

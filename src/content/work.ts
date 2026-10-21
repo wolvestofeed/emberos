@@ -21,7 +21,7 @@ export const header = {
 export const cases: CaseStudy[] = [
   { label: 'Co-owner', title: 'High-volume pizzeria and sandwich shop', fact: 'Award-winning Philadelphia pizzeria, hoagie and cheesesteak shop' },
   { label: 'Co-owner', title: 'Full service bar and grill', fact: 'A 150-seat restaurant and bar in Boulder serving breakfast, lunch and dinner' },
-  { label: 'Co-owner', title: 'Cheesesteak fusion food trailer', fact: 'Corporate catering and festivals' },
+  { label: 'Co-owner', title: 'Cheesesteak fusion food trailer', fact: 'Fusion food trailer for corporate catering and festivals' },
   {
     label: 'Co-packer',
     title: "SW Colorado's kettle co-packer",
