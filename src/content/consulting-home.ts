@@ -18,9 +18,10 @@ export const hero: HeroContent = {
   eyebrow: 'Indy Food businesses & Restaurants in Austin',
   headline: "You've mastered your craft. Now,",
   headlineAccent: "It's time to run your food business.",
+  // Draft for Rob's review (2026-10-20): the lede opens with his name and role; the practice line is his, unchanged.
   lede: {
-    name: 'Food Is My Muse Consulting',
-    intro: "is Austin's first food business partner that offers owners an integrated, whole systems foundation to launch, sustain and grow their business.",
+    name: 'Rob Bogatin',
+    intro: "is a systems architect for food business operations and accounting. Food Is My Muse Consulting is Austin's first food business partner that offers owners an integrated, whole systems foundation to launch, sustain and grow their business.",
   },
   primary: { label: BOOK_LABEL, href: BOOKING_URL },
   secondary: { label: 'See how I work', href: '/services' },
@@ -68,17 +69,18 @@ export const symptoms: SymptomsContent = {
     'Rising food costs & fuel charges',
     'Staff shortages & increasing wages',
     'Customers are always price sensitive',
-    'Busy does not equal profitability'
+    'Busy does not equal profitability',
+    'An organics diversion plan due to the City every year',
   ],
 };
 
 export const wholeSystems: WholeSystemsContent = {
   eyebrow: 'Integrated business systems',
   heading: 'Every input is wired to the books.',
-  body: "Food Is My Muse Consulting builds its own tools and offers food business clients CPA-grade accounting ledgers & reports with unit economics, HR and sustainability metrics baked in.",
+  body: "Food Is My Muse Consulting builds its own tools and offers food business clients CPA-grade accounting ledgers & reports with unit economics, HR and sustainability metrics baked in. Muse Kitchen runs production and the back office. Keep your POS for the front of house, connect your QuickBooks, and the books are one ledger.",
   ledger: {
     title: 'One master ledger captures',
-    lines: ['Food cost and production', 'Labor cost and staffing', 'Cash flow and sales forecasts', 'Sustainability'],
+    lines: ['Food cost and production', 'Labor cost and staffing', 'Cash flow and sales forecasts', 'Sustainability', 'Austin organics compliance (URO)'],
   },
 };
 
@@ -138,7 +140,7 @@ export const toolKit: ToolKitTeaserContent = {
   lead: 'Every retainer engagement includes its own software accounts, set up and taught by the person who built them.',
   body: 'Both are included while a retainer is active. Rob sets the business up on both, trains the staff who use them, and keeps working weekly or monthly until the owner runs the business without him.',
   apps: [
-    { name: 'Muse Kitchen', line: 'Runs production, costing and the kitchen.', price: 'List price $250/month', emberBadge: true },
+    { name: 'Muse Kitchen', line: 'Runs production, costing and the back office, beside your POS and QuickBooks.', price: 'List price $250/month', emberBadge: true },
     { name: 'CompTable', line: 'Models compensation, payroll cost and labor compliance.', price: 'List price $50/month + tokens', href: 'https://getcomptable.com' },
   ],
   link: { label: 'Open the Tool Kit', href: '/tool-kit' },

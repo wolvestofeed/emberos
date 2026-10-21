@@ -6,7 +6,7 @@
 export const SITE_NAME = 'Food Is My Muse Consulting';
 export const LOCATION = 'Austin, Texas';
 export const SITE_DESCRIPTION =
-  'Food business consulting by Rob Bogatin: business setup, costing and accounting, operations and SOPs, production and scale, for chefs and restaurateurs, CPG founders, caterers, ghost kitchens and bakers.';
+  'Food business consulting by Rob Bogatin, a systems architect for operations and accounting: business setup, costing and accounting, operations and SOPs, production and scale, Austin organics compliance, for chefs and restaurateurs, CPG founders, caterers, ghost kitchens and bakers.';
 
 /** Rob's 30-minute Cal.com event (2026-10-20). NEXT_PUBLIC_BOOKING_URL overrides it. */
 export const BOOKING_URL = process.env.NEXT_PUBLIC_BOOKING_URL ?? 'https://axiomdelta.cal.com/lonewolf/30min';
