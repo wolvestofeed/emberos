@@ -32,7 +32,7 @@ export default function AboutPage() {
             </h2>
             <p className="mt-3 max-w-[36em] text-[17px] leading-relaxed text-ink-soft">{contact.body}</p>
           </div>
-          {contact.button.href !== '/about#contact' ? <PrimaryButton href={contact.button.href}>{contact.button.label}</PrimaryButton> : null}
+          <PrimaryButton href={contact.button.href}>{contact.button.label}</PrimaryButton>
         </div>
       </section>
     </>

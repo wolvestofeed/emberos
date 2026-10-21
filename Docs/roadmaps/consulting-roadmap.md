@@ -56,7 +56,7 @@ A sub-roadmap of `Docs/ROADMAP.md` (Phase 6). foodismymuse.com becomes the marke
 ## Open (2026-10-20)
 - [x] The photo for the operating history band: `public/images/consulting/history/rob-with-client.webp`, from Rob's `library/photos/work/rob-meeting_client_mock_1.jpeg` (2026-10-20).
 - [ ] The About page's Cotyledon paragraph: it is the Mission note's text; drop it from About or give About its own version. Rob's first-person writing, not redrafted.
-- [ ] A booking link for "Book a call" (`NEXT_PUBLIC_BOOKING_URL`); until then the buttons point at the contact block on /about.
+- [x] The booking link: Rob's Cal.com event, set as the default in `src/config/site.ts` (2026-10-20).
 - [ ] A monogram or mark for the favicon and social avatar; the Ember OS ones until then.
 - [ ] Work page images, when Rob wants them back (originals in `library/photos/work/`).
 - [ ] One or two Texas referral partners (attorney or CPA) for formation and licensing.
