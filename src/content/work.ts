@@ -8,6 +8,8 @@ export interface CaseStudy {
   title: string;
   /** The one line shown on Home's operating history and under the title on Work. */
   fact: string;
+  /** Home only: replaces `fact` on the operating-history row when Rob wants the row worded differently (2026-10-21). Work is unchanged. */
+  homeFact?: string;
   /** An optional longer note for the Work page only. */
   body?: string;
 }
@@ -21,7 +23,7 @@ export const header = {
 export const cases: CaseStudy[] = [
   { label: 'Co-owner', title: 'High-volume pizzeria and sandwich shop', fact: 'Award-winning Philadelphia pizzeria, hoagie and cheesesteak shop' },
   { label: 'Co-owner', title: 'Full service bar and grill', fact: 'A 150-seat restaurant and bar in Boulder serving breakfast, lunch and dinner' },
-  { label: 'Co-owner', title: 'Cheesesteak fusion food trailer', fact: 'Fusion food trailer for corporate catering and festivals' },
+  { label: 'Co-owner', title: 'Cheesesteak fusion food trailer', fact: 'Corporate catering and festivals', homeFact: 'Fusion food trailer for corporate catering and festivals' },
   {
     label: 'Co-packer',
     title: "SW Colorado's kettle co-packer",

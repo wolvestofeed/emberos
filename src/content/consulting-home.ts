@@ -132,7 +132,7 @@ export const history: HistoryContent = {
   },
   photoPlaceholder: '[Photo: Rob at work in a kitchen]',
   rows: [
-    ...cases.map((c) => ({ label: c.label, fact: c.fact })),
+    ...cases.map((c) => ({ label: c.label, fact: c.homeFact ?? c.fact })),
     { label: 'Finance', fact: 'Director of Operations and Finance, San Juan Mountains Association' },
   ],
 };
