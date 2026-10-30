@@ -8,6 +8,8 @@ export interface ClosingContent {
 
 export interface PartnerLogo {
   name: string;
+  /** What the mark says, when it says more than the name (a member decal, say). Defaults to the name. */
+  alt?: string;
   logo: { src: string; width: number; height: number };
   /** The partner's own site; the logo links there in a new tab. */
   href?: string;
@@ -50,10 +52,10 @@ function LogoCard({ content }: { content: PartnersContent }) {
           const img = (
             <Image
               src={item.logo.src}
-              alt={item.name}
+              alt={item.alt ?? item.name}
               width={item.logo.width}
               height={item.logo.height}
-              className="h-auto w-full max-w-[240px]"
+              className="h-auto max-h-44 w-auto max-w-[240px]"
             />
           );
           return (

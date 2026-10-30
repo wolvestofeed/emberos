@@ -182,7 +182,7 @@ One order or production batch traced through every department. A white card with
 - Cream band with a top 1 px `cream-line` rule.
 - **Two halves (2026-10-30):** each `flex: 1 1 400px`, gap 56 px, stacking under about 900 px.
 - **Left:** the H2 at 36 px (Rob's closing line) with the primary button 32 px under it.
-- **Right:** the Partners card: a white tile (14 px radius, 1 px `cream-line`, `--shadow-tile`), the "Partners" eyebrow in copper-ink, then a wrapping, centered row of logos at up to 240 px wide, each linking to the partner's site in a new tab. The list lives in `src/content/consulting-home.ts` (`partners`); logos in `public/images/consulting/partners/`. A Clients card will reuse the same shape once there are clients.
+- **Right:** the Partners card: a white tile (14 px radius, 1 px `cream-line`, `--shadow-tile`), the "Partners" eyebrow in copper-ink, then a wrapping, centered row of logos, each at most 176 px tall and 240 px wide (a round decal sits at 176 px, a wide lockup at 240 px), each linking to the partner's site in a new tab. The list lives in `src/content/consulting-home.ts` (`partners`); logos in `public/images/consulting/partners/`. A Clients card will reuse the same shape once there are clients.
 
 ### 6.9 SiteFooter
 - Ground background, mist text, 13 px.

@@ -135,14 +135,16 @@ export const closing: ClosingContent = {
 /**
  * The Partners card in the closing band (2026-10-30). One entry per logo; add a line here to add a
  * partner. A Clients card will use the same shape once there are clients to show. Logos live in
- * public/images/consulting/partners/ and the library copy in library/logos/.
+ * public/images/consulting/partners/ (sized for the web) and the originals in library/logos/.
+ * Good Work Austin's approved mark is the round member decal (2026-10-30).
  */
 export const partners: PartnersContent = {
   eyebrow: 'Partners',
   items: [
     {
       name: 'Good Work Austin',
-      logo: { src: '/images/consulting/partners/good-work-austin.webp', width: 1500, height: 323 },
+      alt: 'Proud Member of Good Work Austin. Building Healthier Workplaces.',
+      logo: { src: '/images/consulting/partners/good-work-austin.png', width: 800, height: 800 },
       href: 'https://goodworkaustin.org',
     },
   ],
