@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { servicesPage, software } from '@/content/services';
-import { closing } from '@/content/consulting-home';
+import { closing, partners } from '@/content/consulting-home';
 import { PageIntro } from '@/components/consulting/PageIntro';
 import { ClosingCTA } from '@/components/consulting/ClosingCTA';
 import { SoftwareAndTerms } from '@/components/consulting/SoftwareAndTerms';
@@ -43,7 +43,7 @@ export default function ServicesPage() {
         </ul>
       </div>
       <SoftwareAndTerms content={software} />
-      <ClosingCTA content={closing} />
+      <ClosingCTA content={closing} partners={partners} />
     </>
   );
 }

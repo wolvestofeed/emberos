@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { header, history } from '@/content/work';
-import { closing } from '@/content/consulting-home';
+import { closing, partners } from '@/content/consulting-home';
 import { PageIntro } from '@/components/consulting/PageIntro';
 import { OperatingHistory } from '@/components/consulting/OperatingHistory';
 import { ClosingCTA } from '@/components/consulting/ClosingCTA';
@@ -16,7 +16,7 @@ export default function WorkPage() {
     <>
       <PageIntro eyebrow={header.eyebrow} heading={header.headline} lede={header.lede} />
       <OperatingHistory content={history} />
-      <ClosingCTA content={closing} />
+      <ClosingCTA content={closing} partners={partners} />
     </>
   );
 }

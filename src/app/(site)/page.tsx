@@ -1,4 +1,4 @@
-import { hero, audiences, symptoms, wholeSystems, diagnostic, howItWorks, toolKit, closing } from '@/content/consulting-home';
+import { hero, audiences, symptoms, wholeSystems, diagnostic, howItWorks, toolKit, closing, partners } from '@/content/consulting-home';
 import { Hero } from '@/components/consulting/Hero';
 import { AudienceStrip } from '@/components/consulting/AudienceStrip';
 import { Symptoms } from '@/components/consulting/Symptoms';
@@ -24,7 +24,7 @@ export default function HomePage() {
       <DiagnosticBlock content={diagnostic} />
       <HowItWorks content={howItWorks} />
       <ToolKitTeaser content={toolKit} />
-      <ClosingCTA content={closing} />
+      <ClosingCTA content={closing} partners={partners} />
     </>
   );
 }

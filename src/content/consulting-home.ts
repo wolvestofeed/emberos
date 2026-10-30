@@ -4,7 +4,7 @@
  */
 import type { HeroContent } from '@/components/consulting/Hero';
 import type { ToolKitTeaserContent } from '@/components/consulting/ToolKitTeaser';
-import type { ClosingContent } from '@/components/consulting/ClosingCTA';
+import type { ClosingContent, PartnersContent } from '@/components/consulting/ClosingCTA';
 import type { SymptomsContent } from '@/components/consulting/Symptoms';
 import type { DiagnosticContent } from '@/components/consulting/DiagnosticBlock';
 import type { HowItWorksContent } from '@/components/consulting/HowItWorks';
@@ -130,4 +130,20 @@ export const toolKit: ToolKitTeaserContent = {
 export const closing: ClosingContent = {
   heading: "It's time to build the food business you've been dreaming about.",
   button: { label: BOOK_LABEL, href: BOOKING_URL },
+};
+
+/**
+ * The Partners card in the closing band (2026-10-30). One entry per logo; add a line here to add a
+ * partner. A Clients card will use the same shape once there are clients to show. Logos live in
+ * public/images/consulting/partners/ and the library copy in library/logos/.
+ */
+export const partners: PartnersContent = {
+  eyebrow: 'Partners',
+  items: [
+    {
+      name: 'Good Work Austin',
+      logo: { src: '/images/consulting/partners/good-work-austin.webp', width: 1500, height: 323 },
+      href: 'https://goodworkaustin.org',
+    },
+  ],
 };
