@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 
-/** The Tool Kit pages keep the Ember OS metadata: title, description and the stacked logo as the share image. */
+/** The Ember OS pages keep the Ember OS metadata: title, description and the stacked logo as the share image. */
 export const metadata: Metadata = {
   title: { default: 'Ember OS', template: '%s · Ember OS' },
   description: 'Ember OS: a sustainable food business operating system that feeds people, farmers, our soil and the planet.',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 };
 
 /**
- * The Tool Kit pages (`/tool-kit`, `/platform`, `/mission`): the Ember OS look, unchanged.
+ * The Ember OS pages (`/muse-kitchen`, `/cotyledon`, `/comptable`, `/mission`): the Ember OS look.
  * `.toolkit` restores the dark ground, cream text and amber focus ring from globals.css.
  */
 export default function ToolkitLayout({ children }: Readonly<{ children: React.ReactNode }>) {

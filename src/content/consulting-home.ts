@@ -124,7 +124,7 @@ export const toolKit: ToolKitTeaserContent = {
     { name: 'Muse Kitchen', line: 'Runs production, costing and the back office, beside your POS and QuickBooks.', price: 'List price $250/month', emberBadge: true },
     { name: 'CompTable', line: 'Models compensation, payroll cost and labor compliance.', price: 'List price $50/month + tokens', href: 'https://getcomptable.com' },
   ],
-  link: { label: 'Open the Tool Kit', href: '/tool-kit' },
+  link: { label: 'Open Ember OS', href: '/muse-kitchen' },
 };
 
 export const closing: ClosingContent = {

@@ -4,8 +4,8 @@ import { PrimaryButton } from '@/components/consulting/Buttons';
 
 /**
  * The consulting header (style sheet §6.1): the wordmark set in type, the only wordmark on the page;
- * Services, Work, Tool Kit, About; Book a call. Under 768 px the four links fold into a <details>
- * menu, as the Tool Kit header does with Sign in, and the button stays visible.
+ * Services, Work, Ember OS, About; Book a call. Under 768 px the four links fold into a <details>
+ * menu, as the Ember OS header does with Sign in, and the button stays visible.
  */
 export function SiteHeader() {
   return (

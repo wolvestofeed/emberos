@@ -28,6 +28,13 @@ const SECURITY_HEADERS = [
 ];
 
 const nextConfig: NextConfig = {
+  // The Tool Kit and Platform pages split into Muse Kitchen and Cotyledon on 2026-11-10; old links land on Muse Kitchen.
+  async redirects() {
+    return [
+      { source: '/tool-kit', destination: '/muse-kitchen', permanent: true },
+      { source: '/platform', destination: '/muse-kitchen', permanent: true },
+    ];
+  },
   async headers() {
     return [{ source: '/(.*)', headers: SECURITY_HEADERS }];
   },

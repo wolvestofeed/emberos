@@ -1,4 +1,4 @@
-import { spotlight, type Provenance } from '@/content/home';
+import type { AppPageContent, Provenance } from '@/content/app-page';
 import { SectionHeading } from '@/components/Section';
 
 const CHIP: Record<Provenance, string> = {
@@ -19,7 +19,7 @@ function Chip({ tag }: { tag: Provenance }) {
 }
 
 /** A static mock of cost rows with provenance chips and source lines. Example values, labelled as such. */
-export function ProvenanceSpotlight() {
+export function ProvenanceSpotlight({ spotlight }: { spotlight: AppPageContent['spotlight'] }) {
   return (
     <div className="grid items-center gap-12 lg:grid-cols-2">
       <div>
@@ -37,7 +37,7 @@ export function ProvenanceSpotlight() {
 
       <figure className="rounded-card border border-cream-line bg-paper p-2 shadow-card-light">
         <div className="rounded-tile bg-ground p-5 text-cream sm:p-6">
-          <p className="eyebrow text-amber">Grow plan · Broccoli, 10 × 20 tray</p>
+          <p className="eyebrow text-amber">{spotlight.recordLabel}</p>
           <ul className="mt-5 divide-y divide-ground-line">
             {spotlight.rows.map((row) => {
               const placeholder = row.tag === 'PLACEHOLDER';

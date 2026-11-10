@@ -1,6 +1,6 @@
 # foodismymuse.com
 
-The marketing site for **Food Is My Muse Consulting**, Rob Bogatin's food business consulting practice. Ember OS and its applications live on the Tool Kit page, with two portal cards that sign straight into Muse Kitchen and Cotyledon on their subdomains. Static, no back end.
+The marketing site for **Food Is My Muse Consulting**, Rob Bogatin's food business consulting practice. Ember OS has its own section with a page per application (Muse Kitchen, Cotyledon, CompTable); the Muse Kitchen and Cotyledon pages each carry a portal card that signs straight into the app on its subdomain. Static, no back end.
 
 ```bash
 pnpm install

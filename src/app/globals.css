@@ -4,7 +4,7 @@
 /*
  * Two looks, one site (design/default-style-sheet.md §8).
  * The consulting look is the default: paper ground, ink text, tomato focus ring.
- * The Tool Kit pages wrap themselves in `.toolkit`, which restores the Ember OS ground.
+ * The Ember OS pages wrap themselves in `.toolkit`, which restores the Ember OS ground.
  */
 @layer base {
   html {

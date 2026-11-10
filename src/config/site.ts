@@ -17,10 +17,10 @@ export interface NavItem {
   href: string;
 }
 
-/** Main navigation on the consulting pages, in order. The Tool Kit is the Ember OS group. */
+/** Main navigation on the consulting pages, in order. Ember OS goes to the Muse Kitchen page, the Ember OS landing page. */
 export const NAV: NavItem[] = [
   { label: 'Services', href: '/services' },
   { label: 'Work', href: '/work' },
-  { label: 'Tool Kit', href: '/tool-kit' },
+  { label: 'Ember OS', href: '/muse-kitchen' },
   { label: 'About', href: '/about' },
 ];

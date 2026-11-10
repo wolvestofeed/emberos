@@ -10,7 +10,7 @@ const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500'], variable: 
 // Variable font with the optical-size axis: headings, the wordmark and large figures on the consulting pages.
 const newsreader = Newsreader({ subsets: ['latin'], axes: ['opsz'], variable: '--font-newsreader', display: 'swap' });
 
-/** Site-wide metadata is the consulting practice's. The Tool Kit group overrides it with Ember OS. */
+/** Site-wide metadata is the consulting practice's. The Ember OS group overrides it with Ember OS. */
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: { default: SITE_NAME, template: `%s · ${SITE_NAME}` },

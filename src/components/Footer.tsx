@@ -4,13 +4,13 @@ import { APP_LIST } from '@/config/apps';
 
 const YEAR = 2026;
 
-/** The Tool Kit pages' footer: Ember OS mark, the two apps, the Tool Kit pages and the consulting site, sign-in links, copyright. */
+/** The Ember OS pages' footer: Ember OS mark, the two apps, the Ember OS pages and the consulting site, sign-in links, copyright. */
 export function Footer() {
   return (
     <footer className="border-t border-ground-line bg-ground-deep text-cream">
       <div className="container-site grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
         <div>
-          <Link href="/tool-kit" className="inline-flex items-center gap-2.5 rounded-md" aria-label="Ember OS Tool Kit">
+          <Link href="/muse-kitchen" className="inline-flex items-center gap-2.5 rounded-md" aria-label="Ember OS home">
             <Image src="/brand/ember/ember-mark-64.png" alt="" width={40} height={40} className="h-10 w-10 rounded-lg" />
             <Image src="/brand/ember/ember-os-wordmark-white.png" alt="Ember OS" width={586} height={99} className="h-5 w-auto" />
           </Link>
@@ -23,8 +23,9 @@ export function Footer() {
         <FooterList
           title="Site"
           items={[
-            { label: 'Tool Kit', href: '/tool-kit' },
-            { label: 'Platform', href: '/platform' },
+            { label: 'Muse Kitchen', href: '/muse-kitchen' },
+            { label: 'Cotyledon', href: '/cotyledon' },
+            { label: 'CompTable', href: '/comptable' },
             { label: 'Mission', href: '/mission' },
             { label: 'Food Is My Muse Consulting', href: '/' },
           ]}

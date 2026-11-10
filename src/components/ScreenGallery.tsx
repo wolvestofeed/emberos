@@ -1,12 +1,12 @@
 import Image from 'next/image';
-import { screens } from '@/content/home';
+import type { AppPageContent } from '@/content/app-page';
 import { SectionHeading } from '@/components/Section';
 
 /**
  * Real product screens with captions. A screen without a `src` renders as a captioned frame,
  * so the page lays out before the Muse Kitchen and Cotyledon screens are shot.
  */
-export function ScreenGallery() {
+export function ScreenGallery({ screens }: { screens: AppPageContent['screens'] }) {
   return (
     <>
       <SectionHeading id="screens-heading" eyebrow="Inside the apps" title={screens.heading} align="center" />
