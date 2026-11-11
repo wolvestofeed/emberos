@@ -247,7 +247,7 @@ export default function CompTablePage() {
 
       {/* 10. Have a seat at the table */}
       <Section band="deep" ariaLabelledBy="seat-heading">
-        <SeatAtTheTable photo={teamPhoto} hideSecondary />
+        <SeatAtTheTable photo={teamPhoto} hideSecondary primaryHref={localPulse.link.href} />
       </Section>
     </>
   );

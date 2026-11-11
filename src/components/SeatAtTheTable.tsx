@@ -7,13 +7,15 @@ export interface SeatAtTheTableProps {
   photo?: { src: string; alt: string; width: number; height: number };
   /** Hide the "About CompTable" button on the CompTable page itself. */
   hideSecondary?: boolean;
+  /** Overrides the Local Pulse button's link. The CompTable page sends it to getcomptable.com, where The Local Pulse is live; Muse Kitchen and Cotyledon keep the content file's link until their own version ships. */
+  primaryHref?: string;
 }
 
 /**
  * The closing band on every Ember OS page: The Local Pulse and the peer-to-peer intelligence network,
  * with the way into The Local Pulse on getcomptable.com. Replaced "Two trades today" on 2026-11-10.
  */
-export function SeatAtTheTable({ photo, hideSecondary = false }: SeatAtTheTableProps) {
+export function SeatAtTheTable({ photo, hideSecondary = false, primaryHref }: SeatAtTheTableProps) {
   const s = seatAtTheTable;
   const text = (
     <div className={photo ? '' : 'mx-auto max-w-3xl text-center'}>
@@ -27,7 +29,7 @@ export function SeatAtTheTable({ photo, hideSecondary = false }: SeatAtTheTableP
         </p>
       ))}
       <div className={`mt-8 flex flex-col gap-3 sm:flex-row ${photo ? '' : 'justify-center'}`}>
-        <Button href={s.primary.href} external>
+        <Button href={primaryHref ?? s.primary.href} external>
           {s.primary.label}
         </Button>
         {hideSecondary ? null : (
