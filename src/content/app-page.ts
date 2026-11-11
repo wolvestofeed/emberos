@@ -66,8 +66,10 @@ export interface AppPageContent {
     link: { label: string; href: string };
     tiles: { name: string; line: string }[];
   };
-  planning: { heading: string; items: TitledItem[] };
-  rules: { heading: string; items: TitledItem[] };
+  /** Plan it before you run it. `band` light puts it on cream with light cards (Muse Kitchen, 2026-11-10); dark is the default. */
+  planning: { heading: string; items: TitledItem[]; band?: 'light' | 'dark' };
+  /** How the engine thinks. Optional: Muse Kitchen dropped it on 2026-11-10 and a cream gap stands in its place. */
+  rules?: { heading: string; items: TitledItem[] };
   groups: { heading: string; items: ModuleGroup[] };
   spotlight: {
     heading: string;

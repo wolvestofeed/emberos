@@ -17,6 +17,7 @@ import { SeatAtTheTable } from '@/components/SeatAtTheTable';
  */
 export function AppLanding({ content }: { content: AppPageContent }) {
   const { app, hero, strip, values, modules, planning, rules, groups, spotlight, screens, missionTeaser } = content;
+  const planningLight = planning.band === 'light';
   return (
     <>
       {/* 1. Hero and the application's sign-in card */}
@@ -81,35 +82,45 @@ export function AppLanding({ content }: { content: AppPageContent }) {
       </Section>
 
       {/* 5. Plan it before you run it */}
-      <Section band="dark" ariaLabelledBy="planning-heading">
-        <SectionHeading id="planning-heading" eyebrow="Before you commit" title={planning.heading} />
+      <Section band={planningLight ? 'light' : 'dark'} ariaLabelledBy="planning-heading">
+        <SectionHeading id="planning-heading" eyebrow="Before you commit" title={planning.heading} tone={planningLight ? 'light' : 'dark'} />
         <div className={`mt-12 grid gap-5 ${planning.items.length === 2 ? 'md:grid-cols-2' : 'md:grid-cols-3'}`}>
           {planning.items.map((p, i) => (
-            <ValueTile key={p.title} index={i + 1} title={p.title} body={p.body} />
+            <ValueTile key={p.title} index={i + 1} title={p.title} body={p.body} tone={planningLight ? 'light' : 'dark'} />
           ))}
         </div>
       </Section>
 
-      {/* 6. How the engine thinks */}
-      <Section band="light" ariaLabelledBy="rules-heading">
-        <SectionHeading id="rules-heading" eyebrow="How the engine thinks" title={rules.heading} tone="light" />
-        <ol className="mt-12 grid gap-5 sm:grid-cols-2">
-          {rules.items.map((r, i) => (
-            <li
-              key={r.title}
-              className={`rounded-card border border-cream-line bg-paper p-7 shadow-card-light${
-                i === rules.items.length - 1 && rules.items.length % 2 === 1 ? ' sm:col-span-2' : ''
-              }`}
-            >
-              <span className="font-display text-4xl leading-none text-copper">{String(i + 1).padStart(2, '0')}</span>
-              <h3 className="mt-4 font-display text-2xl leading-tight text-copper">{r.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-ink-soft">{r.body}</p>
-            </li>
-          ))}
-        </ol>
-      </Section>
+      {/* 6. How the engine thinks. Without rules, a dark planning band gets a cream gap (about four lines) so two dark bands do not run together; a cream planning band needs none. */}
+      {rules ? (
+        <Section band="light" ariaLabelledBy="rules-heading">
+          <SectionHeading id="rules-heading" eyebrow="How the engine thinks" title={rules.heading} tone="light" />
+          <ol className="mt-12 grid gap-5 sm:grid-cols-2">
+            {rules.items.map((r, i) => (
+              <li
+                key={r.title}
+                className={`rounded-card border border-cream-line bg-paper p-7 shadow-card-light${
+                  i === rules.items.length - 1 && rules.items.length % 2 === 1 ? ' sm:col-span-2' : ''
+                }`}
+              >
+                <span className="font-display text-4xl leading-none text-copper">{String(i + 1).padStart(2, '0')}</span>
+                <h3 className="mt-4 font-display text-2xl leading-tight text-copper">{r.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-ink-soft">{r.body}</p>
+              </li>
+            ))}
+          </ol>
+        </Section>
+      ) : planningLight ? null : (
+        <div aria-hidden="true" className="h-24 bg-cream" />
+      )}
 
-      {/* 7. Every module, by section */}
+      {/* 7. Inside the system, above the module list (Rob, 2026-11-10). Both are dark, so a cream gap of about four lines sits between them. */}
+      <Section band="dark" ariaLabelledBy="screens-heading">
+        <ScreenGallery screens={screens} />
+      </Section>
+      <div aria-hidden="true" className="h-24 bg-cream" />
+
+      {/* 8. Every module, by section */}
       <Section band="dark" id="every-module" ariaLabelledBy="every-module-heading" className="scroll-mt-16">
         <SectionHeading id="every-module-heading" eyebrow="Modules" title={groups.heading} />
         <div className="mt-12 space-y-14">
@@ -131,14 +142,9 @@ export function AppLanding({ content }: { content: AppPageContent }) {
         </div>
       </Section>
 
-      {/* 8. Transparency spotlight */}
+      {/* 9. Transparency spotlight */}
       <Section band="light" ariaLabelledBy="spotlight-heading">
         <ProvenanceSpotlight spotlight={spotlight} />
-      </Section>
-
-      {/* 9. Inside the system */}
-      <Section band="dark" ariaLabelledBy="screens-heading">
-        <ScreenGallery screens={screens} />
       </Section>
 
       {/* 10. Have a seat at the table: The Local Pulse and the peer network */}

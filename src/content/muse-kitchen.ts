@@ -17,15 +17,15 @@ export const museKitchen: AppPageContent = {
 
   strip: {
     eyebrow: 'The departments it runs',
-    heading: 'Recipes to batches to deliveries, with food safety, costing and the books in step.',
-    blockLabel: 'Department',
+    heading: 'Sourcing, Recipes, Production, Costing, Food Safety, Accounting and Sustainability.',
+    blockLabel: 'ENGINE',
     sequence: false,
     blocks: [
-      { name: 'Production', line: 'Recipes, batches, the day schedule and the floor, planned from the orders coming in.' },
-      { name: 'Accounting', line: 'A double-entry ledger, inventory at actual cost, and the P&L, balance sheet and cash flow.' },
-      { name: 'Sales and clients', line: 'Prospects, customers, orders and the portals they order through.' },
-      { name: 'People', line: 'Staffing, schedules against the labor the plan demands, SOPs and training.' },
-      { name: 'Sustainability', line: 'Energy, water, waste, refrigerants and supplier footprint, beside the batches that made them.' },
+      { name: 'Food Production', line: 'Restaurant or Batch Kitchen Modes, Supplier Directory, Ingredient & Recipe - Batch Management, Unlimited Forecasts, the day schedule and the floor, order driven planning.' },
+      { name: 'People & Training', line: 'Staffing, schedules against the labor demands, SOPs and training. Connects to the CompTable application for extensive staff wages and benefits planning.' },
+          { name: 'Sustainability', line: 'Live calculations based on ingredients and supplier data, full reporting suite, track direct and indirect energy, water, waste, refrigerants and supplier footprint, beside the batches that made them.' },
+      { name: 'Accounting', line: 'A double-entry ledger, inventory at actual cost, and the P&L, balance sheet and cash flow statements your CPA will approve.' },
+      { name: 'Sales & Clients', line: 'a CRM surface with prospects, customers, orders and the portal interfaces for each.' },
     ],
   },
 
@@ -34,25 +34,25 @@ export const museKitchen: AppPageContent = {
     items: [
       {
         title: 'Complete transparency',
-        body: 'Every figure shows where it came from: sourced, stated, derived or placeholder. A placeholder never looks like a real number.',
+        body: 'We tag everything related to food and people safety, we display source data with timestamps and category: sourced, stated, derived or placeholder. A placeholder never looks like a real number.',
       },
       {
-        title: 'Regenerative and sustainable',
-        body: 'Energy, water, waste, refrigerants and supplier footprint are measured in the same system that runs production, not in a spreadsheet off to the side.',
+        title: 'Sustainability Intelligence',
+        body: 'Energy, water, waste, refrigerants and supplier footprint are measured in the same system that runs production, not in a spreadsheet off to the side. Your financials, production runs, staff planning and sustainability numbers are interconnected',
       },
       {
-        title: 'Nutrition first',
-        body: "Food is judged by what it does for the body. Cotyledon scores every flat against a client's nutrition targets, and each benefit cites its research source.",
+        title: 'Power to Decide',
+        body: "Today's orders, costs, people and books in one connected system, with as many forecasts of tomorrow as you need beside them. Decide with the whole business in view, not one slice of it.",
       },
       {
-        title: 'Hospitality and community',
-        body: 'The kitchen is where people gather. Ember OS includes customer, supplier and staff portals to bring your people into the system, with their orders, invoices and choices in one place.',
+        title: 'Hospitality and Community',
+        body: 'The kitchen is where people gather. Ember OS includes customer, supplier and staff portals to bring your people into the system. Used with CompTable, you have a workforce culture model generator where your roster feeds both systems',
       },
     ],
   },
 
   modules: {
-    heading: 'Runs the kitchen or the farm, keeps the books, and knows every employee, supplier and customer.',
+    heading: 'A food business operating system with Restaurant and Batch Kitchen Modes.',
     sub: 'Now you can manage every slice of your business from one system, including sustainability measured from your own recipes and your own facility.',
     link: { label: 'See every module', href: '#every-module' },
     tiles: [
@@ -71,30 +71,20 @@ export const museKitchen: AppPageContent = {
 
   planning: {
     heading: 'Plan it before you run it',
+    band: 'light',
     items: [
       {
         title: 'Forecasts',
         body: 'Save as many forecasts as you need. One is the plan of record you report against. Open any other and every page, from the schedule to the P&L, runs under it.',
       },
       {
-        title: 'Compare',
+        title: 'Compare Mode',
         body: 'One day under two forecasts, or two recipes side by side: cost, labor, resources, footprint and the management figures, with every difference listed.',
       },
       {
-        title: 'Recipe assistant',
-        body: 'Type or dictate a change to any recipe. The engine proposes the new version, you approve it, and it is costed and saved only when you say so. In Muse Kitchen.',
+        title: 'Recipe & Roster Assistant',
+        body: 'Type or dictate a change to any recipe. The engine proposes the new version, you approve it, and it is costed and saved into your library.',
       },
-    ],
-  },
-
-  rules: {
-    heading: 'Five rules the whole system keeps',
-    items: [
-      { title: 'Orders drive production.', body: 'A batch or a sowing is generated by orders coming in. All activities are combined per cycle. Resource allocation is mapped across your entire business.' },
-      { title: 'The production plan builds the costing.', body: 'Every input line on a recipe or grow plan is priced from tagged reference data, so cost per unit is computed, never typed in.' },
-      { title: 'Only real records post to the books.', body: 'Plans and forecasts live in their own world. The ledger moves when a batch closes, a receipt lands or a delivery is handed over.' },
-      { title: 'Every figure carries its source.', body: 'Sourced, stated, derived, placeholder, unconfirmed or dated. A placeholder looks different everywhere it appears.' },
-      { title: 'Forecasts are many; the plan of record is one.', body: 'Save as many forecasts as you need, and every page runs under the one that is open. One of them is the plan of record, the one the business reports against, and a past month is read against the plan that was in force when it closed.' },
     ],
   },
 
