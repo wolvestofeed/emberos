@@ -94,9 +94,9 @@ export const seatAtTheTable = {
   eyebrow: 'The Local Pulse · peer-to-peer intelligence network',
   heading: 'Have a seat at the table',
   paragraphs: [
-    'The Local Pulse shows how your pay, staffing and benefits stack up against your Local Group: the operators who share your revenue band, your front- and back-of-house headcount, your service type and your labor law. It starts with your city, widens to your county and then your state only until at least ten operators are in the comparison, and the data is anonymous and opt-in.',
-    'When a number is not where you want it, the built-in peer network finds an operator in your Local Group who has already moved it and connects you privately, one request at a time. Nothing is published, and no one sees a ranking.',
+    'The Local Pulse shows how your kitchen KPIs and sustainability numbers stack up against your Local Group of peer operators with businesses like yours. Your data is anonymous and sharing is opt-in by each metric. What you share is what you can see in the Group.',
+    'When a number is not where you want it, the built-in peer network finds an operator in your Local Group who has already achieved your goal and connects you privately with a qualified Sharer. Nothing is published, and no one sees a ranking.',
   ],
-  primary: { label: 'Explore The Local Pulse', href: 'https://getcomptable.com/the-local-pulse' },
+  primary: { label: 'Explore The Local Pulse', href: 'tbd' },
   secondary: { label: 'About CompTable', href: '/comptable' },
 };

@@ -31,8 +31,8 @@ export const APPS: Record<AppKey, AppEntry> = {
     name: 'Muse Kitchen',
     url: MUSE_URL,
     signInLabel: 'Sign in to Muse Kitchen',
-    audience: 'For scratch commissary kitchens',
-    runs: 'Recipes to batches to deliveries, with food safety, costing and the books in step.',
+    audience: 'Restaurant and Batch Kitchen Modes',
+    runs: 'Sustainable food business management.',
   },
   cotyledon: {
     key: 'cotyledon',

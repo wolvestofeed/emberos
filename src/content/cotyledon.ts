@@ -77,7 +77,7 @@ export const cotyledon: AppPageContent = {
       },
       {
         title: 'Compare',
-        body: 'One day under two forecasts, or two recipes side by side: cost, labor, resources, footprint and the management figures, with every difference listed.',
+        body: 'One day under two forecasts, or two flats side by side, each under its own grow plan and logistics: cost, labor, resources, footprint and the management figures, with every difference listed.',
       },
     ],
   },
@@ -110,11 +110,11 @@ export const cotyledon: AppPageContent = {
         purpose: 'Turn orders into a real production schedule.',
         modules: [
           { name: 'Grow plans', line: 'every input line costed: seed, medium, nutrients and light' },
-          { name: 'Varieties, Media, Nutrients & Supplements', line: 'the libraries a grow plan draws on, each with price history' },
+          { name: 'Varieties, media, nutrients & supplements', line: 'the libraries a grow plan draws on, each with price history' },
           { name: 'Time studies', line: 'labor standards from timed observations, not guesses' },
           { name: 'Production planning, schedule, calendar', line: 'plan one run, one delivery day or a whole period; the day on the clock, the labor it demands, and the month on a calendar' },
           { name: 'Forecasts', line: 'save as many as you need; one is the plan of record, and a saved forecast can be forked' },
-          { name: 'Compare', line: 'one day under two forecasts in both apps; two recipes side by side in Muse Kitchen, in cost, labor, resources, footprint and management figures' },
+          { name: 'Compare', line: 'one day under two forecasts, or two flats side by side under different grow plans and logistics, in cost, labor, resources, footprint and management figures' },
           { name: 'Grow calendar', line: "every sowing's stages across the days, planned back from distribution day" },
           { name: 'Capacity, equipment or grow units, packaging', line: 'what the room can hold, and where a plan runs out of space' },
           { name: 'Grow room', line: 'the operator’s surface: punch clock, stage records, closing a sowing' },

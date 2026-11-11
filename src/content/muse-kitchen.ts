@@ -1,8 +1,3 @@
-/**
- * The Muse Kitchen page (`/muse-kitchen`): the old Tool Kit and Platform pages with every Cotyledon-only
- * section and module taken out (Rob, 2026-11-10). Text pass to follow: the module tile lines, the
- * "Nutrition first" value and the spotlight's example record still describe both apps or the farm.
- */
 import { PROVENANCE_LEGEND, type AppPageContent } from '@/content/app-page';
 
 export const museKitchen: AppPageContent = {
@@ -21,11 +16,11 @@ export const museKitchen: AppPageContent = {
     blockLabel: 'ENGINE',
     sequence: false,
     blocks: [
-      { name: 'Food Production', line: 'Restaurant or Batch Kitchen Modes, Supplier Directory, Ingredient & Recipe - Batch Management, Unlimited Forecasts, the day schedule and the floor, order driven planning.' },
-      { name: 'People & Training', line: 'Staffing, schedules against the labor demands, SOPs and training. Connects to the CompTable application for extensive staff wages and benefits planning.' },
+      { name: 'Food Production', line: 'Restaurant or Batch Kitchen Modes, Supplier Directory, Ingredient & Recipe / Batch Management, Unlimited Forecasts, the day schedule and the floor, order-driven planning.' },
+      { name: 'People & Training', line: 'Staffing, schedules against labor demand, SOPs and training. Connects to the CompTable application for extensive staff wage and benefits planning.' },
           { name: 'Sustainability', line: 'Live calculations based on ingredients and supplier data, full reporting suite, track direct and indirect energy, water, waste, refrigerants and supplier footprint, beside the batches that made them.' },
       { name: 'Accounting', line: 'A double-entry ledger, inventory at actual cost, and the P&L, balance sheet and cash flow statements your CPA will approve.' },
-      { name: 'Sales & Clients', line: 'a CRM surface with prospects, customers, orders and the portal interfaces for each.' },
+      { name: 'Sales & Clients', line: 'A CRM surface with prospects, customers, orders and the portal interfaces for each.' },
     ],
   },
 
@@ -34,19 +29,19 @@ export const museKitchen: AppPageContent = {
     items: [
       {
         title: 'Complete transparency',
-        body: 'We tag everything related to food and people safety, we display source data with timestamps and category: sourced, stated, derived or placeholder. A placeholder never looks like a real number.',
+        body: 'We tag everything related to food and people safety and display source data with a timestamp and category: sourced, stated, derived or placeholder. A placeholder never looks like a real number.',
       },
       {
-        title: 'Sustainability Intelligence',
-        body: 'Energy, water, waste, refrigerants and supplier footprint are measured in the same system that runs production, not in a spreadsheet off to the side. Your financials, production runs, staff planning and sustainability numbers are interconnected',
+        title: 'Sustainability intelligence',
+        body: 'Energy, water, waste, refrigerants and supplier footprint are measured in the same system that runs production, not in a spreadsheet off to the side. Your financials, production runs, staff planning and sustainability numbers are interconnected.',
       },
       {
-        title: 'Power to Decide',
+        title: 'Power to decide',
         body: "Today's orders, costs, people and books in one connected system, with as many forecasts of tomorrow as you need beside them. Decide with the whole business in view, not one slice of it.",
       },
       {
-        title: 'Hospitality and Community',
-        body: 'The kitchen is where people gather. Ember OS includes customer, supplier and staff portals to bring your people into the system. Used with CompTable, you have a workforce culture model generator where your roster feeds both systems',
+        title: 'Hospitality and community',
+        body: 'The kitchen is where people gather. Ember OS includes customer, supplier and staff portals to bring your people into the system. Used with CompTable, you have a workforce culture model generator where your roster feeds both systems.',
       },
     ],
   },
@@ -104,7 +99,7 @@ export const museKitchen: AppPageContent = {
         heading: 'Production',
         purpose: 'Turn orders into a real production schedule.',
         modules: [
-          { name: 'Recipes', line: 'every input line costed: ingredients' },
+          { name: 'Recipes', line: 'every input line costed, from the ingredients up' },
           { name: 'Time studies', line: 'labor standards from timed observations, not guesses' },
           { name: 'Production planning, schedule, calendar', line: 'plan one run, one delivery day or a whole period; the day on the clock, the labor it demands, and the month on a calendar' },
           { name: 'Forecasts', line: 'save as many as you need; one is the plan of record, and a saved forecast can be forked' },
@@ -157,9 +152,9 @@ export const museKitchen: AppPageContent = {
       },
       {
         heading: 'People',
-        purpose: 'Staff the plan, not the other way round.',
+        purpose: 'Cover the floor. Connects to CompTable for complete staff management.',
         modules: [
-          { name: 'Staffing', line: 'roster, roles, wages, punches and pay periods' },
+          { name: 'Staffing', line: 'roster, roles, wages, punches and station coverage' },
           { name: 'Schedule', line: 'the roster against the labor the plan demands, with gaps shown' },
           { name: 'SOPs & training', line: 'the procedures and who is trained on them' },
         ],
@@ -185,7 +180,7 @@ export const museKitchen: AppPageContent = {
       },
       {
         heading: 'Distribution',
-        modules: [{ name: 'Sites & delivery', line: 'where the food goes' }],
+        modules: [{ name: 'Off-site service', line: 'track your logistics when food is on the road' }],
       },
       {
         heading: 'Billing and payments',
