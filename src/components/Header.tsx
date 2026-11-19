@@ -4,22 +4,23 @@ import { APP_LIST } from '@/config/apps';
 
 const NAV = [
   { label: 'Muse Kitchen', href: '/muse-kitchen' },
-  { label: 'Cotyledon', href: '/cotyledon' },
   { label: 'CompTable', href: '/comptable' },
   { label: 'Mission', href: '/mission' },
   { label: 'Consulting', href: '/' },
+  { label: 'Cotyledon', href: '/cotyledon' },
 ];
 
 /**
- * The Ember OS pages' sticky dark header: Ember OS mark and wordmark, Muse Kitchen, Cotyledon, CompTable,
- * Mission, the way back to the consulting site, and the Sign in menu. Under 640 px the links fold into a Menu
+ * The Ember OS pages' sticky dark header: Ember OS mark and wordmark (to /emberos), Muse Kitchen and
+ * CompTable side by side, Mission, the way back to the consulting site, Cotyledon last (Rob, 2026-11-19), and the
+ * Sign in menu. Under 640 px the links fold into a Menu
  * <details>, as the consulting header does, so the header fits 360 px and Sign in stays visible.
  */
 export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-ground-line bg-ground/95 text-cream backdrop-blur">
       <div className="container-site flex h-16 items-center justify-between gap-3">
-        <Link href="/muse-kitchen" className="flex shrink-0 items-center gap-2.5 rounded-md" aria-label="Ember OS home">
+        <Link href="/emberos" className="flex shrink-0 items-center gap-2.5 rounded-md" aria-label="Ember OS home">
           <Image src="/brand/ember/ember-mark-64.png" alt="" width={36} height={36} className="h-9 w-9 rounded-lg" priority />
           <Image src="/brand/ember/ember-os-wordmark-white.png" alt="Ember OS" width={586} height={99} className="hidden h-[18px] w-auto sm:block" priority />
           <span className="sr-only sm:hidden">Ember OS</span>
@@ -69,7 +70,14 @@ function SignInMenu() {
               className="flex items-center gap-3 rounded-lg px-3 py-2.5 font-sans text-sm text-cream transition-colors hover:bg-white/10"
             >
               <Image
-                src={app.key === 'muse' ? '/brand/muse-kitchen/muse-kitchen-icon-128.png' : '/brand/cotyledon/cotyledon-icon-128.png'}
+                src={
+                  app.key === 'muse'
+                    ? '/brand/muse-kitchen/muse-kitchen-icon-128.png'
+                    : app.key === 'comptable'
+                      ? '/brand/comptable/comptable-mark.svg'
+                      : '/brand/cotyledon/cotyledon-icon-128.png'
+                }
+                unoptimized={app.key === 'comptable'}
                 alt=""
                 width={28}
                 height={28}

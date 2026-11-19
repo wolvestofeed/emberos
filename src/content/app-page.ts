@@ -64,6 +64,8 @@ export interface AppPageContent {
     heading: string;
     sub: string;
     link: { label: string; href: string };
+    /** One module shown full width above the tiles (Muse Kitchen: Local Pulse, Rob, 2026-11-19). */
+    featured?: { eyebrow: string; name: string; line: string; link?: { label: string; href: string } };
     tiles: { name: string; line: string }[];
   };
   /** Plan it before you run it. `band` light puts it on cream with light cards (Muse Kitchen, 2026-11-10); dark is the default. */

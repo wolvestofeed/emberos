@@ -68,7 +68,20 @@ export function AppLanding({ content }: { content: AppPageContent }) {
       {/* 4. Engines and modules, in summary */}
       <Section band="deep" ariaLabelledBy="modules-heading">
         <SectionHeading id="modules-heading" eyebrow="Engines and modules" title={modules.heading} sub={modules.sub} />
-        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+        {modules.featured ? (
+          <div className="mt-12 rounded-tile border border-amber/60 bg-ground-raised p-6 shadow-card sm:p-8">
+            <p className="eyebrow text-amber">{modules.featured.eyebrow}</p>
+            <h3 className="mt-2 font-display text-3xl leading-tight text-copper-light sm:text-4xl">{modules.featured.name}</h3>
+            <p className="mt-3 max-w-4xl text-base leading-relaxed text-mist">{modules.featured.line}</p>
+            {modules.featured.link ? (
+              <Link href={modules.featured.link.href} className="mt-4 inline-flex items-center gap-2 font-sans text-sm font-semibold text-amber hover:underline">
+                {modules.featured.link.label}
+                <span aria-hidden="true">↓</span>
+              </Link>
+            ) : null}
+          </div>
+        ) : null}
+        <div className={`${modules.featured ? 'mt-4' : 'mt-12'} grid gap-4 sm:grid-cols-2 lg:grid-cols-5`}>
           {modules.tiles.map((t) => (
             <ModuleTile key={t.name} name={t.name} line={t.line} />
           ))}

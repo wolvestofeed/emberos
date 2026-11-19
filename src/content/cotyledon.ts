@@ -59,7 +59,7 @@ export const cotyledon: AppPageContent = {
       { name: 'CPA-grade accounting', line: 'Double-entry ledger, US GAAP perpetual inventory at actual cost, P&L, balance sheet and cash flow.' },
       { name: 'Unit economics', line: 'True cost per unit and cost to serve, built from tagged inputs.' },
       { name: 'Sustainability', line: 'Scope 1, 2 and 3 emissions, energy, water, waste, refrigerants and supplier life-cycle data.' },
-      { name: 'Supply chain', line: 'Procurement, purchase orders and a supplier directory with what each supplies.' },
+      { name: 'Supply chain', line: 'Procurement, purchase orders and an organic supplier directory with what each supplies.' },
       { name: 'Inventory and safety', line: 'FIFO lots and full traceability; HACCP control points or the Produce Safety Rule.' },
       { name: 'People', line: 'Staffing, schedules against labor demand, SOPs and training.' },
       { name: 'Sales and clients', line: 'Sales portal, prospects, customers and subscribers, orders.' },

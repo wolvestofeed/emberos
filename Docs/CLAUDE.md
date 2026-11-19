@@ -5,7 +5,7 @@ Rules and oversight for any agent working in this folder.
 ## What this is
 The marketing site for **Food Is My Muse Consulting**, Rob Bogatin's food business consulting practice, at foodismymuse.com. The primary client is the owner of an independent food business in Austin that is open and in its first years; pre-opening founders are the secondary path. Chefs and restaurateurs, CPG founders, caterers, ghost kitchens and bakers.
 
-**Ember OS** is the software that comes with the work. It has its own section, reached from the consulting menu's **Ember OS** item: a page per application at `/muse-kitchen` (the Ember OS landing page), `/cotyledon` and `/comptable`, plus `/mission`. `/tool-kit` and `/platform` redirect to `/muse-kitchen` (2026-11-10).
+**Ember OS** is the software that comes with the work. It has its own section, reached from the consulting menu's **Ember OS** item: the landing page `/emberos` (Muse Kitchen and CompTable side by side, copy in `src/content/ember-os.ts`, 2026-11-19), a page per application at `/muse-kitchen`, `/comptable` and `/cotyledon`, plus `/mission`. `/tool-kit`, `/platform` and `/ember-os` redirect to `/emberos`. The Ember OS header runs Muse Kitchen, CompTable, Mission, Consulting, Cotyledon.
 - **Muse Kitchen** — scratch commissary kitchens. Live at musekitchen.foodismymuse.com/kitchen (its own repo, `wolvestofeed/emberos-musekitchen`, since 17 October 2026).
 - **Cotyledon** — microgreens and sprouts growers. On localhost; planned subdomain cotyledon.foodismymuse.com.
 
@@ -15,7 +15,7 @@ Build spec for the consulting look: `design/default-style-sheet.md`. Build order
 Front-end UI surface only: copy, design tokens, static pages and components. No back end, auth, database or form handling here. The apps own their own sign-in.
 
 ## Decisions in force
-- Two looks, one site. Consulting pages (Home, Services, Work, About) use the default style sheet on paper. Ember OS pages (`/muse-kitchen`, `/cotyledon`, `/comptable`, `/mission`) keep the dark Ember OS look. Route groups `(site)` and `(toolkit)` carry each look; URLs do not change.
+- Two looks, one site. Consulting pages (Home, Services, Work, About) use the default style sheet on paper. Ember OS pages (`/emberos`, `/muse-kitchen`, `/cotyledon`, `/comptable`, `/mission`) keep the dark Ember OS look. Route groups `(site)` and `(toolkit)` carry each look; URLs do not change.
 - The wordmark is "Food Is My Muse Consulting", set in type. It is the only wordmark in the main header. Rob Bogatin is named in the hero lede; his history is the Work page's operating-history band (moved off Home 2026-10-21), fed from `src/content/work.ts`.
 - The Muse Kitchen and Cotyledon pages each carry their app's portal card, which signs directly into the app. Each page lists only its own app's modules; content about Ember OS as a whole appears on both. Every Ember OS page closes with "Have a seat at the table" (The Local Pulse and the peer network, from CompTable).
 - The Mission page is Rob's first-person note. Rob confirms its biographical facts before publishing.

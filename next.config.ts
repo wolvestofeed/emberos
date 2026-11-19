@@ -28,11 +28,12 @@ const SECURITY_HEADERS = [
 ];
 
 const nextConfig: NextConfig = {
-  // The Tool Kit and Platform pages split into Muse Kitchen and Cotyledon on 2026-11-10; old links land on Muse Kitchen.
+  // The Ember OS landing page is /emberos (2026-11-19); the old Tool Kit and Platform links land there.
   async redirects() {
     return [
-      { source: '/tool-kit', destination: '/muse-kitchen', permanent: true },
-      { source: '/platform', destination: '/muse-kitchen', permanent: true },
+      { source: '/tool-kit', destination: '/emberos', permanent: true },
+      { source: '/platform', destination: '/emberos', permanent: true },
+      { source: '/ember-os', destination: '/emberos', permanent: true },
     ];
   },
   async headers() {

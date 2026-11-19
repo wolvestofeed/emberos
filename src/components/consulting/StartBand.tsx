@@ -8,12 +8,12 @@ export interface StartBandContent {
 
 /**
  * "Start from where you are" (marketing refresh, 2026-11-18): how an open business moves onto Muse
- * Kitchen from the software it already runs. A cream band between How it works and the Tool Kit.
+ * Kitchen from the software it already runs. A paper band between the Tool Kit (cream) and the closing (cream).
  */
 export function StartBand({ content }: { content: StartBandContent }) {
   const { eyebrow, heading, body, steps } = content;
   return (
-    <section aria-labelledby="start-heading" className="bg-cream">
+    <section aria-labelledby="start-heading">
       <div className="container-wide py-16 sm:py-[88px]">
         <div className="flex flex-col gap-3">
           <p className="eyebrow text-copper-ink">{eyebrow}</p>

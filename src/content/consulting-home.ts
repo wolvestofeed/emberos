@@ -80,7 +80,7 @@ export const symptoms: SymptomsContent = {
 export const wholeSystems: WholeSystemsContent = {
   eyebrow: 'Integrated business systems',
   heading: 'Every input is wired to the books.',
-  body: "Food Is My Muse Consulting builds its own tools and offers food business clients CPA-grade accounting ledgers & reports with unit economics, HR and sustainability metrics baked in. Muse Kitchen runs production and the back office. Keep your POS for the front of house, connect your QuickBooks, and the books are one ledger.",
+  body: "Food Is My Muse Consulting builds its own tools and offers food business clients CPA-grade accounting ledgers & reports with unit economics, HR and sustainability metrics baked in. Muse Kitchen runs production and the back office. Keep your POS for the front of house, connect your accounting software, and the books are one ledger.",
   ledger: {
     title: 'One master ledger captures',
     lines: [
@@ -126,13 +126,13 @@ export const howItWorks: HowItWorksContent = {
   ],
 };
 
-/** Start from where you are (marketing refresh, 2026-11-18): how an open business moves onto Muse Kitchen. Draft for Rob's rewrite. */
+/** Start from where you are (2026-11-18): below the Tool Kit, so the software is introduced first. Heading and body are Rob's. */
 export const startBand: StartBandContent = {
   eyebrow: 'Start from where you are',
-  heading: 'Your first month on the system starts from the reports you already have.',
-  body: 'No re-keying a year of history. The software you run today already holds what Muse Kitchen needs to begin.',
+  heading: 'Ember OS is two applications built on one system.',
+  body: "You can get started with last month's data or start from scratch.",
   steps: [
-    { title: 'Bring last month', body: "Drop in last month's reports from your POS, accounting and payroll software. They are read into a baseline month." },
+    { title: 'Bring last month, or start fresh', body: "Drop in last month's reports from your POS, accounting and payroll software and they are read into a baseline month, or begin with an empty kitchen." },
     { title: 'Set up by voice or by form', body: 'The onboarding wizard takes your business, your locations and your software, described in your own words or typed.' },
     { title: 'Go live by location', body: 'Each location gets its own go-live date. Before it, practice stays off the books; after it, the month to date is posted.' },
   ],
@@ -144,16 +144,17 @@ export const toolKit: ToolKitTeaserContent = {
   lead: 'Every retainer engagement includes its own software accounts, set up and taught by the person who built them.',
   body: 'Both are included while a retainer is active. Rob sets the business up on both, trains the staff who use them, and keeps working weekly or monthly until the owner runs the business without him.',
   apps: [
-    { name: 'Muse Kitchen', line: 'Runs production, costing and the back office in Restaurant or Batch Kitchen mode, beside your POS and QuickBooks.', price: 'List price $250/month', emberBadge: true },
+    { name: 'Muse Kitchen', line: 'Runs production, costing and the back office in Restaurant or Batch Kitchen mode, with Local Pulse, a peer-to-peer intelligence network.', price: 'List price $250/month', brand: 'muse-kitchen' },
     {
       name: 'CompTable',
-      line: 'Models compensation, payroll cost, take-home pay and labor compliance.',
+      brand: 'comptable',
+      line: 'Models compensation, payroll cost, take-home pay and labor compliance, with Local Pulse, a peer-to-peer intelligence network.',
       price: 'Get started free',
       href: COMPTABLE_URL,
       extra: { label: 'Try the Live Demo (free sign-up)', href: `${COMPTABLE_URL}/sign-up` },
     },
   ],
-  link: { label: 'Open Ember OS', href: '/muse-kitchen' },
+  link: { label: 'Open Ember OS', href: '/emberos' },
 };
 
 export const closing: ClosingContent = {

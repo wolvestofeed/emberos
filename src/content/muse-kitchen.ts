@@ -7,20 +7,21 @@ export const museKitchen: AppPageContent = {
   hero: {
     eyebrow: 'Ember OS · Muse Kitchen',
     headline: 'A sustainable food business operating system that feeds people, farmers, our soil and the planet.',
-    support: 'In Restaurant or Batch Kitchen mode, Ember OS runs your entire business, organizes your people and delivers sustainability reports, side by side.',
+    support: 'In Restaurant or Batch Kitchen mode, Ember OS runs your entire business, organizes your people and delivers sustainability reports, side by side. Local Pulse, a peer-to-peer intelligence network, sets your numbers beside kitchens like yours. All it needs beside it is your POS; keeping your accounting software is your choice.',
   },
 
   strip: {
     eyebrow: 'The departments it runs',
-    heading: 'Sourcing, Recipes, Production, Costing, Food Safety, Accounting and Sustainability.',
+    heading: 'Sourcing, Recipes, Production, Costing, Food Safety, Accounting, Sales, Sustainability and Peer Network Intelligence.',
     blockLabel: 'ENGINE',
     sequence: false,
     blocks: [
-      { name: 'Food Production', line: 'Restaurant or Batch Kitchen Modes, Supplier Directory, Ingredient & Recipe / Batch Management, Unlimited Forecasts, the day schedule and the floor, order-driven planning.' },
+      { name: 'Food Production', line: 'Restaurant or Batch Kitchen Modes, Organic Supplier Directory, Ingredient & Recipe / Batch Management, Unlimited Forecasts, the day schedule and the floor, order-driven planning.' },
       { name: 'People & Training', line: 'Staffing, schedules against labor demand, SOPs and training. Connects to the CompTable application for extensive staff wage and benefits planning.' },
           { name: 'Sustainability', line: 'Live calculations based on ingredients and supplier data, full reporting suite, track direct and indirect energy, water, waste, refrigerants and supplier footprint, beside the batches that made them.' },
       { name: 'Accounting', line: 'A double-entry ledger, inventory at actual cost, and the P&L, balance sheet and cash flow statements your CPA will approve.' },
       { name: 'Sales & Clients', line: 'A CRM surface with prospects, customers, orders and the portal interfaces for each.' },
+      { name: 'Local Pulse', line: 'A peer-to-peer intelligence network. Share your locked month anonymously, see where you stand in your Local Group of kitchens like yours, and ask for a private introduction to one that has already reached your goal.' },
     ],
   },
 
@@ -50,17 +51,23 @@ export const museKitchen: AppPageContent = {
     heading: 'A food business operating system with Restaurant and Batch Kitchen Modes.',
     sub: 'Now you can manage every slice of your business from one system, including sustainability measured from your own recipes and your own facility.',
     link: { label: 'See every module', href: '#every-module' },
+    featured: {
+      eyebrow: 'Peer-to-peer intelligence network',
+      name: 'Local Pulse',
+      line: 'Lock a month and share up to 19 production, financial and sustainability ratios, anonymously and one metric at a time, with your Local Group: kitchens of your kind and size, near you first. See the range, median and top quartile on every metric you share, and ask for a private introduction to a kitchen that has already reached your goal.',
+      link: { label: 'How Local Pulse works', href: '#local-pulse' },
+    },
     tiles: [
       { name: 'Production engine', line: 'Plans, batches, prep against par, schedules, capacity and time studies, from one plan of record.' },
       { name: 'CPA-grade accounting', line: 'Double-entry ledger, US GAAP perpetual inventory at actual cost, P&L, balance sheet and cash flow.' },
       { name: 'Unit economics', line: 'True cost per unit and cost to serve, built from tagged inputs.' },
       { name: 'Sustainability', line: 'Scope 1, 2 and 3 emissions, energy, water, waste, refrigerants and supplier life-cycle data.' },
-      { name: 'Supply chain', line: 'Procurement, purchase orders and a supplier directory with what each supplies.' },
+      { name: 'Supply chain', line: 'Procurement, purchase orders and an organic supplier directory with what each supplies.' },
       { name: 'Inventory and safety', line: 'FIFO lots and full traceability, par and count sheets, HACCP control points and line checks.' },
       { name: 'People', line: 'Staffing, schedules against labor demand, SOPs and training.' },
       { name: 'Sales and clients', line: 'Sales portal, prospects, customers and subscribers, orders.' },
       { name: 'Portals', line: 'Customer, client, supplier and family portals, each in its own space.' },
-      { name: 'Billing and payments', line: 'Invoicing and receivables; payables with bills captured by camera and a bill register.' },
+      { name: 'Receipt and bill management', line: 'Invoicing and receivables; payables with bills captured by camera and a bill register.' },
     ],
   },
 

@@ -2,6 +2,7 @@ import { APPS, type AppKey } from '@/config/apps';
 
 const LIGHT: Record<AppKey, string> = {
   muse: 'bg-muse-emerald/15 text-muse-emerald ring-muse-emerald/30',
+  comptable: 'bg-[#059669]/15 text-[#047857] ring-[#059669]/30',
   cotyledon: 'bg-coty-sky/15 text-coty-forest ring-coty-sky/40',
 };
 

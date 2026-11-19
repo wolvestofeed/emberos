@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: APPS.muse.runs,
 };
 
-/** The Muse Kitchen page: the Ember OS landing page since 2026-11-10 (was /tool-kit, which redirects here). */
+/** The Muse Kitchen page. The Ember OS landing page is /emberos since 2026-11-19. */
 export default function MuseKitchenPage() {
   return <AppLanding content={museKitchen} />;
 }

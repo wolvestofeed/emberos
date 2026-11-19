@@ -17,10 +17,10 @@ export interface NavItem {
   href: string;
 }
 
-/** Main navigation on the consulting pages, in order. Ember OS goes to the Muse Kitchen page, the Ember OS landing page. */
+/** Main navigation on the consulting pages, in order. Ember OS goes to the Ember OS landing page, /emberos (2026-11-19). */
 export const NAV: NavItem[] = [
   { label: 'Services', href: '/services' },
   { label: 'Work', href: '/work' },
-  { label: 'Ember OS', href: '/muse-kitchen' },
+  { label: 'Ember OS', href: '/emberos' },
   { label: 'About', href: '/about' },
 ];

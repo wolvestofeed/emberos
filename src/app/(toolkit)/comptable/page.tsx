@@ -268,7 +268,7 @@ export default function CompTablePage() {
       </Section>
 
       {/* 9b. CompTable and Muse Kitchen together (2026-11-18) */}
-      <Section band="light" ariaLabelledBy="together-heading">
+      <Section band="light" id="together" ariaLabelledBy="together-heading">
         <SectionHeading id="together-heading" eyebrow={together.eyebrow} title={together.heading} tone="light" />
         <p className="mt-6 max-w-3xl text-base leading-relaxed text-ink-soft">{together.body}</p>
         <ol className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">

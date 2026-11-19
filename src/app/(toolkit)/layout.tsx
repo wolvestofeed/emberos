@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 };
 
 /**
- * The Ember OS pages (`/muse-kitchen`, `/cotyledon`, `/comptable`, `/mission`): the Ember OS look.
+ * The Ember OS pages (`/emberos`, `/muse-kitchen`, `/cotyledon`, `/comptable`, `/mission`): the Ember OS look.
  * `.toolkit` restores the dark ground, cream text and amber focus ring from globals.css.
  */
 export default function ToolkitLayout({ children }: Readonly<{ children: React.ReactNode }>) {

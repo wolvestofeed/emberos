@@ -1,11 +1,12 @@
 import Link from 'next/link';
 import type { ReactNode } from 'react';
 
-type Tone = 'amber' | 'muse' | 'cotyledon' | 'ghost-dark' | 'ghost-light';
+type Tone = 'amber' | 'muse' | 'comptable' | 'cotyledon' | 'ghost-dark' | 'ghost-light';
 
 const TONES: Record<Tone, string> = {
   amber: 'bg-amber text-ink hover:bg-[#ffb94d]',
   muse: 'bg-muse-mint text-muse-deep hover:bg-[#b4e2cc]',
+  comptable: 'bg-[#059669] text-white hover:bg-[#047857]',
   cotyledon: 'bg-coty-mint text-coty-forest hover:bg-[#b3dfc5]',
   'ghost-dark': 'border border-mist/40 text-cream hover:border-cream hover:bg-white/5',
   'ghost-light': 'border border-ink/30 text-ink hover:border-ink hover:bg-ink/5',

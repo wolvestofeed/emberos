@@ -16,7 +16,7 @@ export function CTA({ heading = 'Sign in', body }: CTAProps) {
       {body ? <p className="mt-4 text-lg leading-relaxed text-mist">{body}</p> : null}
       <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
         {APP_LIST.map((app) => (
-          <Button key={app.key} href={app.url} tone={app.key === 'muse' ? 'muse' : 'cotyledon'} external>
+          <Button key={app.key} href={app.url} tone={app.key} external>
             {app.signInLabel}
           </Button>
         ))}
