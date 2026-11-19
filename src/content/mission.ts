@@ -7,7 +7,7 @@
 export const header = {
   eyebrow: 'Mission',
   headline: 'Food is my muse',
-  sub: 'Why I built Ember OS & CompTable',
+  sub: 'Why I built the Ember OS suite of applications',
 };
 
 export const note: string[] = [
