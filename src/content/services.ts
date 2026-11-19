@@ -40,7 +40,7 @@ export const services: Service[] = [
     slug: 'launch',
     numeral: '04',
     name: 'Business Launch',
-    line: 'Before you open: the operating systems, chart of accounts, costing & pricing models, opening budget & forecast, staffing plan & comp model, SOPs - built to run on day one.',
+    line: 'Before you open: the operating systems, chart of accounts, costing & pricing models, opening budget & forecast, staffing plan & comp model, SOPs, built to run on day one.',
     price: 'Project fee starting at $2,500',
   },
   {
@@ -64,7 +64,7 @@ export const servicesPage = {
     eyebrow: 'Consulting Services',
     headline: 'Start with a diagnostic.',
     headlineAccent: 'Stay for the systems and partner value.',
-    lede: 'Rob Bogatin works with owner operators onsite and in-person.',
+    lede: 'Rob Bogatin works onsite and in person with Austin owner operators, in their first years open or getting ready to open.',
   },
   sections: [
     {
@@ -95,6 +95,7 @@ export const servicesPage = {
         'Labor, scheduling, hiring and HR systems',
         'Quality control and written SOPs the crew follows',
         'Austin organics diversion kept on record in Muse Kitchen, with the annual plan ready to file',
+        "Month one starts from your last month's POS, accounting and payroll reports, imported into Muse Kitchen",
         'Monthly advisory or weekly embedded cadence',
       ],
       outcome: 'A partner that delivers serious results in the first three months. A roadmap to phase me out, so you can own every aspect of running your business.',
@@ -108,7 +109,7 @@ export const servicesPage = {
         'Core SOPs for prep, service and closing',
         'Formation, licensing, permits and the organics diversion program the City requires',
       ],
-      outcome: 'A complete build and launch plan working backwards from Opening Day',
+      outcome: 'A complete build and launch plan working backwards from Opening Day.',
     },
     {
       service: offer('05'),
@@ -127,17 +128,18 @@ export const servicesPage = {
 export const software: SoftwareAndTermsContent = {
   eyebrow: 'Software Tools and Service Terms',
   heading: 'Three decades of experience on top of cutting-edge food business software.',
-  lead: 'Every engagement comes with my expertise and focused attention on your business success. Retainers include use of the two software applications I built myself for food businesses just like yours - Muse Kitchen and CompTable.',
+  lead: 'Every engagement comes with my expertise and focused attention on your business success. Retainers include use of the two software applications I built myself for food businesses just like yours: Muse Kitchen and CompTable.',
   apps: [
     {
       name: 'Muse Kitchen',
       line: 'Runs production and the back office, beside your front-of-house POS',
       covers: [
-        'Recipes, batches and production planning, forecasts',
-        'Plate and batch costing from real prices paid',
-        'Customer CRM, Orders, Deliveries, Suppliers and CPA-grade books',
+        'Restaurant and Batch Kitchen modes: covers and plates, or meals and portions',
+        'Recipes, prep and production planning, with as many forecasts as you need',
+        'Plate and batch costing from real prices paid, with margins by channel',
+        'Receipts and supplier bills by camera, approved into CPA-grade books for every location',
         'Austin URO organics compliance: hauler invoices, containers, signage, the training log and the annual plan',
-        'Connects to your QuickBooks; your POS stays for the front of house',
+        'Starts from your POS and QuickBooks reports; your POS stays for the front of house',
       ],
       price: 'List price $250/month',
       emberBadge: true,
@@ -150,8 +152,10 @@ export const software: SoftwareAndTermsContent = {
         'Maximize profit and offer living wages and staff benefits',
         'Payroll liabilities, staff income and FOH/BOH disparity',
         'Compliance rules that cite the statute and the dollar impact',
+        'Take-home pay for every employee, with filing status and local income tax',
+        'Roster and weekly schedule, published to staff on their own link',
       ],
-      price: 'List price $50/month+ AI tokens as needed',
+      price: 'Get started free',
       href: 'https://getcomptable.com',
       logo: { src: '/brand/comptable/comptable-name-logo.webp', alt: 'CompTable', width: 800, height: 175 },
       overlay: { src: '/brand/comptable/comptable-name-logo.webp', alt: '', width: 800, height: 175 },
@@ -174,7 +178,7 @@ export const software: SoftwareAndTermsContent = {
       { label: 'Minimum', text: `Retainers (${offer('03').name}, ${offer('04').name}, ${offer('05').name}) run three months minimum, billed monthly in advance.` },
       {
         label: 'Software included',
-        text: 'While a retainer is active, Muse Kitchen (list price $250/month) and CompTable (list price $50/month + tokens) are included free for three months.',
+        text: 'While a retainer is active, Muse Kitchen (list price $250/month) and CompTable (get started free) are included free for three months.',
       },
       { label: 'Month one', text: 'Rob sets the business up on both platforms and trains the staff who use them, so you run the software alongside him for at least two months.' },
       { label: 'The end', text: 'The engagement ends with you running the business on your own system.' },

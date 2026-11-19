@@ -16,7 +16,7 @@ export const metadata: Metadata = {
  * getcomptable.com. The hero sits on cream because the CompTable name logo is dark on white.
  */
 export default function CompTablePage() {
-  const { hero, questions, localPulse, network, share, engine, inventory, privacy, callouts, teamPhoto } = comptable;
+  const { hero, demo, questions, localPulse, network, share, engine, inventory, privacy, callouts, together, teamPhoto } = comptable;
   return (
     <>
       {/* 1. Hero */}
@@ -53,6 +53,28 @@ export default function CompTablePage() {
           />
         </div>
       </section>
+
+      {/* 1b. The Live Demo (2026-11-18) */}
+      <Section band="light" id="live-demo" ariaLabelledBy="demo-heading">
+        <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+          <div>
+            <SectionHeading id="demo-heading" eyebrow={demo.eyebrow} title={demo.heading} tone="light" />
+            <p className="mt-6 max-w-xl text-base leading-relaxed text-ink-soft">{demo.body}</p>
+            <div className="mt-8">
+              <Button href={demo.button.href} external>
+                {demo.button.label}
+              </Button>
+            </div>
+          </div>
+          <ul className="grid gap-2 rounded-card border border-cream-line bg-paper p-7 shadow-card-light sm:grid-cols-2 lg:grid-cols-1">
+            {demo.businesses.map((b) => (
+              <li key={b} className="text-sm leading-relaxed text-ink">
+                {b}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </Section>
 
       {/* 2. The questions operators ask */}
       <Section band="dark" ariaLabelledBy="questions-heading">
@@ -243,6 +265,22 @@ export default function CompTablePage() {
             </div>
           ))}
         </div>
+      </Section>
+
+      {/* 9b. CompTable and Muse Kitchen together (2026-11-18) */}
+      <Section band="light" ariaLabelledBy="together-heading">
+        <SectionHeading id="together-heading" eyebrow={together.eyebrow} title={together.heading} tone="light" />
+        <p className="mt-6 max-w-3xl text-base leading-relaxed text-ink-soft">{together.body}</p>
+        <ol className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {together.flows.map((f) => (
+            <li key={f.what} className="rounded-card border border-cream-line bg-paper p-6 shadow-card-light">
+              <p className="font-label text-[0.65rem] uppercase tracking-[0.16em] text-ink-soft">{f.direction}</p>
+              <h3 className="mt-3 font-display text-2xl leading-tight text-copper">{f.what}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-ink-soft">{f.line}</p>
+            </li>
+          ))}
+        </ol>
+        <p className="mt-8 max-w-3xl text-sm leading-relaxed text-ink-soft">{together.note}</p>
       </Section>
 
       {/* 10. Have a seat at the table */}

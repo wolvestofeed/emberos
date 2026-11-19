@@ -9,11 +9,13 @@ import type { SymptomsContent } from '@/components/consulting/Symptoms';
 import type { DiagnosticContent } from '@/components/consulting/DiagnosticBlock';
 import type { HowItWorksContent } from '@/components/consulting/HowItWorks';
 import type { WholeSystemsContent } from '@/components/consulting/WholeSystems';
+import type { StartBandContent } from '@/components/consulting/StartBand';
 import { BOOKING_URL, BOOK_LABEL } from '@/config/site';
+import { COMPTABLE_URL } from '@/content/comptable';
 import { offer, servicesPage } from '@/content/services';
 
 export const hero: HeroContent = {
-  eyebrow: 'Indy Food businesses & Restaurants in Austin',
+  eyebrow: 'Independent food businesses & restaurants in Austin',
   headline: "You've mastered your craft. Now,",
   headlineAccent: "It's time to run your food business.",
   // Draft for Rob's review (2026-10-20): the lede opens with his name and role; the practice line is his, unchanged.
@@ -81,7 +83,16 @@ export const wholeSystems: WholeSystemsContent = {
   body: "Food Is My Muse Consulting builds its own tools and offers food business clients CPA-grade accounting ledgers & reports with unit economics, HR and sustainability metrics baked in. Muse Kitchen runs production and the back office. Keep your POS for the front of house, connect your QuickBooks, and the books are one ledger.",
   ledger: {
     title: 'One master ledger captures',
-    lines: ['Food cost and production', 'Labor cost and staffing', 'Cash flow and sales forecasts', 'Sustainability', 'Austin organics compliance (URO)'],
+    lines: [
+      'Food cost and production',
+      'Plate cost by sales channel',
+      'Labor cost and staffing',
+      'Receipts and bills, captured by camera',
+      'Cash flow and sales forecasts',
+      "Every location's books in one ledger",
+      'Sustainability',
+      'Austin organics compliance (URO)',
+    ],
   },
 };
 
@@ -115,14 +126,32 @@ export const howItWorks: HowItWorksContent = {
   ],
 };
 
+/** Start from where you are (marketing refresh, 2026-11-18): how an open business moves onto Muse Kitchen. Draft for Rob's rewrite. */
+export const startBand: StartBandContent = {
+  eyebrow: 'Start from where you are',
+  heading: 'Your first month on the system starts from the reports you already have.',
+  body: 'No re-keying a year of history. The software you run today already holds what Muse Kitchen needs to begin.',
+  steps: [
+    { title: 'Bring last month', body: "Drop in last month's reports from your POS, accounting and payroll software. They are read into a baseline month." },
+    { title: 'Set up by voice or by form', body: 'The onboarding wizard takes your business, your locations and your software, described in your own words or typed.' },
+    { title: 'Go live by location', body: 'Each location gets its own go-live date. Before it, practice stays off the books; after it, the month to date is posted.' },
+  ],
+};
+
 export const toolKit: ToolKitTeaserContent = {
   eyebrow: 'Tool Kit',
   heading: 'The software that comes with me.',
   lead: 'Every retainer engagement includes its own software accounts, set up and taught by the person who built them.',
   body: 'Both are included while a retainer is active. Rob sets the business up on both, trains the staff who use them, and keeps working weekly or monthly until the owner runs the business without him.',
   apps: [
-    { name: 'Muse Kitchen', line: 'Runs production, costing and the back office, beside your POS and QuickBooks.', price: 'List price $250/month', emberBadge: true },
-    { name: 'CompTable', line: 'Models compensation, payroll cost and labor compliance.', price: 'List price $50/month + tokens', href: 'https://getcomptable.com' },
+    { name: 'Muse Kitchen', line: 'Runs production, costing and the back office in Restaurant or Batch Kitchen mode, beside your POS and QuickBooks.', price: 'List price $250/month', emberBadge: true },
+    {
+      name: 'CompTable',
+      line: 'Models compensation, payroll cost, take-home pay and labor compliance.',
+      price: 'Get started free',
+      href: COMPTABLE_URL,
+      extra: { label: 'Try the Live Demo (free sign-up)', href: `${COMPTABLE_URL}/sign-up` },
+    },
   ],
   link: { label: 'Open Ember OS', href: '/muse-kitchen' },
 };

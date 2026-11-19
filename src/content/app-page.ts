@@ -70,6 +70,14 @@ export interface AppPageContent {
   planning: { heading: string; items: TitledItem[]; band?: 'light' | 'dark' };
   /** How the engine thinks. Optional: Muse Kitchen dropped it on 2026-11-10 and a cream gap stands in its place. */
   rules?: { heading: string; items: TitledItem[] };
+  /**
+   * Highlights: what the application does that the module list alone does not show (Muse Kitchen,
+   * marketing refresh 2026-11-18). Optional; a card with an `id` is a jump target (the closing band's
+   * Local Pulse button lands on `local-pulse`).
+   */
+  highlights?: { eyebrow: string; heading: string; sub?: string; items: { id?: string; title: string; body: string; points?: string[] }[] };
+  /** Overrides the closing band's Local Pulse link on this page, e.g. `#local-pulse`. */
+  seatPrimaryHref?: string;
   groups: { heading: string; items: ModuleGroup[] };
   spotlight: {
     heading: string;

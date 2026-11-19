@@ -24,7 +24,6 @@ Front-end UI surface only: copy, design tokens, static pages and components. No 
 - Software on the consulting pages: Muse Kitchen (Ember OS) and CompTable (getcomptable.com) only, included while a retainer is active. Cotyledon never appears on the consulting pages; the "Powered by Ember OS" badge applies to Muse Kitchen only. CompTable copy states facts and math and never advises: no "recommend", "should", "best", "optimal", "consider switching" or "we suggest".
 - Voice copy is Rob's. He edits `src/content/*.ts` directly; a bracketed line is a slot he has not filled and renders as-is. Never redraft his copy.
 - Cotyledon's app rules (no icons, no persuasive copy, replace-not-log) do not govern this site. Log every change in `Docs/ROADMAP.md` → Update Log.
-- No walkthrough or demo call-to-action.
 
 ## Rules
 1. **Brand assets come from the kits only:** the Ember OS web library, the Muse Kitchen + Ember logo files, the Cotyledon logo files. Never redraw or alter a logo.

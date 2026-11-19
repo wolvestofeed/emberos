@@ -51,6 +51,15 @@ The site becomes the marketing site for Food Is My Muse Consulting; Ember OS mov
 - [x] Review and first push (C5, 2026-10-20)
 - [ ] Imagery: the operating-history photo, Work images when wanted (C4)
 
+## Phase 7 — Marketing refresh (Rob, 2026-11-18)
+Home, a Services polish, the Muse Kitchen and CompTable pages brought up to what the apps do since the 10 Nov push, and the Muse Kitchen welcome page. Tracked in `Docs/roadmaps/marketing-refresh-roadmap.md`.
+- [x] Rob's decisions (demo CTA rule, CompTable price and template names, software terms, Diagnostic length)
+- [x] Muse Kitchen page
+- [x] Home page
+- [x] Services polish
+- [x] CompTable page and the closing band
+- [x] Muse Kitchen welcome page (Muse Kitchen repo)
+
 ---
 
 ## Update Log
@@ -90,3 +99,6 @@ The site becomes the marketing site for Food Is My Muse Consulting; Ember OS mov
 - **2026-10-21**: Per Rob: the operating-history band leaves the home page and becomes the body of the Work page, below its intro, in place of the case list. `history` now lives in `src/content/work.ts` with the rows (the trailer row worded by `historyFact`); `title` and `body` stay on each case for later. Home runs hero, audiences, symptoms, whole systems, Diagnostic, how it works, Tool Kit, closing.
 - **2026-11-10**: Per Rob: the Tool Kit and Platform pages split into one page per application. `/muse-kitchen` is the Ember OS landing page (the old Tool Kit page with the Platform page's five rules and module list folded in, Cotyledon-only modules removed); `/cotyledon` is the same layout with Muse Kitchen-only parts removed; `/comptable` is new, a summary of the getcomptable.com home page (questions, The Local Pulse, the peer network, the compliance engine, the platform inventory, privacy, accountants and coalitions). `/tool-kit` and `/platform` redirect to `/muse-kitchen`. The Ember OS header reads Muse Kitchen, Cotyledon, CompTable, Mission, Consulting; the consulting menu's Tool Kit item is now Ember OS. Muse Kitchen's second section is five departments (Production, Accounting, Sales and clients, People, Sustainability) under Muse Kitchen's own line; Cotyledon keeps the seed-to-supper stages without Prepare. "Two trades today" is gone; every Ember OS page closes with "Have a seat at the table" (The Local Pulse and the peer network). Text pass to follow: module tile lines, the Nutrition first value and the spotlight example still describe both apps or the farm; the CompTable page carries no price until Rob picks one.
 - **2026-11-10**: Per Rob, Muse Kitchen page: the third commitment is now "The power to decide" (today's business and its forecasts in one connected system); "How the engine thinks" is removed from this page (Cotyledon keeps it); "Before you commit" sits on cream with light cards like the departments strip; "Inside the system" moves above "Every module, by section" on both app pages, with a four-line cream gap between the two dark bands. Rob's own copy edits in `src/content/muse-kitchen.ts` ride along. The Muse Kitchen banner (1500 × 500) is added to `library/banners/`.
+- **2026-11-18**: Per Rob: Phase 7, the marketing refresh, planned in `Docs/roadmaps/marketing-refresh-roadmap.md` from the 16 Nov platform overview, the Muse Kitchen and CompTable onboarding guides and both apps' commits since the 10 Nov push. No `src/` changes.
+- **2026-11-18**: Per Rob: every CompTable price line reads "Get started free", as on getcomptable.com: the home Tool Kit teaser, the Services software card, and the Services terms ("CompTable (get started free)"). The no-demo-CTA rule is deleted from `Docs/CLAUDE.md`. Not committed.
+- **2026-11-18**: Per Rob: Phase 7 built, not committed. Services polish; Home gains the "Start from where you are" band, new ledger lines and a Live Demo link on the CompTable tile; Muse Kitchen gains eight highlight cards, a Restaurant mode module group and a restaurant spotlight, with the Cotyledon wording removed and the closing band's Local Pulse button on `#local-pulse`; CompTable gains the Live Demo band, take-home pay, scheduling, Dictate, OT Analysis and the two-app band. The Muse Kitchen welcome page (its own repo) gains the welcome card. Detail in `Docs/roadmaps/marketing-refresh-roadmap.md`. Typecheck, lint and build pass; not viewed in a browser.

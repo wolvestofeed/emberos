@@ -2,8 +2,8 @@
  * The CompTable page (`/comptable`): a summary of the getcomptable.com home page, in its own wording.
  * Source: Comptable/apps/web/src/app/(marketing)/page.tsx, src/lib/marketing/local-pulse-copy.ts and
  * src/components/platform-inventory.tsx, read 2026-11-10. Facts only: CompTable copy never advises.
- * No price: the consulting site says $50/month + tokens, getcomptable.com says "Get started free";
- * Rob picks one before a number goes here.
+ * Price: "Get started free" everywhere CompTable is priced on this site, as on getcomptable.com
+ * (Rob, 2026-11-18).
  */
 export const COMPTABLE_URL = 'https://getcomptable.com';
 
@@ -21,6 +21,24 @@ export const comptable = {
       width: 863,
       height: 507,
     },
+  },
+
+  /** The Live Demo (marketing refresh, 2026-11-18; Comptable/docs/beta/beta-onboarding-guide.md, Part 1). Sign-up with an email opens it. */
+  demo: {
+    eyebrow: 'The Live Demo',
+    heading: 'The real product, running on eight sample businesses.',
+    body: 'Sign up with your email, choose Live Demo in the header, and open a business as its owner would see it, or a CPA firm that manages all eight. Everything that calculates is open; nothing you change is saved.',
+    businesses: [
+      'Muse Austin Bar and Grill · Austin',
+      'Muse Austin Coffee and Tea · Austin',
+      'Muse Austin Smokehouse · Austin',
+      'Mile High Agave · Denver',
+      'Green City Table · Chicago',
+      'Ballard Fire & Hops · Seattle',
+      'Tribeca Oyster House · New York City',
+      'Mission Mezze · San Francisco',
+    ],
+    button: { label: 'Try the Live Demo (free sign-up)', href: `${COMPTABLE_URL}/sign-up` },
   },
 
   questions: {
@@ -139,6 +157,9 @@ export const comptable = {
       'AI-assisted data ingestion and narratives',
       'Math trails, scenario and library management',
       'CPA-ready audit exports and account access',
+      'Take-home pay for every employee, with filing status and local income tax in nine states',
+      'The roster and the weekly schedule, published to staff on their own link',
+      'Dictate: describe your roster or your goals by voice',
     ],
     simulatorsLabel: 'Simulators and tools',
     simulators: [
@@ -146,6 +167,7 @@ export const comptable = {
       { name: 'Menu Pricing Engine', line: 'Translates a labor cost change into menu price changes by category, under a chosen strategy: maintain margin, prime cost % or target labor %.' },
       { name: 'Labor Headroom Solver', line: 'Given a fixed menu, searches the other levers (hours, headcount, wages, bonus, benefits, margin) and returns ranked candidates.' },
       { name: 'Wage Compression Simulator', line: 'Given a new wage floor, shows who falls below it and who collapses into the new-hire band. Tenure-aware when hire dates are present.', tag: 'Tool' },
+      { name: 'OT Analysis', line: 'Finds the roster rows working overtime and sets the overtime cost beside a backfill hire for the same hours.', tag: 'Tool' },
     ],
     templatesLabel: 'Compensation templates',
     templates: [
@@ -191,6 +213,20 @@ export const comptable = {
       link: { label: 'The Local Pulse for organizations', href: `${COMPTABLE_URL}/the-local-pulse#organizations` },
     },
   ],
+
+  /** CompTable and Muse Kitchen (2026-11-18; beta guide Part 5). The connection is being built. */
+  together: {
+    eyebrow: 'Ember OS',
+    heading: 'How CompTable and Muse Kitchen work together',
+    body: 'CompTable holds your people: roster, wages, payroll burden, benefits and the schedule you publish. Muse Kitchen runs suppliers, recipes, production, inventory, food safety, the books, sales and sustainability.',
+    flows: [
+      { what: 'Staff demand', direction: 'Muse Kitchen → CompTable', line: 'The headcount and hours the production plan needs, by task and station, two weeks out.' },
+      { what: 'Published schedule', direction: 'CompTable → Muse Kitchen', line: 'The schedule you publish shows against demand as staff coverage by day.' },
+      { what: 'Clock punches', direction: 'Muse Kitchen → CompTable', line: 'Hours worked on the kitchen floor come back to CompTable.' },
+      { what: 'Closed pay period', direction: 'CompTable → Muse Kitchen', line: 'Wages, payroll taxes, workers’ comp and benefits post to the books as labor cost per batch and per plate.' },
+    ],
+    note: 'Pay stays in CompTable; only totals cross. The two-way connection is being built, and today each app runs on its own. What you set up in CompTable now is what Muse Kitchen will read.',
+  },
 
   /** The photo beside "Have a seat at the table" on this page (Comptable/apps/web/public/images). */
   teamPhoto: {

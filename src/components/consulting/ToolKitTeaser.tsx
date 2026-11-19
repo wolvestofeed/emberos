@@ -10,6 +10,8 @@ export interface ToolKitApp {
   /** Only Muse Kitchen carries the kit's "Powered by Ember OS" badge. */
   emberBadge?: boolean;
   href?: string;
+  /** A second link under the price, e.g. CompTable's Live Demo (2026-11-18). */
+  extra?: { label: string; href: string };
 }
 
 export interface ToolKitTeaserContent {
@@ -61,6 +63,11 @@ export function ToolKitTeaser({ content }: { content: ToolKitTeaserContent }) {
             </div>
             <p className="text-[15px] leading-relaxed text-ink-soft">{app.line}</p>
             <p className="figures border-t border-cream-deep pt-3 text-[13px] font-semibold text-ink">{app.price}</p>
+            {app.extra ? (
+              <a href={app.extra.href} className="self-start font-sans text-[14px] font-semibold text-copper-ink underline underline-offset-4 hover:text-ink">
+                {app.extra.label}
+              </a>
+            ) : null}
           </li>
         ))}
       </ul>

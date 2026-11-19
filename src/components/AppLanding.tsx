@@ -16,7 +16,7 @@ import { SeatAtTheTable } from '@/components/SeatAtTheTable';
  * from the page's content file.
  */
 export function AppLanding({ content }: { content: AppPageContent }) {
-  const { app, hero, strip, values, modules, planning, rules, groups, spotlight, screens, missionTeaser } = content;
+  const { app, hero, strip, values, modules, planning, rules, highlights, seatPrimaryHref, groups, spotlight, screens, missionTeaser } = content;
   const planningLight = planning.band === 'light';
   return (
     <>
@@ -91,6 +91,35 @@ export function AppLanding({ content }: { content: AppPageContent }) {
         </div>
       </Section>
 
+      {/* 5b. Highlights (Muse Kitchen, 2026-11-18): dark, so a cream gap follows before the dark screens band. */}
+      {highlights ? (
+        <>
+          <Section band="deep" ariaLabelledBy="highlights-heading">
+            <SectionHeading id="highlights-heading" eyebrow={highlights.eyebrow} title={highlights.heading} sub={highlights.sub} />
+            <div className="mt-12 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
+              {highlights.items.map((h, i) => (
+                <div key={h.title} id={h.id} className="scroll-mt-20 rounded-card border border-ground-line bg-ground-raised p-7 shadow-card">
+                  <span className="font-display text-4xl leading-none text-amber">{String(i + 1).padStart(2, '0')}</span>
+                  <h3 className="mt-4 font-display text-2xl leading-tight text-copper-light">{h.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-mist">{h.body}</p>
+                  {h.points ? (
+                    <ul className="mt-4 space-y-1.5 border-t border-ground-line pt-4 text-sm leading-relaxed text-mist">
+                      {h.points.map((pt) => (
+                        <li key={pt} className="flex gap-2">
+                          <span aria-hidden="true" className="text-amber">·</span>
+                          <span>{pt}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : null}
+                </div>
+              ))}
+            </div>
+          </Section>
+          <div aria-hidden="true" className="h-24 bg-cream" />
+        </>
+      ) : null}
+
       {/* 6. How the engine thinks. Without rules, a dark planning band gets a cream gap (about four lines) so two dark bands do not run together; a cream planning band needs none. */}
       {rules ? (
         <Section band="light" ariaLabelledBy="rules-heading">
@@ -149,7 +178,7 @@ export function AppLanding({ content }: { content: AppPageContent }) {
 
       {/* 10. Have a seat at the table: The Local Pulse and the peer network */}
       <Section band="deep" ariaLabelledBy="seat-heading">
-        <SeatAtTheTable />
+        <SeatAtTheTable primaryHref={seatPrimaryHref} />
       </Section>
 
       {/* 11. Mission teaser */}

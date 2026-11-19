@@ -7,7 +7,7 @@ export const museKitchen: AppPageContent = {
   hero: {
     eyebrow: 'Ember OS · Muse Kitchen',
     headline: 'A sustainable food business operating system that feeds people, farmers, our soil and the planet.',
-    support: 'Ember OS runs your entire business, organizes your people and delivers sustainability reports, side by side.',
+    support: 'In Restaurant or Batch Kitchen mode, Ember OS runs your entire business, organizes your people and delivers sustainability reports, side by side.',
   },
 
   strip: {
@@ -51,16 +51,16 @@ export const museKitchen: AppPageContent = {
     sub: 'Now you can manage every slice of your business from one system, including sustainability measured from your own recipes and your own facility.',
     link: { label: 'See every module', href: '#every-module' },
     tiles: [
-      { name: 'Production engine', line: 'Plans, batches or sowings, schedules, capacity and time studies, from one plan of record.' },
+      { name: 'Production engine', line: 'Plans, batches, prep against par, schedules, capacity and time studies, from one plan of record.' },
       { name: 'CPA-grade accounting', line: 'Double-entry ledger, US GAAP perpetual inventory at actual cost, P&L, balance sheet and cash flow.' },
       { name: 'Unit economics', line: 'True cost per unit and cost to serve, built from tagged inputs.' },
       { name: 'Sustainability', line: 'Scope 1, 2 and 3 emissions, energy, water, waste, refrigerants and supplier life-cycle data.' },
       { name: 'Supply chain', line: 'Procurement, purchase orders and a supplier directory with what each supplies.' },
-      { name: 'Inventory and safety', line: 'FIFO lots and full traceability; HACCP control points or the Produce Safety Rule.' },
+      { name: 'Inventory and safety', line: 'FIFO lots and full traceability, par and count sheets, HACCP control points and line checks.' },
       { name: 'People', line: 'Staffing, schedules against labor demand, SOPs and training.' },
       { name: 'Sales and clients', line: 'Sales portal, prospects, customers and subscribers, orders.' },
       { name: 'Portals', line: 'Customer, client, supplier and family portals, each in its own space.' },
-      { name: 'Billing and payments', line: 'Invoicing, receivables and payables, and subscriptions billed through Stripe.' },
+      { name: 'Billing and payments', line: 'Invoicing and receivables; payables with bills captured by camera and a bill register.' },
     ],
   },
 
@@ -77,11 +77,72 @@ export const museKitchen: AppPageContent = {
         body: 'One day under two forecasts, or two recipes side by side: cost, labor, resources, footprint and the management figures, with every difference listed.',
       },
       {
-        title: 'Recipe & Roster Assistant',
+        title: 'Recipe Assistant',
         body: 'Type or dictate a change to any recipe. The engine proposes the new version, you approve it, and it is costed and saved into your library.',
       },
     ],
   },
+
+  /** Highlights (marketing refresh, 2026-11-18): built since the 10 Nov page. Drafts for Rob's rewrite. */
+  highlights: {
+    eyebrow: 'Built for the way you run',
+    heading: 'Two modes, one set of books, and a start from where you are.',
+    sub: 'What Muse Kitchen does beyond the module list, from the first day on the system to the month you compare with your peers.',
+    items: [
+      {
+        title: 'Two modes',
+        body: 'A business runs one or both. Each mode has its own menu, dashboard, vocabulary and costing basis; your business, locations and settings are shared.',
+        points: [
+          'Restaurant: covers and plates, the menu at its prices, par, prep list, order guide, line checks, sales by channel',
+          'Batch Kitchen: meals and portions, the batch your equipment makes, production planning, cold chain, deliveries',
+        ],
+      },
+      {
+        title: 'Start from where you are',
+        body: "Set up by voice or by form in the onboarding wizard. Drop in last month's reports from any POS, accounting or payroll software and they become your baseline month.",
+        points: ['A go-live date for each location', 'Practice stays off the books until then', 'POS sales and staff schedules import'],
+      },
+      {
+        title: 'Capture by camera',
+        body: 'Photograph a receipt or a supplier bill, or drop in the file. AI reads it into a draft, a person reviews it, and the approval posts it to the right account.',
+        points: ['Receipts and bills by location', 'The bill register and card payments'],
+      },
+      {
+        title: 'Every location, one ledger',
+        body: 'Each location keeps its own books, and the business reads as one double-entry ledger, with statements by location and by unit.',
+        points: ['Profit and loss, balance sheet and cash flow for any date range', 'Plan against actual', 'Every statement computed from records, none typed'],
+      },
+      {
+        title: 'Reports and lenses',
+        body: 'A library of 35 management reports across every department, with charts by week or month.',
+        points: [
+          'Five lenses: Performance, Loss & leakage, Alerts & compliance, Utilization & staffing, Sustainability',
+          'Export one report, a department or a lens as a workbook',
+        ],
+      },
+      {
+        id: 'local-pulse',
+        title: 'Local Pulse for kitchens',
+        body: 'Lock a month and share up to 19 ratio metrics, anonymously and one at a time, with your Local Group: kitchens of your kind and size, near you first.',
+        points: [
+          "The group's range, average, median and top quartile on every metric you share",
+          'Production, Financial and Sustainability views',
+          'A private introduction to a top-quartile kitchen, only when you ask',
+        ],
+      },
+      {
+        title: 'Libraries that ship with it',
+        body: 'Muse Kitchen arrives with the reference data a kitchen would otherwise have to build.',
+        points: ['700 certified organic and school-ready suppliers', 'An equipment catalog for each mode', '43 food emission factors and a register of cited sources', 'The chart of accounts'],
+      },
+      {
+        title: 'Sustainability to the portion',
+        body: 'A greenhouse-gas inventory across Scopes 1, 2 and 3, computed per portion and per batch, on the plan and on actuals, with every factor cited.',
+        points: ['The evidence pack', 'The organics and recycling compliance pack'],
+      },
+    ],
+  },
+  seatPrimaryHref: '#local-pulse',
 
   groups: {
     heading: 'Every module, by section',
@@ -91,7 +152,8 @@ export const museKitchen: AppPageContent = {
         purpose: 'See the whole operation at a glance.',
         modules: [
           { name: 'Dashboard', line: 'one card per section with its key figures; operators see their own view without company financials' },
-          { name: 'Reports', line: 'exports across every module' },
+          { name: 'Reports', line: '35 management reports, charts and five lenses, exported to a workbook' },
+          { name: 'Local Pulse', line: 'your locked month beside your Local Group' },
           { name: 'Sources', line: 'the register of every source a figure cites' },
         ],
       },
@@ -105,8 +167,20 @@ export const museKitchen: AppPageContent = {
           { name: 'Forecasts', line: 'save as many as you need; one is the plan of record, and a saved forecast can be forked' },
           { name: 'Compare', line: 'one day under two forecasts in both apps; two recipes side by side in Muse Kitchen, in cost, labor, resources, footprint and management figures' },
           { name: 'Recipe assistant', line: 'type or dictate a change; a proposal card to approve; costed and saved to the library on click' },
-          { name: 'Capacity, equipment or grow units, packaging', line: 'what the room can hold, and where a plan runs out of space' },
+          { name: 'Capacity, equipment, packaging', line: 'what the room can hold, and where a plan runs out of space' },
           { name: 'Floor', line: 'the operator’s surface: punch clock, stage records, closing a batch' },
+        ],
+      },
+      {
+        heading: 'Restaurant mode',
+        purpose: 'Covers and plates, from the menu to the line.',
+        modules: [
+          { name: 'Menu', line: 'every dish at its price, with plate economics by channel' },
+          { name: 'Beverages and resale items', line: 'their own libraries and count sheets' },
+          { name: 'Par and count sheets', line: 'only a full count trues the books' },
+          { name: 'Prep list and order guide', line: 'set par once; the prep list and order guide follow the count' },
+          { name: 'Line checks', line: 'a reading outside its limit shows as a finding' },
+          { name: 'Sales and labor imports', line: "covers and sales by channel from the POS's daily summary; labor from the staff schedule" },
         ],
       },
       {
@@ -118,6 +192,8 @@ export const museKitchen: AppPageContent = {
           { name: 'Ledger', line: 'double-entry, with perpetual inventory at actual cost under US GAAP (ASC 330)' },
           { name: 'Plan v actual, actuals', line: 'what was planned against what happened' },
           { name: 'Receivables, payables', line: 'who owes, who is owed' },
+          { name: 'Receipts, bills and payables', line: 'captured by camera, reviewed, approved into the books; the bill register' },
+          { name: 'Locations', line: 'each location its own books, one consolidated ledger, a go-live date per location' },
           { name: 'Capital & financing', line: 'equipment, loans and the money that built the place' },
         ],
       },
@@ -126,7 +202,7 @@ export const museKitchen: AppPageContent = {
         purpose: 'Know every lot, from receipt to the plate or flat.',
         modules: [
           { name: 'Inventory', line: 'FIFO lots at the price paid' },
-          { name: 'Food safety', line: 'HACCP and critical control points' },
+          { name: 'Food safety', line: 'HACCP and critical control points; line checks in Restaurant mode' },
         ],
       },
       {
@@ -134,7 +210,7 @@ export const museKitchen: AppPageContent = {
         purpose: 'Buy well and know who you buy from.',
         modules: [
           { name: 'Procurement', line: "purchase orders at each supplier's published price" },
-          { name: 'Suppliers', line: 'the directory: who they are, what they supply, and at what price' },
+          { name: 'Suppliers', line: 'the directory of 700 certified organic and school-ready suppliers: who they are, what they supply, and at what price' },
           { name: 'Supplier portal', line: 'suppliers sign in to their own space' },
         ],
       },
@@ -164,6 +240,7 @@ export const museKitchen: AppPageContent = {
         purpose: 'From first conversation to standing order.',
         modules: [
           { name: 'Sales portal', line: "the seller's own space" },
+          { name: 'Sales CRM', line: 'prospects, customers and orders on one sales surface' },
           { name: 'Prospects', line: 'the pipeline, mapped' },
           { name: 'Customers', line: 'every account with its pickup points or delivery sites' },
           { name: 'Orders', line: 'confirmed and delivered, ready for production' },
@@ -190,6 +267,7 @@ export const museKitchen: AppPageContent = {
         heading: 'Workspaces',
         modules: [
           { name: 'Multi-tenant from the ground up', line: 'each business is its own workspace, isolated in the database, with its own members and roles' },
+          { name: 'Onboarding wizard', line: 'your business, locations, software and modules, by voice or by form' },
         ],
       },
     ],
@@ -197,13 +275,13 @@ export const museKitchen: AppPageContent = {
 
   spotlight: {
     heading: 'Every number shows its work',
-    body: 'Open any figure in Ember OS and it tells you where it came from. A seed price carries its supplier and the receipt it was paid on. A labor minute carries the time study it was timed in. A number still waiting on real data says so, in a different color, until the real one replaces it.',
-    recordLabel: 'Grow plan · Broccoli, 10 × 20 tray',
+    body: 'Open any figure in Ember OS and it tells you where it came from. An ingredient price carries its supplier and the bill it was paid on. A labor minute carries the schedule or time study it came from. A number still waiting on real data says so, in a different color, until the real one replaces it.',
+    recordLabel: 'Menu item · Brisket plate, dine-in',
     exampleNote: 'Example values, not a live record.',
     rows: [
-      { label: 'Broccoli seed', value: '$9.40', unit: '/ lb', tag: 'SOURCED', source: 'Supplier price list, received 14 Sep 2026 · receipt #4120' },
-      { label: 'Sowing labor', value: '6.5', unit: 'min / tray', tag: 'DERIVED', source: 'Time study TS-07, three timed observations' },
-      { label: 'Grow-room electricity', value: '$0.142', unit: '/ kWh', tag: 'PLACEHOLDER', source: 'Awaiting the first utility bill' },
+      { label: 'Brisket, whole packer', value: '$5.89', unit: '/ lb', tag: 'SOURCED', source: 'Supplier bill, captured 12 Nov 2026 · bill #2207' },
+      { label: 'Plate labor', value: '4.2', unit: 'min / plate', tag: 'DERIVED', source: 'Staff schedule import, week of 9 Nov, against covers from the POS' },
+      { label: 'Smoker gas', value: '$0.98', unit: '/ therm', tag: 'PLACEHOLDER', source: 'Awaiting the first utility bill' },
     ],
     legend: PROVENANCE_LEGEND,
   },
