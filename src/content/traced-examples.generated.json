@@ -44,8 +44,8 @@
         },
         {
           "department": "Fixed costs",
-          "item": "Absorbed overhead at $2.76 a meal",
-          "cost": 413.33,
+          "item": "Absorbed overhead at $1.62 a meal",
+          "cost": 243.22,
           "trace": "mealUnderForecast management.absorbed: budgeted manufacturing overhead on normal capacity, a meal × meals"
         }
       ],
@@ -130,7 +130,7 @@
           "note": "The plan’s price on the Corporate catering channel."
         },
         {
-          "name": "Loaded wage, delivery a meal, fixed-cost lines",
+          "name": "Loaded wage, delivery a meal",
           "status": "PLACEHOLDER",
           "note": "The seed plan’s working figures."
         },
@@ -146,8 +146,8 @@
         "Card fees: the order is invoiced, and the scenario states no card fee for it."
       ],
       "price": 2250,
-      "trueCost": 1430.89,
-      "trueMargin": 819.11,
+      "trueCost": 1260.78,
+      "trueMargin": 989.22,
       "totalHours": 12.51
     },
     {
