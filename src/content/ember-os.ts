@@ -54,6 +54,7 @@ const apps: EmberOsApp[] = [
       'Take-home pay for every employee',
       'Compliance findings and system alerts',
       'Local Pulse: your wage model beside operators like you',
+      'Planned: payroll processing. Not available today',
     ],
     learn: { label: 'Explore CompTable', href: '/comptable' },
     start: { label: 'Get started free', href: `${COMPTABLE_URL}/sign-up` },
