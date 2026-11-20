@@ -35,7 +35,7 @@ const BRAND = {
  * the two engines (the app cards) and Local Pulse; Cotyledon below.
  */
 export default function EmberOsPage() {
-  const { hero, stack, planning, engines, apps, localPulse, cotyledon } = emberOs;
+  const { hero, stack, planning, engines, apps, localPulse, startHeading, startSteps, cotyledon } = emberOs;
   return (
     <>
       {/* Hero */}
@@ -160,6 +160,21 @@ export default function EmberOsPage() {
               </a>
             </p>
           </div>
+
+          <h2 id="start-heading" className="mx-auto mt-16 max-w-4xl text-balance text-center font-display text-3xl leading-[1.12] text-cream sm:text-4xl">
+            {startHeading}
+          </h2>
+          <ol aria-labelledby="start-heading" className="mx-auto mt-8 grid max-w-4xl gap-x-10 md:grid-cols-3">
+            {startSteps.map((s, i) => (
+              <li key={s.title} className="flex gap-4 border-t border-amber/40 py-5">
+                <span className="pt-1 font-display text-[15px] tabular-nums text-amber">{String(i + 1).padStart(2, '0')}</span>
+                <span className="flex flex-col gap-1.5">
+                  <span className="font-display text-[22px] leading-snug text-cream">{s.title}</span>
+                  <span className="text-[15px] leading-relaxed text-mist">{s.body}</span>
+                </span>
+              </li>
+            ))}
+          </ol>
 
           <div className="mx-auto mt-14 flex max-w-3xl flex-col items-center justify-center gap-3 border-t border-ground-line pt-8 text-center sm:flex-row sm:gap-4">
             <Image src="/brand/cotyledon/cotyledon-icon-128.png" alt="" width={128} height={128} className="h-9 w-9 rounded-md" />

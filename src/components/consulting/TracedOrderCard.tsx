@@ -1,3 +1,7 @@
+'use client';
+
+import { useState } from 'react';
+
 export interface TracedRow {
   /** The department the line belongs to: purchasing, production, operations, sales and admin, accounting. */
   department: string;
@@ -14,16 +18,34 @@ export interface SustainabilityRow {
   value: string;
 }
 
+export interface RevenueLine {
+  /** The menu item or meal sold. */
+  item: string;
+  quantity: number;
+  /** Dollars each. */
+  price: number;
+  total: number;
+}
+
 export interface TracedOrderExample {
-  title: string;
-  /** "Illustrative example" until Rob supplies real figures. */
-  label: string;
-  /** The order or batch being traced, set bold under the title. */
+  /** The tab that opens this example: "Catering order", "Restaurant". */
+  tab: string;
+  /** The order, batch or service being traced, set bold under the tabs. */
   item: string;
   rows: TracedRow[];
   price: number;
+  /** The items sold behind the price; their totals sum to it. */
+  revenue?: { lines: RevenueLine[]; total: number };
   /** The order's sustainability report: one metric per row, beside the money and hours. */
   sustainability?: { title: string; rows: SustainabilityRow[] };
+}
+
+export interface TracedOrderContent {
+  title: string;
+  /** "Illustrative example" until Rob supplies real figures. */
+  label: string;
+  /** One example per tab; the first opens by default. */
+  examples: TracedOrderExample[];
 }
 
 const usd = (n: number) => `$${n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
@@ -32,12 +54,14 @@ const hrs = (n: number) => `${n.toFixed(2)} h`;
 const SUBTITLE = 'font-label text-[10px] uppercase tracking-[0.24em] text-ink-soft';
 
 /**
- * One order traced through every department: one card, one title, and under it two ledgers side by
+ * One order traced through every department: one card, one title, a tab per example, and under them two ledgers side by
  * side (stacked under about 640 px): the costing on the left, with true cost, true margin and total
  * hours computed from the rows, and the order's sustainability report on the right.
  */
-export function TracedOrderCard({ example }: { example: TracedOrderExample }) {
-  const { title, label, item, rows, price, sustainability } = example;
+export function TracedOrderCard({ content }: { content: TracedOrderContent }) {
+  const { title, label, examples } = content;
+  const [active, setActive] = useState(0);
+  const { item, rows, price, revenue, sustainability } = examples[active] ?? examples[0];
   const trueCost = rows.reduce((sum, r) => sum + r.cost, 0);
   const totalHours = rows.reduce((sum, r) => sum + (r.hours ?? 0), 0);
   const margin = price - trueCost;
@@ -50,10 +74,30 @@ export function TracedOrderCard({ example }: { example: TracedOrderExample }) {
           <h3 className="font-serif text-[22px] font-semibold leading-tight text-ink">{title}</h3>
           <span className={SUBTITLE}>{label}</span>
         </div>
-        <p className="pt-1.5 text-[15px] font-bold text-ink">{item}</p>
+        {examples.length > 1 ? (
+          <div role="tablist" aria-label="Illustrative examples" className="mt-3 flex flex-wrap gap-x-5 gap-y-1">
+            {examples.map((e, i) => (
+              <button
+                key={e.tab}
+                type="button"
+                role="tab"
+                id={`traced-tab-${i}`}
+                aria-selected={i === active}
+                aria-controls="traced-panel"
+                onClick={() => setActive(i)}
+                className={`border-b-2 pb-1 font-label text-[11px] uppercase tracking-[0.2em] ${
+                  i === active ? 'border-tomato text-ink' : 'border-transparent text-ink-soft hover:text-ink'
+                }`}
+              >
+                {e.tab}
+              </button>
+            ))}
+          </div>
+        ) : null}
+        <p className="pt-2 text-[15px] font-bold text-ink">{item}</p>
       </div>
 
-      <div className="flex flex-wrap gap-x-8 gap-y-6">
+      <div id="traced-panel" role="tabpanel" aria-labelledby={`traced-tab-${active}`} className="flex flex-wrap gap-x-8 gap-y-6">
         <table className="figures w-full min-w-0 flex-[1_1_300px] self-start text-[15px] text-ink">
           <caption className="sr-only">
             {item}: cost and hours by department
@@ -88,16 +132,25 @@ export function TracedOrderCard({ example }: { example: TracedOrderExample }) {
               <th scope="row" className="pb-1 pt-3 text-left font-bold">
                 True cost
               </th>
-              <td className="pb-1 pt-3 text-right font-bold">{usd(trueCost)}</td>
-              <td className="pb-1 pt-3 text-right font-bold text-ink">{hrs(totalHours)}</td>
+              <td className="whitespace-nowrap pb-1 pt-3 text-right font-bold">{usd(trueCost)}</td>
+              <td className="whitespace-nowrap pb-1 pl-3 pt-3 text-right font-bold text-ink">{hrs(totalHours)}</td>
             </tr>
             <tr className="text-ink-soft">
               <th scope="row" className="py-1 text-left font-normal">
-                Price
+                Revenue
               </th>
               <td className="py-1 text-right">{usd(price)}</td>
               <td />
             </tr>
+            {revenue?.lines.map((l) => (
+              <tr key={l.item} className="text-[13px] text-ink-soft">
+                <th scope="row" className="py-0.5 pl-3 pr-3 text-left font-normal">
+                  {l.quantity.toLocaleString('en-US')} {l.item} at {usd(l.price)}
+                </th>
+                <td className="whitespace-nowrap py-0.5 text-right align-bottom">{usd(l.total)}</td>
+                <td />
+              </tr>
+            ))}
             <tr className="border-t border-cream-deep">
               <th scope="row" colSpan={3} className="pt-4 text-left font-semibold">
                 <span className="flex flex-wrap items-baseline justify-between gap-x-4">

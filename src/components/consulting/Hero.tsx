@@ -1,5 +1,5 @@
 import { PrimaryButton, SecondaryButton } from '@/components/consulting/Buttons';
-import { TracedOrderCard, type TracedOrderExample } from '@/components/consulting/TracedOrderCard';
+import { TracedOrderCard, type TracedOrderContent } from '@/components/consulting/TracedOrderCard';
 
 export interface HeroContent {
   eyebrow: string;
@@ -10,8 +10,8 @@ export interface HeroContent {
   lede: { name: string; intro: string };
   primary: { label: string; href: string };
   secondary: { label: string; href: string };
-  /** One order traced through every department (brief section 6). */
-  traced: TracedOrderExample;
+  /** Orders traced through every department, one per tab (brief section 6). */
+  traced: TracedOrderContent;
   /** One line under the card naming what it shows: the whole-systems foundation. */
   caption: string;
 }
@@ -41,7 +41,7 @@ export function Hero({ content }: { content: HeroContent }) {
         </div>
       </div>
       <figure className="min-w-0 flex-[1_1_600px]">
-        <TracedOrderCard example={traced} />
+        <TracedOrderCard content={traced} />
         <figcaption className="mt-4 px-1 text-sm leading-relaxed text-ink-soft">{caption}</figcaption>
       </figure>
     </section>

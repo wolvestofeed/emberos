@@ -133,6 +133,14 @@ export const emberOs = {
     link: { label: 'Explore The Local Pulse', href: `${COMPTABLE_URL}/the-local-pulse` },
   } satisfies EmberOsSection & { pillars: { name: string; line: string }[]; link: { label: string; href: string } },
 
+  /** Getting started, three steps. Moved from the consulting home page on 2026-11-19; wording is Rob's. */
+  startHeading: 'Start from where you are',
+  startSteps: [
+    { title: 'Bring last month, or start fresh', body: "Drop in last month's reports from your POS, accounting and payroll software and they are read into a baseline month, or begin with an empty kitchen." },
+    { title: 'Set up by voice or by form', body: 'The onboarding wizard takes your business, your locations and your software, described in your own words or typed.' },
+    { title: 'Go live by location', body: 'Each location gets its own go-live date. Before it, practice stays off the books; after it, the month to date is posted.' },
+  ],
+
   cotyledon: {
     line: 'Also on Ember OS: Cotyledon, for microgreens and sprouts growers.',
     link: { label: 'Explore Cotyledon', href: '/cotyledon' },
