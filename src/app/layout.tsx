@@ -1,14 +1,32 @@
 import type { Metadata } from 'next';
-import { Cormorant_Garamond, Montserrat, Newsreader, Poppins } from 'next/font/google';
+import localFont from 'next/font/local';
 import { SITE_URL } from '@/config/apps';
 import { SITE_DESCRIPTION, SITE_NAME } from '@/config/site';
 import '@/app/globals.css';
 
-const montserrat = Montserrat({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'], variable: '--font-montserrat', display: 'swap' });
-const cormorant = Cormorant_Garamond({ subsets: ['latin'], weight: ['500', '600'], style: ['normal', 'italic'], variable: '--font-cormorant', display: 'swap' });
-const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500'], variable: '--font-poppins', display: 'swap' });
+/*
+ * Fonts are stored in the repo (src/app/fonts, Latin subset, OFL-1.1, from the @fontsource packages) so the
+ * build never fetches Google Fonts; Vercel builds failed twice on 19 Nov 2026 when that fetch broke.
+ */
+const montserrat = localFont({ src: './fonts/montserrat-latin-wght-normal.woff2', weight: '300 700', variable: '--font-montserrat', display: 'swap' });
+const cormorant = localFont({
+  src: [
+    { path: './fonts/cormorant-garamond-latin-wght-normal.woff2', weight: '500 600', style: 'normal' },
+    { path: './fonts/cormorant-garamond-latin-wght-italic.woff2', weight: '500 600', style: 'italic' },
+  ],
+  variable: '--font-cormorant',
+  display: 'swap',
+});
+const poppins = localFont({
+  src: [
+    { path: './fonts/poppins-latin-400-normal.woff2', weight: '400', style: 'normal' },
+    { path: './fonts/poppins-latin-500-normal.woff2', weight: '500', style: 'normal' },
+  ],
+  variable: '--font-poppins',
+  display: 'swap',
+});
 // Variable font with the optical-size axis: headings, the wordmark and large figures on the consulting pages.
-const newsreader = Newsreader({ subsets: ['latin'], axes: ['opsz'], variable: '--font-newsreader', display: 'swap' });
+const newsreader = localFont({ src: './fonts/newsreader-latin-opsz-normal.woff2', weight: '200 800', variable: '--font-newsreader', display: 'swap' });
 
 /** Site-wide metadata is the consulting practice's. The Ember OS group overrides it with Ember OS. */
 export const metadata: Metadata = {
