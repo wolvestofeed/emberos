@@ -1,0 +1,356 @@
+{
+  "generatedBy": "Muse Kitchen: pnpm demo:traced",
+  "examples": [
+    {
+      "key": "catering-lunch",
+      "tab": "Catering order",
+      "item": "Catering order: 150 boxed lunches at $15.00",
+      "revenue": {
+        "lines": [
+          {
+            "item": "Honey-Garlic Chicken with Sesame Broccoli",
+            "quantity": 150,
+            "price": 15,
+            "total": 2250
+          }
+        ],
+        "total": 2250
+      },
+      "rows": [
+        {
+          "department": "Purchasing",
+          "item": "Ingredients for 150 meals",
+          "cost": 508.78,
+          "trace": "costToServe food (costRecipe with the shrink allowance) × meals"
+        },
+        {
+          "department": "Production",
+          "item": "Prep, cook and pack at $29.28 an hour, loaded",
+          "cost": 366.28,
+          "hours": 12.51,
+          "trace": "costToServe directLabor: laborMinutesPerMeal at the order’s batch × blendedLoadedWage, × meals"
+        },
+        {
+          "department": "Operations",
+          "item": "Packaging",
+          "cost": 90,
+          "trace": "recipePackagingCost of the recipe’s picks × meals"
+        },
+        {
+          "department": "Operations",
+          "item": "Delivery",
+          "cost": 52.5,
+          "trace": "costToServe distribution (perMeal.delivery) × meals"
+        },
+        {
+          "department": "Fixed costs",
+          "item": "Absorbed overhead at $2.76 a meal",
+          "cost": 413.33,
+          "trace": "mealUnderForecast management.absorbed: budgeted manufacturing overhead on normal capacity, a meal × meals"
+        }
+      ],
+      "sustainability": {
+        "title": "Order Sustainability Report",
+        "rows": [
+          {
+            "metric": "Carbon emissions",
+            "value": "381 kg CO₂e",
+            "amount": 380.83802866546716,
+            "unit": "kg CO2e",
+            "trace": "mealUnderForecast footprint lines (ingredients, electricity, gas) a portion × portions sold, plus pathwayNet on the food waste"
+          },
+          {
+            "metric": "Energy consumption",
+            "value": "36 kWh",
+            "amount": 35.96141520244462,
+            "unit": "kWh",
+            "trace": "mealUnderForecast energy.kwhEq a portion × portions sold"
+          },
+          {
+            "metric": "Water, kitchen",
+            "value": "142 L",
+            "amount": 141.95294189999998,
+            "unit": "L",
+            "trace": "mealUnderForecast water a portion × portions sold, gallons to liters"
+          },
+          {
+            "metric": "Waste, food donation",
+            "value": "0.8 kg",
+            "amount": 0.8345827937703532,
+            "unit": "kg",
+            "trace": "trimKgPerPortion plus the shrink allowance on apMassPerPortionKg, × portions sold, × the scenario’s pathway share"
+          },
+          {
+            "metric": "Waste, animal feed",
+            "value": "1.7 kg",
+            "amount": 1.6691655875407063,
+            "unit": "kg",
+            "trace": "trimKgPerPortion plus the shrink allowance on apMassPerPortionKg, × portions sold, × the scenario’s pathway share"
+          },
+          {
+            "metric": "Waste, compost",
+            "value": "5.0 kg",
+            "amount": 5.007496762622118,
+            "unit": "kg",
+            "trace": "trimKgPerPortion plus the shrink allowance on apMassPerPortionKg, × portions sold, × the scenario’s pathway share"
+          },
+          {
+            "metric": "Waste, landfill",
+            "value": "0.8 kg",
+            "amount": 0.8345827937703532,
+            "unit": "kg",
+            "trace": "trimKgPerPortion plus the shrink allowance on apMassPerPortionKg, × portions sold, × the scenario’s pathway share"
+          }
+        ]
+      },
+      "inputs": [
+        {
+          "name": "Meals",
+          "status": "STATED",
+          "note": "The brief: one order of about 150 boxed lunches."
+        },
+        {
+          "name": "Recipe",
+          "status": "PLACEHOLDER",
+          "note": "The sample recipe every new kitchen starts with."
+        },
+        {
+          "name": "Packaging costs",
+          "status": "PLACEHOLDER",
+          "note": "The seed packaging library names these three packages with no cost on file; the costs are drafted for the demo."
+        },
+        {
+          "name": "Waste pathway shares",
+          "status": "PLACEHOLDER",
+          "note": "Robert, 2026-11-19: a made-up split, kept reasonable. The pounds are the engine’s trim and shrink; only the split is drafted."
+        },
+        {
+          "name": "Price a meal",
+          "status": "PLACEHOLDER",
+          "note": "The plan’s price on the Corporate catering channel."
+        },
+        {
+          "name": "Loaded wage, delivery a meal, fixed-cost lines",
+          "status": "PLACEHOLDER",
+          "note": "The seed plan’s working figures."
+        },
+        {
+          "name": "Ingredient prices",
+          "status": "PLACEHOLDER",
+          "note": "The seed library’s ingredient prices, most of them working figures."
+        }
+      ],
+      "notComputed": [
+        "Methane as its own figure: the engine carries methane inside CO₂e.",
+        "Sales and admin hours: no engine times them.",
+        "Card fees: the order is invoiced, and the scenario states no card fee for it."
+      ],
+      "price": 2250,
+      "trueCost": 1430.89,
+      "trueMargin": 819.11,
+      "totalHours": 12.51
+    },
+    {
+      "key": "restaurant-dinner",
+      "tab": "Restaurant",
+      "item": "Dinner service: 120 covers, $15.08 average check",
+      "revenue": {
+        "lines": [
+          {
+            "item": "Regenerative Beef & Black Bean Bowl",
+            "quantity": 20,
+            "price": 15.5,
+            "total": 310
+          },
+          {
+            "item": "Hill Country Smoked Chicken & Sweet Potato Hash",
+            "quantity": 20,
+            "price": 15,
+            "total": 300
+          },
+          {
+            "item": "Gulf Coast Fish & Crispy Potatoes",
+            "quantity": 20,
+            "price": 17,
+            "total": 340
+          },
+          {
+            "item": "Texas Farmhouse Chicken Salad",
+            "quantity": 20,
+            "price": 14.5,
+            "total": 290
+          },
+          {
+            "item": "Three-Bean & Root Vegetable Texas Chili",
+            "quantity": 20,
+            "price": 13.5,
+            "total": 270
+          },
+          {
+            "item": "Pasture-Raised Chicken Fajitas",
+            "quantity": 20,
+            "price": 15,
+            "total": 300
+          }
+        ],
+        "total": 1810
+      },
+      "rows": [
+        {
+          "department": "Purchasing",
+          "item": "Food for 120 plates",
+          "cost": 408.01,
+          "trace": "restaurantPlateEconomics foodCost (costRecipe with the shrink allowance) × plates sold"
+        },
+        {
+          "department": "Kitchen",
+          "item": "Back-of-house wages and payroll taxes, 2 people",
+          "cost": 126.21,
+          "hours": 7.86,
+          "trace": "scheduleTotals weekly wages and hours ÷ 7, plus EMPLOYER_PAYROLL_TAX_RATE, as postRestaurantPlanLedger posts a day"
+        },
+        {
+          "department": "Front of house",
+          "item": "Front-of-house wages and payroll taxes, 8 people",
+          "cost": 469.1,
+          "hours": 30.57,
+          "trace": "scheduleTotals weekly wages and hours ÷ 7, plus EMPLOYER_PAYROLL_TAX_RATE, as postRestaurantPlanLedger posts a day"
+        },
+        {
+          "department": "Management",
+          "item": "Salaried wages and payroll taxes, 1 person",
+          "cost": 163.06,
+          "hours": 6.43,
+          "trace": "scheduleTotals weekly wages and hours ÷ 7, plus EMPLOYER_PAYROLL_TAX_RATE, as postRestaurantPlanLedger posts a day"
+        },
+        {
+          "department": "Operations",
+          "item": "Card fees, 2.5% of sales",
+          "cost": 45.25,
+          "trace": "feeDollars on the service’s sales"
+        },
+        {
+          "department": "Fixed costs",
+          "item": "The day’s share of $10,800.00 a month",
+          "cost": 360,
+          "trace": "monthlyFixedTotal of the lines in force (lineInForceOn) ÷ 30 days"
+        }
+      ],
+      "sustainability": {
+        "title": "Service Sustainability Report",
+        "rows": [
+          {
+            "metric": "Carbon emissions",
+            "value": "491 kg CO₂e",
+            "amount": 491.0641203297726,
+            "unit": "kg CO2e",
+            "trace": "mealUnderForecast footprint lines (ingredients, electricity, gas) a portion × portions sold, plus pathwayNet on the food waste"
+          },
+          {
+            "metric": "Energy consumption",
+            "value": "39 kWh",
+            "amount": 39.4628353673972,
+            "unit": "kWh",
+            "trace": "mealUnderForecast energy.kwhEq a portion × portions sold"
+          },
+          {
+            "metric": "Water, kitchen",
+            "value": "143 L",
+            "amount": 143.265069972929,
+            "unit": "L",
+            "trace": "mealUnderForecast water a portion × portions sold, gallons to liters"
+          },
+          {
+            "metric": "Waste, food donation",
+            "value": "0.7 kg",
+            "amount": 0.6888470390228818,
+            "unit": "kg",
+            "trace": "trimKgPerPortion plus the shrink allowance on apMassPerPortionKg, × portions sold, × the scenario’s pathway share"
+          },
+          {
+            "metric": "Waste, animal feed",
+            "value": "1.4 kg",
+            "amount": 1.3776940780457636,
+            "unit": "kg",
+            "trace": "trimKgPerPortion plus the shrink allowance on apMassPerPortionKg, × portions sold, × the scenario’s pathway share"
+          },
+          {
+            "metric": "Waste, compost",
+            "value": "4.1 kg",
+            "amount": 4.133082234137291,
+            "unit": "kg",
+            "trace": "trimKgPerPortion plus the shrink allowance on apMassPerPortionKg, × portions sold, × the scenario’s pathway share"
+          },
+          {
+            "metric": "Waste, landfill",
+            "value": "0.7 kg",
+            "amount": 0.6888470390228818,
+            "unit": "kg",
+            "trace": "trimKgPerPortion plus the shrink allowance on apMassPerPortionKg, × portions sold, × the scenario’s pathway share"
+          }
+        ]
+      },
+      "inputs": [
+        {
+          "name": "Covers",
+          "status": "STATED",
+          "note": "The brief: one dinner service of about 120 covers."
+        },
+        {
+          "name": "Plates a cover",
+          "status": "PLACEHOLDER",
+          "note": "One plate a cover: the menu is main dishes only."
+        },
+        {
+          "name": "Recipes on the menu",
+          "status": "PLACEHOLDER",
+          "note": "Robert, 2026-11-19: six recipes, sold in equal number. Which six is drafted: the first six adult-portion recipes of the seed library."
+        },
+        {
+          "name": "Menu price over cost",
+          "status": "STATED",
+          "note": "Robert, 2026-11-19: the menu price is roughly 15% more than all the costs."
+        },
+        {
+          "name": "Menu price step",
+          "status": "PLACEHOLDER",
+          "note": "Menu prices to the half dollar."
+        },
+        {
+          "name": "Card fees",
+          "status": "STATED",
+          "note": "Robert, 2026-11-19: card fees are 2.5% of sales."
+        },
+        {
+          "name": "Roster",
+          "status": "STATED",
+          "note": "Robert, 2026-11-19: the roster of CompTable’s $750,000 Austin cafe demo operator, one day of it. Headcount, hours and wages are that demo roster’s (CompTable `demo-seed-data.ts`); positions are named by labor type here."
+        },
+        {
+          "name": "Fixed-cost lines",
+          "status": "PLACEHOLDER",
+          "note": "Robert, 2026-11-19: rent is $5,000 to $10,000 a month, and fixed costs are a little more than rent alone. The three amounts are drafted inside that."
+        },
+        {
+          "name": "Waste pathway shares",
+          "status": "PLACEHOLDER",
+          "note": "Robert, 2026-11-19: a made-up split, kept reasonable. The pounds are the engine’s trim and shrink; only the split is drafted."
+        },
+        {
+          "name": "Ingredient prices",
+          "status": "PLACEHOLDER",
+          "note": "The seed library’s ingredient prices, most of them working figures."
+        }
+      ],
+      "notComputed": [
+        "Methane as its own figure: the engine carries methane inside CO₂e.",
+        "Sales and admin hours: no engine times them.",
+        "Energy and kitchen water are each recipe’s Batch Kitchen route a portion; Restaurant mode has no cook-to-order route yet."
+      ],
+      "price": 1810,
+      "trueCost": 1571.63,
+      "trueMargin": 238.37,
+      "totalHours": 44.86
+    }
+  ]
+}
